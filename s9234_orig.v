@@ -5,50 +5,20 @@
 //# 2027 gates (955 ANDs + 528 NANDs + 431 ORs + 113 NORs)
 
 
-module s9234(CK,g102,g107,g1290,g1293,g22,g23,g2584,g301,g306,g310,g314,g319,g32,
+module s9234_orig(CK,g102,g107,g1290,g1293,g22,g23,g2584,g301,g306,g310,g314,g319,g32,
   g3222,g36,g3600,g37,g38,g39,g40,g4098,g4099,g41,g4100,g4101,g4102,g4103,
   g4104,g4105,g4106,g4107,g4108,g4109,g4110,g4112,g4121,g42,g4307,g4321,g44,
   g4422,g45,g46,g47,g4809,g5137,g5468,g5469,g557,g558,g559,g560,g561,g562,g563,
   g564,g567,g5692,g6282,g6284,g6360,g6362,g6364,g6366,g6368,g6370,g6372,g6374,
-  g639,g6728,g702,g705,g89,g94,g98, TMS, TCK, TRST, TDI, TDO);
+  g639,g6728,g702,g705,g89,g94,g98);
 input CK,g89,g94,g98,g102,g107,g301,g306,g310,g314,g319,g557,g558,g559,g560,g561,
   g562,g563,g564,g705,g639,g567,g45,g42,g39,g702,g32,g38,g46,g36,g47,g40,g37,
-  g41,g22,g44,g23, TMS, TCK, TRST, TDI;
+  g41,g22,g44,g23;
 output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   g6284,g6360,g6362,g6364,g6366,g6368,g6370,g6372,g6374,g6728,g1290,g4121,
   g4108,g4106,g4103,g1293,g4099,g4102,g4109,g4100,g4112,g4105,g4101,g4110,
-  g4104,g4107,g4098, TDO;
+  g4104,g4107,g4098;
 
-  //signal suffix of b means part of boundary scan cells
-  // boundary scan wires (PI boundary modules -> circuit PIs)
-  wire g89b,g94b,g98b,g102b,g107b,g301b,g306b,g310b,g314b,g319b,g557b,g558b,g559b,g560b,g561b,
-  g562b,g563b,g564b,g705b,g639b,g567b,g45b,g42b,g39b,g702b,g32b,g38b,g46b,g36b,g47b,g40b,g37b,
-  g41b,g22b,g44b,g23b,
-  // (PO boundary modules -> POs)
-	g2584b,g3222b,g3600b,g4307b,g4321b,g4422b,g4809b,g5137b,g5468b,g5469b,g5692b,g6282b,
-  g6284b,g6360b,g6362b,g6364b,g6366b,g6368b,g6370b,g6372b,g6374b,g6728b,g1290b,g4121b,
-  g4108b,g4106b,g4103b,g1293b,g4099b,g4102b,g4109b,g4100b,g4112b,g4105b,g4101b,g4110b,
-  g4104b,g4107b,g4098b,
-  // Boundary scan scan chain wires (bXXX_YYY, where XXX and YYY are PI/PO boundary cells on each side of wire)
-  bI00_I01, bI01_I02, bI02_I03, bI03_I04, bI04_I05, bI05_I06, bI06_I07, bI07_I08, bI08_I09, bI09_I10, bI10_I11, bI11_I12, bI12_I13,
-  bI13_I14, bI14_I15, bI15_I16, bI16_I17, bI17_I18, bI18_I19, bI19_I20, bI20_I21, bI21_I22, bI22_I23, bI23_I24, bI24_I25, bI25_I26,
-  bI26_I27, bI27_I28, bI28_I29, bI29_I30, bI30_I31, bI31_I32, bI32_I33, bI33_I34, bI34_I35, bI35_O00, bO00_O01, bO01_O02, bO02_O03,
-  bO03_O04, bO04_O05, bO05_O06, bO06_O07, bO07_O08, bO08_O09, bO09_O10, bO10_O11, bO11_O12, bO12_O13, bO13_O14, bO14_O15, bO15_O16, 
-  bO16_O17, bO17_O18, bO18_O19, bO19_O20, bO20_O21, bO21_O22, bO22_O23, bO23_O24, bO24_O25, bO25_O26, bO26_O27, bO27_O28, bO28_O29,
-  bO29_O30, bO30_O31, bO31_O32, bO32_O33, bO33_O34, bO34_O35, bO35_O36, bO36_O37, bO37_O38, bO38_O39,
-  // Boundary scan control signals
-  bs_clk, shiftLoad, bs_update, testNorm; // necessary?
-  
-  // Tab controller wires
-  wire clockdr, shiftdr, updatedr, clockir, shiftir, updateir, select, bs_en;
-  
-  // DR wires
-  wire dr_out, bp_TDO, bs_TDO, update;
-  
-  // IR decode wires
-  wire ir_out, irshift, irupdate, BIST_en;
-  wire [1:0] dr_sel;
-  
   wire g678,g4130,g332,g6823,g123,g6940,g207,g6102,g695,g4147,g461,g4841,g18,
     g6725,g292,g3232,g331,g4119,g689,g4141,g24,g6726,g465,g6507,g84,g6590,g291,
     g3231,g676,g5330,g622,g5147,g117,g4839,g278,g6105,g128,g5138,g598,g4122,
@@ -528,122 +498,6 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
     I5258,I7564,I5648,I5649,I5243,I2683,I7578,I5659,I4184,g3528,g3664,g3656,
     g3647,g1449,g1418,g1879;
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////                        Added TAP architecture stuff                       ////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
-	
-	
-	// Tap controller as defined by course staff
-	tapcontroller tc(TCK, TRST, TMS, clockdr, shiftdr, updatedr, clockir, shiftir, updateir, select, bs_en);
-	
-	// Data routing muxes (select DR, select DR or IR)
-	mux4to1 mDRSel(dr_out, dr_sel, bp_TDO, bs_TDO, 1'b0/*IS TDO?*/, 1'b0/*BIST TDO*/);
-	u_mux2 mIRDR(ir_dr_out, select, dr_out, ir_out); 
-	
-	// Bypass register
-	dff_r bypass_reg(bp_TDO, clockdr, TRST, TDI);
-	
-	// TDO tri state buffer implemented with a mux4to1
-	u_mux2 mTriState(TDO, bs_en, 1'bz, ir_dr_out);
-	
-	// Get update clock signal for DR
-	and aUpdate(update, updatedr, clockdr);
-	
-	// Update and shift signal for IR
-	and aIRUpdate(irupdate, clockir, updateir);
-	and aIRShift (irshift,  clockir, shiftir);
-	
-	// Instruction register
-	instructionRegister ir(ir_out, dr_sel, TDI, irshift, irupdate);
-	
-	// Instruction Decode
-	instructionDecode id(BIST_en, dr_sel);
-	
-	// Boundary scan cells
-	boundaryCell bcI00(g89 , clockdr, TRST, shiftdr, update, updatedr, TDI     , bI00_I01, g89b) ;
-	boundaryCell bcI01(g94 , clockdr, TRST, shiftdr, update, updatedr, bI00_I01, bI01_I02, g94b) ;
-	boundaryCell bcI02(g98 , clockdr, TRST, shiftdr, update, updatedr, bI01_I02, bI02_I03, g98b) ;
-	boundaryCell bcI03(g102, clockdr, TRST, shiftdr, update, updatedr, bI02_I03, bI03_I04, g102b);
-	boundaryCell bcI04(g107, clockdr, TRST, shiftdr, update, updatedr, bI03_I04, bI04_I05, g107b);
-	boundaryCell bcI05(g301, clockdr, TRST, shiftdr, update, updatedr, bI04_I05, bI05_I06, g301b);
-	boundaryCell bcI06(g306, clockdr, TRST, shiftdr, update, updatedr, bI05_I06, bI06_I07, g306b);
-	boundaryCell bcI07(g310, clockdr, TRST, shiftdr, update, updatedr, bI06_I07, bI07_I08, g310b);
-	boundaryCell bcI08(g314, clockdr, TRST, shiftdr, update, updatedr, bI07_I08, bI08_I09, g314b);
-	boundaryCell bcI09(g319, clockdr, TRST, shiftdr, update, updatedr, bI08_I09, bI09_I10, g319b);
-	boundaryCell bcI10(g557, clockdr, TRST, shiftdr, update, updatedr, bI09_I10, bI10_I11, g557b);
-	boundaryCell bcI11(g558, clockdr, TRST, shiftdr, update, updatedr, bI10_I11, bI11_I12, g558b);
-	boundaryCell bcI12(g559, clockdr, TRST, shiftdr, update, updatedr, bI11_I12, bI12_I13, g559b);
-	boundaryCell bcI13(g560, clockdr, TRST, shiftdr, update, updatedr, bI12_I13, bI13_I14, g560b);
-	boundaryCell bcI14(g561, clockdr, TRST, shiftdr, update, updatedr, bI13_I14, bI14_I15, g561b);
-	boundaryCell bcI15(g562, clockdr, TRST, shiftdr, update, updatedr, bI14_I15, bI15_I16, g562b);
-	boundaryCell bcI16(g563, clockdr, TRST, shiftdr, update, updatedr, bI15_I16, bI16_I17, g563b);
-	boundaryCell bcI17(g564, clockdr, TRST, shiftdr, update, updatedr, bI16_I17, bI17_I18, g564b);
-	boundaryCell bcI18(g705, clockdr, TRST, shiftdr, update, updatedr, bI17_I18, bI18_I19, g705b);
-	boundaryCell bcI19(g639, clockdr, TRST, shiftdr, update, updatedr, bI18_I19, bI19_I20, g639b);
-	boundaryCell bcI20(g567, clockdr, TRST, shiftdr, update, updatedr, bI19_I20, bI20_I21, g567b);
-	boundaryCell bcI21(g45 , clockdr, TRST, shiftdr, update, updatedr, bI20_I21, bI21_I22, g45b) ;
-	boundaryCell bcI22(g42 , clockdr, TRST, shiftdr, update, updatedr, bI21_I22, bI22_I23, g42b) ;
-	boundaryCell bcI23(g39 , clockdr, TRST, shiftdr, update, updatedr, bI22_I23, bI23_I24, g39b) ;
-	boundaryCell bcI24(g702, clockdr, TRST, shiftdr, update, updatedr, bI23_I24, bI24_I25, g702b);
-	boundaryCell bcI25(g32 , clockdr, TRST, shiftdr, update, updatedr, bI24_I25, bI25_I26, g32b) ;
-	boundaryCell bcI26(g38 , clockdr, TRST, shiftdr, update, updatedr, bI25_I26, bI26_I27, g38b) ;
-	boundaryCell bcI27(g46 , clockdr, TRST, shiftdr, update, updatedr, bI26_I27, bI27_I28, g46b) ;
-	boundaryCell bcI28(g36 , clockdr, TRST, shiftdr, update, updatedr, bI27_I28, bI28_I29, g36b) ;
-	boundaryCell bcI29(g47 , clockdr, TRST, shiftdr, update, updatedr, bI28_I29, bI29_I30, g47b) ;
-	boundaryCell bcI30(g40 , clockdr, TRST, shiftdr, update, updatedr, bI29_I30, bI30_I31, g40b) ;
-	boundaryCell bcI31(g37 , clockdr, TRST, shiftdr, update, updatedr, bI30_I31, bI31_I32, g37b) ;
-	boundaryCell bcI32(g41 , clockdr, TRST, shiftdr, update, updatedr, bI31_I32, bI32_I33, g41b) ;
-	boundaryCell bcI33(g22 , clockdr, TRST, shiftdr, update, updatedr, bI32_I33, bI33_I34, g22b) ;
-	boundaryCell bcI34(g44 , clockdr, TRST, shiftdr, update, updatedr, bI33_I34, bI34_I35, g44b) ;
-	boundaryCell bcI35(g23 , clockdr, TRST, shiftdr, update, updatedr, bI34_I35, bI35_O00, g23b) ;
-	
-	boundaryCell bcO00(g2584b, clockdr, TRST, shiftdr, update, updatedr, bI35_O00, bO00_O01, g2584);
-	boundaryCell bcO01(g3222b, clockdr, TRST, shiftdr, update, updatedr, bO00_O01, bO01_O02, g3222);
-	boundaryCell bcO02(g3600b, clockdr, TRST, shiftdr, update, updatedr, bO01_O02, bO02_O03, g3600);
-	boundaryCell bcO03(g4307b, clockdr, TRST, shiftdr, update, updatedr, bO02_O03, bO03_O04, g4307);
-	boundaryCell bcO04(g4321b, clockdr, TRST, shiftdr, update, updatedr, bO03_O04, bO04_O05, g4321);
-	boundaryCell bcO05(g4422b, clockdr, TRST, shiftdr, update, updatedr, bO04_O05, bO05_O06, g4422);
-	boundaryCell bcO06(g4809b, clockdr, TRST, shiftdr, update, updatedr, bO05_O06, bO06_O07, g4809);
-	boundaryCell bcO07(g5137b, clockdr, TRST, shiftdr, update, updatedr, bO06_O07, bO07_O08, g5137);
-	boundaryCell bcO08(g5468b, clockdr, TRST, shiftdr, update, updatedr, bO07_O08, bO08_O09, g5468);
-	boundaryCell bcO09(g5469b, clockdr, TRST, shiftdr, update, updatedr, bO08_O09, bO09_O10, g5469);
-	boundaryCell bcO10(g5692b, clockdr, TRST, shiftdr, update, updatedr, bO09_O10, bO10_O11, g5692);
-	boundaryCell bcO11(g6282b, clockdr, TRST, shiftdr, update, updatedr, bO10_O11, bO11_O12, g6282);
-	boundaryCell bcO12(g6284b, clockdr, TRST, shiftdr, update, updatedr, bO11_O12, bO12_O13, g6284);
-	boundaryCell bcO13(g6360b, clockdr, TRST, shiftdr, update, updatedr, bO12_O13, bO13_O14, g6360);
-	boundaryCell bcO14(g6362b, clockdr, TRST, shiftdr, update, updatedr, bO13_O14, bO14_O15, g6362);
-	boundaryCell bcO15(g6364b, clockdr, TRST, shiftdr, update, updatedr, bO14_O15, bO15_O16, g6364);
-	boundaryCell bcO16(g6366b, clockdr, TRST, shiftdr, update, updatedr, bO15_O16, bO16_O17, g6366);
-	boundaryCell bcO17(g6368b, clockdr, TRST, shiftdr, update, updatedr, bO16_O17, bO17_O18, g6368);
-	boundaryCell bcO18(g6370b, clockdr, TRST, shiftdr, update, updatedr, bO17_O18, bO18_O19, g6370);
-	boundaryCell bcO19(g6372b, clockdr, TRST, shiftdr, update, updatedr, bO18_O19, bO19_O20, g6372);
-	boundaryCell bcO20(g6374b, clockdr, TRST, shiftdr, update, updatedr, bO19_O20, bO20_O21, g6374);
-	boundaryCell bcO21(g6728b, clockdr, TRST, shiftdr, update, updatedr, bO20_O21, bO21_O22, g6728);
-	boundaryCell bcO22(g1290b, clockdr, TRST, shiftdr, update, updatedr, bO21_O22, bO22_O23, g1290);
-	boundaryCell bcO23(g4121b, clockdr, TRST, shiftdr, update, updatedr, bO22_O23, bO23_O24, g4121);
-	boundaryCell bcO24(g4108b, clockdr, TRST, shiftdr, update, updatedr, bO23_O24, bO24_O25, g4108);
-	boundaryCell bcO25(g4106b, clockdr, TRST, shiftdr, update, updatedr, bO24_O25, bO25_O26, g4106);
-	boundaryCell bcO26(g4103b, clockdr, TRST, shiftdr, update, updatedr, bO25_O26, bO26_O27, g4103);
-	boundaryCell bcO27(g1293b, clockdr, TRST, shiftdr, update, updatedr, bO26_O27, bO27_O28, g1293);
-	boundaryCell bcO28(g4099b, clockdr, TRST, shiftdr, update, updatedr, bO27_O28, bO28_O29, g4099);
-	boundaryCell bcO29(g4102b, clockdr, TRST, shiftdr, update, updatedr, bO28_O29, bO29_O30, g4102);
-	boundaryCell bcO30(g4109b, clockdr, TRST, shiftdr, update, updatedr, bO29_O30, bO30_O31, g4109);
-	boundaryCell bcO31(g4100b, clockdr, TRST, shiftdr, update, updatedr, bO30_O31, bO31_O32, g4100);
-	boundaryCell bcO32(g4112b, clockdr, TRST, shiftdr, update, updatedr, bO31_O32, bO32_O33, g4112);
-	boundaryCell bcO33(g4105b, clockdr, TRST, shiftdr, update, updatedr, bO32_O33, bO33_O34, g4105);
-	boundaryCell bcO34(g4101b, clockdr, TRST, shiftdr, update, updatedr, bO33_O34, bO34_O35, g4101);
-	boundaryCell bcO35(g4110b, clockdr, TRST, shiftdr, update, updatedr, bO34_O35, bO35_O36, g4110);
-	boundaryCell bcO36(g4104b, clockdr, TRST, shiftdr, update, updatedr, bO35_O36, bO36_O37, g4104);
-	boundaryCell bcO37(g4107b, clockdr, TRST, shiftdr, update, updatedr, bO36_O37, bO37_O38, g4107);
-	boundaryCell bcO38(g4098b, clockdr, TRST, shiftdr, update, updatedr, bO37_O38, bs_TDO  , g4098);
-	
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////                      End Added TAP architecture stuff                     ////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 
   dff DFF_0(g678,CK,g4130);
   dff DFF_1(g332,CK,g6823);
@@ -1294,7 +1148,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_434(I3672,g1656);
   not NOT_435(g3040,I4255);
   not NOT_436(I3077,g1439);
-  not NOT_437(g4809b,I6485);
+  not NOT_437(g4809,I6485);
   not NOT_438(g5593,I7355);
   not NOT_439(g3440,I4678);
   not NOT_440(g3969,I5233);
@@ -1335,9 +1189,9 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_475(g5450,g5292);
   not NOT_476(I5037,g3705);
   not NOT_477(g5996,g5824);
-  not NOT_478(g4104b,I5394);
+  not NOT_478(g4104,I5394);
   not NOT_479(g6592,I8644);
-  not NOT_480(g4099b,I5379);
+  not NOT_480(g4099,I5379);
   not NOT_481(g4499,I6015);
   not NOT_482(I2352,g1161);
   not NOT_483(I6063,g4381);
@@ -1481,7 +1335,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_621(g4805,g4473);
   not NOT_622(g4022,I5328);
   not NOT_623(g1584,g743);
-  not NOT_624(g4422b,g4111);
+  not NOT_624(g4422,g4111);
   not NOT_625(g6599,I8665);
   not NOT_626(g1539,g878);
   not NOT_627(I5109,g3710);
@@ -1499,7 +1353,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_639(g736,I1841);
   not NOT_640(I6525,g4770);
   not NOT_641(g2768,g2367);
-  not NOT_642(g6370b,I8174);
+  not NOT_642(g6370,I8174);
   not NOT_643(g2594,I3723);
   not NOT_644(g4798,I6464);
   not NOT_645(g6325,I8061);
@@ -1527,7 +1381,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_667(g2934,g2004);
   not NOT_668(g2230,I3355);
   not NOT_669(g4437,I5948);
-  not NOT_670(g4102b,I5388);
+  not NOT_670(g4102,I5388);
   not NOT_671(g4302,g4068);
   not NOT_672(I5865,g3743);
   not NOT_673(g6106,I7814);
@@ -1654,7 +1508,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_794(g760,I1853);
   not NOT_795(g2783,I3979);
   not NOT_796(g4281,I5736);
-  not NOT_797(g3600b,I4791);
+  not NOT_797(g3600,I4791);
   not NOT_798(g2112,I3240);
   not NOT_799(g1283,g853);
   not NOT_800(g2312,I3462);
@@ -1685,7 +1539,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_825(I7276,g5375);
   not NOT_826(I5487,g3881);
   not NOT_827(I2355,g1177);
-  not NOT_828(g4109b,I5409);
+  not NOT_828(g4109,I5409);
   not NOT_829(g4309,g4074);
   not NOT_830(g2828,g2488);
   not NOT_831(g2830,g2494);
@@ -1731,7 +1585,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_871(g6800,I8966);
   not NOT_872(I5169,g3593);
   not NOT_873(I6410,g4473);
-  not NOT_874(g4098b,I5376);
+  not NOT_874(g4098,I5376);
   not NOT_875(g3500,g2647);
   not NOT_876(g4498,I6012);
   not NOT_877(I2057,g685);
@@ -1777,7 +1631,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_917(g6823,I9002);
   not NOT_918(g3477,g2692);
   not NOT_919(g6166,I7892);
-  not NOT_920(g6366b,I8162);
+  not NOT_920(g6366,I8162);
   not NOT_921(I6334,g4454);
   not NOT_922(I8872,g6695);
   not NOT_923(g2241,I3370);
@@ -1854,7 +1708,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_994(I8552,g6455);
   not NOT_995(g1774,I2817);
   not NOT_996(g4766,I6406);
-  not NOT_997(g4105b,I5397);
+  not NOT_997(g4105,I5397);
   not NOT_998(g1846,I2940);
   not NOT_999(g5054,g4816);
   not NOT_1000(g4801,g4487);
@@ -1889,7 +1743,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_1029(I8860,g6699);
   not NOT_1030(I4480,g3073);
   not NOT_1031(g1994,I3105);
-  not NOT_1032(g1290b,I2275);
+  not NOT_1032(g1290,I2275);
   not NOT_1033(I2275,g909);
   not NOT_1034(g6938,I9227);
   not NOT_1035(I5466,g3787);
@@ -2014,7 +1868,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_1154(g5539,g5331);
   not NOT_1155(g5896,g5753);
   not NOT_1156(g1673,I2653);
-  not NOT_1157(g6374b,I8186);
+  not NOT_1157(g6374,I8186);
   not NOT_1158(I3826,g2145);
   not NOT_1159(g3364,g3114);
   not NOT_1160(g3233,I4498);
@@ -2025,7 +1879,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_1165(I4303,g1897);
   not NOT_1166(g2612,I3752);
   not NOT_1167(I8300,g6299);
-  not NOT_1168(g6284b,I8002);
+  not NOT_1168(g6284,I8002);
   not NOT_1169(g2243,I3376);
   not NOT_1170(g3770,I4961);
   not NOT_1171(I9014,g6820);
@@ -2045,7 +1899,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_1185(g6420,I8270);
   not NOT_1186(I4240,g2165);
   not NOT_1187(g2330,g1777);
-  not NOT_1188(g4108b,I5406);
+  not NOT_1188(g4108,I5406);
   not NOT_1189(g4609,I6182);
   not NOT_1190(g6507,I8441);
   not NOT_1191(g4308,I5777);
@@ -2182,7 +2036,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_1322(g1161,I2182);
   not NOT_1323(g6278,I7966);
   not NOT_1324(g2686,I3830);
-  not NOT_1325(g6372b,I8180);
+  not NOT_1325(g6372,I8180);
   not NOT_1326(g3162,I4402);
   not NOT_1327(g5261,I6918);
   not NOT_1328(g3019,I4226);
@@ -2202,7 +2056,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_1342(I3301,g1730);
   not NOT_1343(g5415,I7081);
   not NOT_1344(g3452,g2625);
-  not NOT_1345(g6282b,I7996);
+  not NOT_1345(g6282,I7996);
   not NOT_1346(I2050,g683);
   not NOT_1347(I5400,g3963);
   not NOT_1348(g6566,I8582);
@@ -2213,7 +2067,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_1353(I3605,g1681);
   not NOT_1354(g4723,I6349);
   not NOT_1355(I8567,g6432);
-  not NOT_1356(g4101b,I5385);
+  not NOT_1356(g4101,I5385);
   not NOT_1357(g6134,I7852);
   not NOT_1358(g5664,g5521);
   not NOT_1359(g2625,I3767);
@@ -2301,7 +2155,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_1441(g6160,g5926);
   not NOT_1442(g3226,I4477);
   not NOT_1443(I5508,g3867);
-  not NOT_1444(g6360b,I8144);
+  not NOT_1444(g6360,I8144);
   not NOT_1445(g6933,I9220);
   not NOT_1446(I5944,g4356);
   not NOT_1447(g2962,g2008);
@@ -2462,7 +2316,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_1602(I5840,g3732);
   not NOT_1603(I8500,g6431);
   not NOT_1604(g791,I1865);
-  not NOT_1605(g4103b,I5391);
+  not NOT_1605(g4103,I5391);
   not NOT_1606(g6580,g6491);
   not NOT_1607(I7859,g6032);
   not NOT_1608(g5631,g5536);
@@ -2769,7 +2623,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_1909(I8429,g6425);
   not NOT_1910(g5596,I7358);
   not NOT_1911(g6164,g5926);
-  not NOT_1912(g6364b,I8156);
+  not NOT_1912(g6364,I8156);
   not NOT_1913(g6233,g6052);
   not NOT_1914(I5991,g4226);
   not NOT_1915(I2707,g1190);
@@ -2949,7 +2803,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_2089(I5705,g3942);
   not NOT_2090(g6162,g5926);
   not NOT_2091(I3478,g1450);
-  not NOT_2092(g6362b,I8150);
+  not NOT_2092(g6362,I8150);
   not NOT_2093(g6419,I8267);
   not NOT_2094(I6723,g4761);
   not NOT_2095(g4140,I5502);
@@ -2973,7 +2827,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_2113(I2491,g821);
   not NOT_2114(g2903,g1902);
   not NOT_2115(I8635,g6552);
-  not NOT_2116(g6728b,I8878);
+  not NOT_2116(g6728,I8878);
   not NOT_2117(g6486,g6363);
   not NOT_2118(I2169,g269);
   not NOT_2119(g942,g69);
@@ -3007,7 +2861,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_2147(g2135,I3261);
   not NOT_2148(I4510,g2753);
   not NOT_2149(I9146,g6890);
-  not NOT_2150(g4110b,I5412);
+  not NOT_2150(g4110,I5412);
   not NOT_2151(I7167,g5434);
   not NOT_2152(I7318,g5452);
   not NOT_2153(I4291,g2241);
@@ -3250,7 +3104,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_2390(g6165,g5926);
   not NOT_2391(g6571,I8597);
   not NOT_2392(g6365,I8159);
-  not NOT_2393(g2584b,I3705);
+  not NOT_2393(g2584,I3705);
   not NOT_2394(g4788,I6452);
   not NOT_2395(g6048,g5824);
   not NOT_2396(I1841,g207);
@@ -3442,8 +3296,8 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_2582(I8573,g6435);
   not NOT_2583(I8863,g6700);
   not NOT_2584(I4483,g3082);
-  not NOT_2585(g1293b,I2284);
-  not NOT_2586(g6368b,I8168);
+  not NOT_2585(g1293,I2284);
+  not NOT_2586(g6368,I8168);
   not NOT_2587(g4144,I5514);
   not NOT_2588(I8713,g6522);
   not NOT_2589(I7593,g5605);
@@ -3473,7 +3327,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_2613(g1221,g46);
   not NOT_2614(g6411,I8243);
   not NOT_2615(g6734,I8894);
-  not NOT_2616(g3222b,I4465);
+  not NOT_2616(g3222,I4465);
   not NOT_2617(I3886,g2215);
   not NOT_2618(I8857,g6698);
   not NOT_2619(g1703,I2707);
@@ -3646,7 +3500,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_2786(g2467,I3599);
   not NOT_2787(I8681,g6566);
   not NOT_2788(g4726,I6352);
-  not NOT_2789(g5469b,I7153);
+  not NOT_2789(g5469,I7153);
   not NOT_2790(g4154,I5548);
   not NOT_2791(I2601,g1161);
   not NOT_2792(g6696,I8806);
@@ -3675,7 +3529,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_2815(I7871,g6097);
   not NOT_2816(I2460,g952);
   not NOT_2817(I3001,g1267);
-  not NOT_2818(g4112b,I5418);
+  not NOT_2818(g4112,I5418);
   not NOT_2819(g4218,I5640);
   not NOT_2820(g2197,I3340);
   not NOT_2821(g4267,I5720);
@@ -3853,7 +3707,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_2993(I3614,g1295);
   not NOT_2994(g3781,I4976);
   not NOT_2995(I3370,g1805);
-  not NOT_2996(g5137b,I6789);
+  not NOT_2996(g5137,I6789);
   not NOT_2997(g5395,I7061);
   not NOT_2998(g5891,g5731);
   not NOT_2999(g3898,g3575);
@@ -3885,7 +3739,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_3025(g1366,I2402);
   not NOT_3026(g5266,I6923);
   not NOT_3027(I2627,g1053);
-  not NOT_3028(g1056,g89b);
+  not NOT_3028(g1056,g89);
   not NOT_3029(g6568,I8588);
   not NOT_3030(I5328,g3502);
   not NOT_3031(g1529,g1076);
@@ -3899,7 +3753,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_3039(g5248,g4911);
   not NOT_3040(g4636,g4286);
   not NOT_3041(g1355,I2394);
-  not NOT_3042(g4106b,I5400);
+  not NOT_3042(g4106,I5400);
   not NOT_3043(g5255,g4933);
   not NOT_3044(g3852,I5065);
   not NOT_3045(I9031,g6809);
@@ -3907,7 +3761,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_3047(g3488,g2728);
   not NOT_3048(I8894,g6709);
   not NOT_3049(g4790,I6456);
-  not NOT_3050(g5692b,I7451);
+  not NOT_3050(g5692,I7451);
   not NOT_3051(I4587,g2962);
   not NOT_3052(g5097,I6733);
   not NOT_3053(g5726,I7487);
@@ -3956,13 +3810,13 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_3096(I4507,g2739);
   not NOT_3097(g5329,I6989);
   not NOT_3098(g1549,g878);
-  not NOT_3099(g4107b,I5403);
+  not NOT_3099(g4107,I5403);
   not NOT_3100(I7042,g5310);
   not NOT_3101(g947,g74);
   not NOT_3102(g6894,I9149);
   not NOT_3103(g1834,I2916);
   not NOT_3104(I4794,g2814);
-  not NOT_3105(g4307b,I5774);
+  not NOT_3105(g4307,I5774);
   not NOT_3106(I5851,g3739);
   not NOT_3107(g4536,I6118);
   not NOT_3108(I3858,g2197);
@@ -4009,7 +3863,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_3149(g2443,I3578);
   not NOT_3150(g6484,g6361);
   not NOT_3151(g3096,I4343);
-  not NOT_3152(g5468b,I7150);
+  not NOT_3152(g5468,I7150);
   not NOT_3153(g1519,I2491);
   not NOT_3154(g1740,g1116);
   not NOT_3155(I7012,g5316);
@@ -4210,10 +4064,10 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_3350(I4050,g2059);
   not NOT_3351(g3241,I4522);
   not NOT_3352(g2912,g2001);
-  not NOT_3353(g4121b,I5445);
+  not NOT_3353(g4121,I5445);
   not NOT_3354(g1969,I3080);
   not NOT_3355(I3232,g1782);
-  not NOT_3356(g4321b,I5790);
+  not NOT_3356(g4321,I5790);
   not NOT_3357(g5307,I6959);
   not NOT_3358(g2157,I3278);
   not NOT_3359(g5536,g5467);
@@ -4412,7 +4266,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   not NOT_3552(g2120,I3251);
   not NOT_3553(I4285,g2555);
   not NOT_3554(g2320,I3474);
-  not NOT_3555(g4100b,I5382);
+  not NOT_3555(g4100,I5382);
   not NOT_3556(g1724,I2724);
   not NOT_3557(g3874,I5103);
   not NOT_3558(I2958,g1257);
@@ -4443,7 +4297,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   and AND2_12(g2340,g1398,g1387);
   and AND2_13(g5938,g5114,g5791);
   and AND2_14(g5909,g5787,g3384);
-  and AND2_15(g1802,g89b,g1064);
+  and AND2_15(g1802,g89,g1064);
   and AND2_16(g3554,g2941,g179);
   and AND2_17(g4410,g3903,g1474);
   and AND2_18(g6640,g1612,g6549);
@@ -5813,7 +5667,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   or OR2_351(g4630,g4339,g3610);
   or OR2_352(g6921,g6908,g6816);
   or OR2_353(g5367,g5199,g4928);
-  nand NAND3_0(g1777,g1060,g102,g89b);
+  nand NAND3_0(g1777,g1060,g102,g89);
   nand NAND2_0(I7217,g152,I7216);
   nand NAND2_1(I7571,g5678,I7569);
   nand NAND4_0(g5686,g5546,g1017,g1551,g2916);
@@ -6042,7 +5896,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
   nand NAND2_192(I5294,g625,I5292);
   nand NAND2_193(I6963,g4874,I6962);
   nand NAND3_15(g3741,g901,g3433,g2340);
-  nand NAND2_194(g1157,g89b,g107);
+  nand NAND2_194(g1157,g89,g107);
   nand NAND2_195(I2499,g1036,I2497);
   nand NAND2_196(g937,I1979,I1980);
   nand NAND2_197(g4472,g3380,g4253);

@@ -65,3 +65,29 @@ module mux4to1(out, sel, A, B, C, D);
 	or  o(out, and_a, and_b, and_c, and_d);
 	
 endmodule // mux4to1
+
+
+// Instruction register has 4 states (boundary, BIST, bypass, Internal scan)
+`timescale 1ns / 1ps
+module instructionRegister(TDO, instruction, TDI, shift, update);
+	input 			TDI, shift, update;
+	output 			TDO;
+	output [1:0] 	instruction;
+	
+	dff shift1(shift1_shift0, shift, TDI);
+	dff shift0(TDO, shift, shift1_shift0);
+	
+	dff update1(instruction[1], update, shift1_shift0);
+	dff update0(instruction[0], update, TDO);
+
+endmodule // instructionRegister
+
+// Instruction decode module. Doesn't do much right now
+`timescale 1ns / 1ps
+module instructionDecode(BIST_en, instruction);
+	input [1:0]	instruction;
+	output BIST_en;
+	
+	and a0(BIST_en, instruction[1], instruction[0]);
+	
+endmodule // instructionDecode
