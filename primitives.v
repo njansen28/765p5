@@ -80,15 +80,27 @@ module dff(q, clock, data);
 endmodule // udff
 `endcelldefine
 
+`timescale 1ns / 1ps
+`celldefine
+module scanff_r(Q, SI, SE, CK, reset_l, SD);
+   input CK, SD, SI, SE, reset_l;
+   output Q;
+   wire   a;
+   udff_r(Q, CK, reset_l, a);  
+   u_mux2 m0(a, SD, SI, SE);
+ 
+endmodule // scanff
+`endcelldefine
+
 
 `timescale 1ns / 1ps
-  `celldefine
-module scanff(CK, SD, SI, SE, Q);
+`celldefine
+module scanff(Q, SI, SE, CK, SD);
    input CK, SD, SI, SE;
    output Q;
    wire   a;
-   dff  (Q, CK, a);  
-   u_mux2  (a, SD, SI, SE);
+   udff(Q, CK, a);  
+   u_mux2 m0(a, SD, SI, SE);
  
 endmodule // scanff
 `endcelldefine
