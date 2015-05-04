@@ -1,0 +1,2465 @@
+STIL 1.0; 
+
+//***************************************************************************//
+//                             STIL VECTOR FILE                              //
+//Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121) //
+//***************************************************************************//
+//                                                                           //
+//  FILE CREATED..............May 03, 2015 at 20:46:06                       //
+//                                                                           //
+//  PROJECT NAME..............work                                           //
+//                                                                           //
+//  TESTMODE..................FULLSCAN                                       //
+//                                                                           //
+//  INEXPERIMENT..............exp_comb                                       //
+//                                                                           //
+//  TDR.......................dummy.tdr                                      //
+//                                                                           //
+//  TEST PERIOD...............80.000   TEST TIME UNITS...........ns          //
+//  TEST PULSE WIDTH..........8.000                                          //
+//  TEST STROBE OFFSET........72.000   TEST STROBE TYPE..........edge        //
+//  TEST BIDI OFFSET..........0.000                                          //
+//  TEST PI OFFSET............0.000    X VALUE...................Z           //
+//                                                                           //
+//                                                                           //
+//                                     SCAN OVERLAP..............yes         //
+//  SCAN PERIOD...............80.000   SCAN TIME UNITS...........ns          //
+//  SCAN PULSE WIDTH..........8.000                                          //
+//  SCAN STROBE OFFSET........0.000    SCAN STROBE TYPE..........edge        //
+//  SCAN BIDI OFFSET..........0.000                                          //
+//  SCAN PI OFFSET............0.000    X VALUE...................Z           //
+//                                                                           //
+//                                                                           //
+//  Active TESTMODEs TM = 1 ..FULLSCAN                                       //
+//                                                                           //
+//  EXPERIMENT................1  Name = exp_comb                             //
+//  DATA FORMAT...............binary                                         //
+//                                                                           //
+//  TEST SECTION..............1        TEST SECTION TYPE.........logic       //
+//                                                                           //
+//  The range of Tests in this Test Section......................1:165       //
+//                                                                           //
+//  TESTER TERMINATION........none     TERMINATION DOMINATION....tester      //
+//                                                                           //
+//***************************************************************************//
+
+  Include "STIL.FULLSCAN.exp_comb.signals.stil"; 
+
+//***************************************************************************//
+//                            TIMING DEFINITIONS                             //
+//***************************************************************************//
+
+  Timing { 
+
+    WaveformTable "test_cycle" { Period '80.000000ns'; 
+      Waveforms { 
+        "g1" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g10" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g102" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g107" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g11" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g111" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g114" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g117" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g118" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g119" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g122" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g123" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g127" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g128" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g131" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g135" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g139" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g14" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g143" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g148" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g15" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g152" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g157" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g161" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g166" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g170" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g175" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g179" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g18" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g184" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g188" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g19" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g193" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g197" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g2" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g204" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g205" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g206" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g207" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g208" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g209" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g210" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g211" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g212" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g218" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g22" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g224" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g23" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g230" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g236" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g24" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g242" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g248" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g25" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g254" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g260" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g266" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g269" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g276" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g277" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g278" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g279" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g28" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g280" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g281" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g282" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g283" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g284" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g285" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g286" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g287" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g288" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g289" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g29" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g290" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g291" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g292" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g293" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g297" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g3" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g301" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g306" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g310" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g314" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g319" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g32" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g323" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g326" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g327" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g328" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g33" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g331" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g332" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g336" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g337" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g338" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g341" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g345" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g349" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g353" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g357" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g36" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g361" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g366" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g37" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g370" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g374" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g378" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g38" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g382" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g386" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g39" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g390" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g394" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g398" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g40" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g402" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g406" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g41" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g410" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g414" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g418" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g42" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g422" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g426" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g43" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g430" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g434" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g437" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g44" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g441" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g445" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g449" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g45" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g453" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g457" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g46" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g461" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g465" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g47" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g471" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g478" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g48" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g485" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g486" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g489" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g49" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g492" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g496" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g500" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g504" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g508" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g512" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g516" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g520" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g524" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g528" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g532" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g536" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g54" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g541" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g545" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g548" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g551" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g554" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g557" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g558" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g559" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g560" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g561" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g562" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g563" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g564" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g567" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g571" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g574" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g578" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g582" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g586" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g59" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g590" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g594" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g598" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g6" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g602" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g606" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g610" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g613" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g616" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g619" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g622" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g625" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g628" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g631" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g634" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g638" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g639" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g64" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g642" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g646" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g650" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g654" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g658" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g662" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g663" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g664" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g665" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g666" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g667" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g668" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g669" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g672" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g675" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g676" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g677" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g678" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g679" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g680" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g681" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g682" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g683" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g684" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g685" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g686" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g687" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g688" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g689" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g69" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g690" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g691" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g692" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g693" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g694" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g695" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g696" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g697" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g698" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g699" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g7" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g702" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g705" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g74" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g79" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g84" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g89" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g94" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g98" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "g1288" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g1289" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g1290" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g1291" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g1292" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g1293" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g1294" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g1831" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g2584" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g2585" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g2586" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g2587" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3222" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3224" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3225" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3226" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3227" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3228" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3229" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3230" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3231" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3232" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3233" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3234" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3235" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3236" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3237" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3238" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3239" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3240" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3241" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g3600" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4098" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4099" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4100" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4101" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4102" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4103" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4104" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4105" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4106" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4107" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4108" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4109" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4110" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4112" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4113" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4114" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4115" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4116" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4117" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4118" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4119" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4120" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4121" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4122" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4123" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4124" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4125" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4126" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4127" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4128" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4129" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4130" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4131" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4132" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4133" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4134" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4135" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4136" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4137" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4138" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4139" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4140" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4141" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4142" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4143" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4144" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4145" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4146" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4147" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4148" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4149" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4150" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4307" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4321" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4422" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4423" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4424" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4425" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4426" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4657" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4658" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4659" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4809" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4839" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4840" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4841" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4842" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4843" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4844" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4845" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4846" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4847" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4848" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4849" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4850" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4851" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4852" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4853" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4854" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4855" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4856" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4857" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g4858" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5137" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5138" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5139" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5140" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5141" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5147" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5148" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5328" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5329" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5330" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5468" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5469" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5470" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5471" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5472" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5473" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5474" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5475" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5476" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5477" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5478" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5479" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5480" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5489" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5490" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5491" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5580" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5581" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5582" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5692" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5693" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5694" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5695" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5696" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5697" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5698" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5699" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5700" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5874" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5875" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5876" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5877" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g5878" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6100" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6101" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6102" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6103" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6104" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6105" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6106" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6107" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6277" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6278" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6282" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6284" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6360" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6362" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6364" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6366" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6368" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6370" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6372" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6374" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6401" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6402" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6403" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6404" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6405" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6406" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6407" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6497" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6498" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6499" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6500" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6501" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6502" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6503" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6504" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6505" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6506" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6507" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6508" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6509" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6510" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6511" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6512" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6582" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6583" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6584" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6585" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6586" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6587" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6588" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6589" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6590" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6591" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6592" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6593" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6594" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6595" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6596" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6597" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6598" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6599" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6600" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6601" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6602" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6720" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6721" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6722" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6723" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6724" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6725" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6726" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6727" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6728" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6729" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6744" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6745" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6800" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6801" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6823" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6824" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6825" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6826" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6827" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6839" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6840" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6841" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6842" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6853" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6854" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6925" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6940" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+        "g6941" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+    } } 
+} 
+
+//***************************************************************************//
+//                               TEST VECTORS                                //
+//***************************************************************************//
+
+PatternBurst 
+  MAIN_BRST { Termination { "ALLPOs" TerminateOff; } 
+              PatList { MAIN_TEST; } } 
+
+PatternExec 
+  MAIN_EXEC { PatternBurst MAIN_BRST; } 
+
+Pattern 
+  MAIN_TEST { 
+
+//***************************************************************************//
+//  TESTER LOOP...............1        PROCEDURES HAVE MEMORY....no          //
+//                                                                           //
+//  The range of Tests in this Tester Loop.......................1:165       //
+//                                                                           //
+//  TEST PROCEDURE............1        TYPE......................init        //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  TEST SEQUENCE.............         TYPE......................init        //
+//***************************************************************************//
+
+
+//***************************************************************************//
+//  TEST PROCEDURE............2        TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................1:16        //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............11755    PERCENT STATIC FAULTS.....70.860207   //
+//  TEST SEQUENCE.............1        TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.1.2.1:  Measure_PO: 
+  "1.1.1.2.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 011110101100100001100010000001001001100001011000000011100101110011011010000111010000101111011101000000110111011011111011111011101101101100111001001001100001100 \r13 1 010100111110100011111101010100010000000111000111110110111001001011011111110; 
+    "ALLPOs" = LLLLLHHHLLLHHHHLLLHLLLH \r3 HLLL LLLLHHHLLHHLHH \r9 L HHLLLLLHH \r11 L HHLLLHHLLHHLLLLLHHHLHHHHLHLHLHHHLHHLLHHHHHLHLLHHLHLLHHHHHHLHLLH \r13 L HLHLLLHLHHHHLHLLHLHLLHLLHHLLHHHHHLLLLHHHLHLLHH \r10 L HLLLHLHLLLLHHLHLLHLLLLLLHHHLHLLHLLLHLLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............2        TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.2.2.1:  Measure_PO: 
+  "1.1.1.2.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000 \r10 1 00010110111111101101101111001100001000000011111110101 \r8 0 10000 \r5 01 001101 \r8 0 101010110110001001000100100101100110001101001 \r9 0 11100100110 \r11 1 01110000111010011000110 \r9 1 011100010010000100111110111010001000; 
+    "ALLPOs" = \r7 H LLHHLLHHHLLHHLHHHHLLHHLHLH \r9 L HHLLLLLLLHLHLLLLLLHH \r23 L HHHLLHLHLLHHHL \r5 LH LLHLLLLHHHHLHLHHLHLLLLLHHHHLHLLLHLHLHLHHHHHLHLH \r9 L HLHL \r9 H \r16 L HLHHHLL \r10 H LLLHLHHHHHHLLHLLLLLLLHLLH \r3 LHHH LL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............3        TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.3.2.1:  Measure_PO: 
+  "1.1.1.2.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000100101111100001010001100100100000001001 \r11 0 100111100010001111110110000100100010111011001111010101000100010011011001101001011101111101111111 \r10 0 1011111110110111111010110111111000011111001001111011001001111011100111110010111010111000; 
+    "ALLPOs" = HLHHHHHLLLLLLHHHHHLLHHHHHHHLLHHHLLLHLLLLLLHHHHLLLLHLHHLLLLLLHHLLLLHLLLLLHLLLLLLHLLLLHHHLLHLLLLHHLLHLHHLHLLLHLHHLHLLHHHHHHHLLHHHHLHLLLLHHHHLHLHLHLLHLLHLLHHHLLHHHLHLLHLLL \r10 H LLLLLLH \r10 L HLLHLL \r12 H LLHLH \r9 L HLHLHHHHHLHLLLLHLLLLLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............4        TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.4.2.1:  Measure_PO: 
+  "1.1.1.2.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 001001110110110000010001111001000001000001010000000100001011000001000111000001100110001101011110000000100 \r10 1 011110011001 \r3 1100 1110100000100001000000101001111111 \r12 0 10000010101101010010011010111111000011100101101100111010000111; 
+    "ALLPOs" = LLHLHHH \r9 L HHLHLLLLLHHLHLLLLLLLHHLLHLLH \r3 HHHL HLHHLH \r11 L HH \r9 L HHHLLLLLHLHHHHLHLHHLHHHHHLLHLH \r8 L HHLHHLHHHLHHHHLHLLHLHHL \r14 H \r4 LH LLH \r10 L HHLLHHLLLLH \r8 L HH \r17 L HLLH \r9 L \r3 HLLH LHLLHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............5        TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.5.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.5.2.1:  Measure_PO: 
+  "1.1.1.2.5.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 001100101101100000101111011101101101001101000101 \r13 0 1000100001110100100000010110001010000000100011001000101010100010011111101010001111101101 \r9 0 11000100100111010111100110100010101011101010010010100111011111100000010010000101111000001; 
+    "ALLPOs" = LHLLHHHHLLHHHHHHHLLHLLHHHHLLHLLLHLHLLLHHLHHLLHLHH \r8 L HLLH \r10 L H \r11 L HHLLLLHLHLHLHHLHLLHHHHLHHLLHLHHLLHHHHHLLHHHLLHLHHHHHHLHHLHLLLLLHHLHLLHHLHLLHLHLLHLLL \r17 H \r10 L HLLHLH \r10 L HHHHLHHHHHHHLHLHLLLLLHLHHHHHLHLHLLHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............6        TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.6.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.6.2.1:  Measure_PO: 
+  "1.1.1.2.6.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 100010101111100000100100011111001101001001 \r15 0 111110010101100111001000110001101001 \r9 0 11001111001010101111000011011000100110111110101 \r9 0 111011110001110111110 \r23 1 010001010001010010011011111001011101010110010; 
+    "ALLPOs" = LLHLLHHHLLLHL \r18 H LLLLLHLLLLHLLHLLHHHHLH \r9 L HLHLLHLLLLLHLHLHLLHLLLHHLLLLHLLLHHHHLHLLHLHHLHHHLLHLLLHHHHLLLLHHHLLHHHHHHHLH \r8 L HHHLHLHLLLLHHLHLLLLHL \r11 H LLHHH \r10 L HLHLHHHLLHHHHHHHLHLLHHHHLLLHHLLHLLLHLLHLHHHLHLLHHLLHHHLLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............7        TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.7.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.7.2.1:  Measure_PO: 
+  "1.1.1.2.7.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00011111011010100000111101110000110111000100010100000001010000001110000000110100001010111101100000010011011011100100010000010101011000001101111101001 \r12 0 11011110101111110000010111110001100101011110010010001010000011010100111110111110000000; 
+    "ALLPOs" = LLLLHHHHLLHLLHHLHHLHHHHHLHHLHHHHHLLLHLHLLHLHLHLLLLHHHHHLLLLLLH \r11 L H \r10 L HHH \r8 L HHHLLLLHLHLHLLLHLLLHHHHHHLLLLLHHLLLLLHHHHLLHLLLHLLHHLHHLHLHLLHLLLHLLLLHL \r11 H \r20 L HHHH \r8 L HHLLLLHHHHHHLHHHLLLLLLLHHLHHHLHLHHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............8        TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.8.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.8.2.1:  Measure_PO: 
+  "1.1.1.2.8.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 001000111111100001010111110100 \r9 1 0010000010000010111001110010011111000001110010010010111 \r11 0 1111110100000101100011001110001010101100101 \r9 0 110011011000100011111110010 \r16 1 000101011100100000001111001111100 \r12 1 00; 
+    "ALLPOs" = LHHHLHHLLLLLHHHHHHHLLHHHHHHHLLHHHLLLHLLLLHLLHHHHHHLLHH \r9 L HLLHLLHLLLHLLHLLHLLHLLH \r8 L HHHHHLLHHLLLLLHHLLHLLHHHHHLLLHHLHHHLLHHHHHLHLLLHLLLHHHHHHLLHLHHLLLLLLHHLLL \r17 H \r9 L HLHHHLHHLLHHHHHHLLLLHLHLHLLLHHLLHHLLLHHLHHLLHLHLHLHLLLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............9        TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.9.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.9.2.1:  Measure_PO: 
+  "1.1.1.2.9.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0101100101101 \r9 0 111111001000000110010000101000 \r10 1 01100101111111 \r8 0 1011101001100000101101100100100010110111011001010 \r6 01 000000110011101000111010110000010101110111100100111110110011100101111101011100110101010000011111100000; 
+    "ALLPOs" = HHLHLHHLLLLHHLHHLHHHLLLHHLHHHLLH \r8 L HHLHH \r9 L HHLLHHLHLLLH \r12 L H \r9 L HLHHLLHHHHLLHLHLLLHLHLHHLHLHHHHHHHLH \r8 L HHHHLHLLHLHH \r9 L HHLLHLHLLLLLLLHLLHHLHHH \r8 L HLLHHLLHHHLHHLH \r12 L HLHHHHLHLLLLHHLLHHHLLLLHHHLHHLLLHLLLLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............10       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.10.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.10.2.1:  Measure_PO: 
+  "1.1.1.2.10.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 011001111001 \r8 0 100100100101100 \r9 1 0001 \r8 0 1010110111010111100110100001000101100110000001100101010110111111001010011110101101111110101001 \r9 0 10010100100100100111101101111111000 \r8 1 010011001011100000111110100101001011010011011; 
+    "ALLPOs" = LLHLHHHLLLHLL \r8 H L \r8 H LLHLHLLHLHHHLLHHHHLLHLHLLLLLHHLLLLLHLLLLLHLLHLLLHLLLLH \r10 L HHLLHHHHLHHHHHHLLLHLLLHHHHLLHLHLLLLHHH \r9 L HLHLHLHHLHLHLLLL \r5 LH LLLLLLHLLHHHHLLLLHH \r9 L HLLLLHHHHHHLLHHLHHHLHH \r8 L HHLLHLLLHHHLHLLHHLHLLLHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............11       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.11.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.11.2.1:  Measure_PO: 
+  "1.1.1.2.11.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000001011110011101101010111001001010000010000111000111111000110010001101010000100001110111110001000001011111011011001001010010001000000010011001111000110011110110111001010000001000000 \r10 1 00101111110000110011010100111110101001011011111110001; 
+    "ALLPOs" = LHLLLHHLLLLHHLLLHHHHHLLLLHH \r3 HHHL LHHLLLLLHHHLLLLHLLLHH \r9 L HHLHHHLLLLLLLHLLHLLLLHLLLHHHH \r8 L HLHLLLLLLHHLHHLLLLHLHLLHLLHHHHLH \r15 L HLLHLHLLLLLHLLHL \r16 H LLHHLLHHHLLHHH \r12 L HHLLL \r8 H LLLHLHLHHLHHLHLLHHLLHHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............12       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.12.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.12.2.1:  Measure_PO: 
+  "1.1.1.2.12.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00010 \r8 1 00100001101101000100101101001000001000001000001010001010100110100111000111001000101111110101100010110100100011111 \r9 0 110101111111 \r11 0 10000000101110010111101010 \r13 1 01110010000100011111011100100101001110011111001000; 
+    "ALLPOs" = LHLLLHHHLHL \r9 H LLHHHHHHHLLHHHLHLHLLHLLH \r14 L HHLH \r8 L HLHLH \r9 L HLLLLLHLLLHHHLHLLLLLLLHLLHHHLLLHHHHHLLLLLHLLLLLLLHHHHHLHLLLHLHLLHLHLHHLLHHLHHLLLHHLLL \r9 H LLLLLLH \r9 L HHLHLLHHHLLLLLLHLLLLL \r9 H LHLHHLLLLLHHLHLHLHLLLHHHHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............13       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.13.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.13.2.1:  Measure_PO: 
+  "1.1.1.2.13.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1010010011101000000100001000 \r11 1 01 \r9 0 101000011111100100000110000101111110111110011 \r8 0 100101 \r9 0 1010 \r8 1 011000000101111101 \r10 0 101001010 \r8 1 011100011101001010001101111010100001111100010011100100001001001111000000; 
+    "ALLPOs" = LLLHLHHHLLHHHHHLHLHHHHHHLHLHHHHHLLLLHLLLHHLLHHLHHHHHHLLLLLHHLLHHHLLHHHLLLHLHHHLLHHHLHLHHHLLLHLHLHLLLHHLHHLLLHLHHHLHHLLLLLHHHLHLLHLHHHHHHLHLHHHLHLLHLLLLLLHLHLHLLLHLLLLHHLHLLHHHLLHLLLLLH \r9 L HHLLHHHLHLHLLLLLLLHHHLLLLLLLHHHLLHLLHLHHLHHHLLHLHLLHHLHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............14       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.14.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.14.2.1:  Measure_PO: 
+  "1.1.1.2.14.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 01101111011010000001101000000110000111111000010100000100001101001110010001101001010001101010111000000110111101111100011001001010001011000100101100101 \r13 0 1011100111110110110010 \r16 1 00010001001011010110001000110101100011010110110; 
+    "ALLPOs" = LLHLLHHHLLHLLHHHHHHLLLHHHHHHLLLLHHHHLHHLLLHLHLHLHHLH \r8 L HLLLLHLLLLHHHLHLLLHLLLLLHLHLLHHLLHLHHHHLLHLHLHLHLLHLHLLLHHHHLLLHLHLHLLHLHHHHLHLLLLLHLHHHHHHHLHLHLH \r5 HL \r15 H \r10 L H \r9 L HHHHHHLHLHHLLHHHHHHHLHHLHHHLHHHHHLLLLHLLLLHHHHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............15       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.15.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.15.2.1:  Measure_PO: 
+  "1.1.1.2.15.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1110001000111 \r11 0 100010001100110001 \r14 0 11101100000100111001110011011010010111000000100001011000110000111011000111000001100011100101 \r14 0 110111010001010110010100010010111110100100000011111101101011110110100 \r9 1 0000100; 
+    "ALLPOs" = LHLLLHHLLLLHLHLHHLLLHLHLHHLLLHLLLLLLHLLLHHLHHLLLLHLLHHLHHLHHLHHLHHLHLLLLLHLHLHHLHLLLLHLHHLHLHLHHHLLHLLLLHHLLHHLHLLLLHHHHHLLLLLHLHLLHHHHHHLHHHLHHLHLHLLHHLLHLLLHHLLHHH \r9 L HLLLHLLLLLH \r12 L HHH \r10 L HLHHLHLLLLHHLH \r8 L HLHHHLHLLLHLLHHHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............16       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.16.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.2.16.2.1:  Measure_PO: 
+  "1.1.1.2.16.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0010111011111000011111010101000101101000010001000010000000111000010000011101111001 \r6 10 \r11 0 10011001010101101100101101000111000111110101 \r9 0 1001111101110010000010000010111001111010100001111010110010 \r9 1 0100110101111110000100; 
+    "ALLPOs" = HHLHHHHHLLHLLLLHHLLLLLLLHHLLLLLHLLLLHLHLHLLHHLLHHHLHLLHLLLHHLHLHLLHLHLLLLHLLHLLHLHLLHLHLLLHLLLHHHLHHLLHHHHLHLHLLLLHHHHHHLLHLHHLLLLLLHHHHLHHLHLHHLLHLLHLHLHHLLHHLLLHHLL \r12 H LLLLLH \r10 L HLLHLHHLLLLHLHLHLLLHLLHLHHLLLHHHHLHHLHLHHHLLHLHLHHHLLLLL; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............3        TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................17:32       //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............1765     PERCENT STATIC FAULTS.....81.499794   //
+//  TEST SEQUENCE.............17       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.1.2.1:  Measure_PO: 
+  "1.1.1.3.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0010011101 \r8 0 1001010101000101011110111000010000010001111100111011 \r5 10 0000111010001000001001101011110000111000011000100100111010011010110001 \r8 0 1011001101101111101110101010 \r8 1 0111110 \r17 1 00111010110111101011011110000; 
+    "ALLPOs" = \r8 H LLHLHHHLHLHLHHHHLHLHLHHLHHHHHLLHHHHHLHHLH \r9 L HHHH \r8 L HHHH \r9 L HLHHLHLLLHHHHHLLHHLLLLHLLLHLLHLLLHHHHLHLLLLHLLLLLHHHHLHLHHHLH \r11 L HLHLLLHLLLHHHL \r14 H LHLHHHHLHLHHLLHHLH \r9 L HLLLHLHHHHHHLLLLHHLLLHLHHLLHLLHLHHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............18       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.2.2.1:  Measure_PO: 
+  "1.1.1.3.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000010000010110011000010001111000101110111110111010101101010100 \r12 1 \r7 0 10010010011001000101000001010001010110010011110111010000111111000011110111111001001100111011110000010 \r8 1 0010101110110100000 \r12 1 001100001001101111111000; 
+    "ALLPOs" = LLLHLHHHLL \r10 H L \r8 H LHH \r3 HLLL HHLLLLLLHLHLLLHHLLLHLLHHHLLLLHLLHLLHHHLLH \r9 L HHHLLHHHHHHHLHLLLLHLLHHHHHLLLLLHLLLLLLHLLLLHHLHLLHLLLLLHLLHHLLHLLLHLHLHHLLLHLHLLH \r9 L HHHHHLHHHLHLHLHLLHLHLLLHHHHHLLLLHHHHHHLHLLLLHLLHLLLLHLHLLHHHHHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............19       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.3.2.1:  Measure_PO: 
+  "1.1.1.3.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000111010010011000110000011101111100010011111110010101011 \r8 0 11011010010000100001111011110000100000100111011011011011111000110111110001110101101111101110101000010000110100000100000011000101010111001111101111001110110111101011011000001011001000; 
+    "ALLPOs" = HHHHLHHLLLLHHLLHHHLLHLLLHHHLLHLLLHLLHHHLHLHLLH \r8 L HLHHHHH \r9 L HLLHH \r10 L HHLLLLLLLHHHLL \r12 H LLLLLHHHHHLLLLLHLLLLLHHHHLHHLLLLH \r9 L HHLHLLHLHLHHLL \r11 H LLLLLLHHHHLHHHLLLHHH \r15 L HLLHHHHHHHLHLHHLHLLHHLLLLLLHHHLLHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............20       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.4.2.1:  Measure_PO: 
+  "1.1.1.3.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000011100011101001101010100011100011110011000010000101111111001011 \r10 0 10011011011111001100101011101011011100100001011110100110000011001011000000100011100101001110101111101101100 \r9 1 0001110001110100100111 \r9 0 11110110100010100110000; 
+    "ALLPOs" = HLLLHLLLLLHLLHLLHHLLLHHLLHHLLLHHHLHLHHLHH \r9 L HHHLHLLLHH \r11 L HLHH \r8 L HHHHLLLHLLLHHHHLLLHHLHLLLHLHHLLLHHHHHLLLLLHHLLLLLHHLLHLLLHLHHLHLHLHHLLHLHLHHHLLLLHLL \r11 H LLLLLLHLLHLLLHHHLHHLHHLHLLLHHHHLHL \r10 H LHLLHLLH \r8 L HLLLLHHHHHHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............21       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.5.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.5.2.1:  Measure_PO: 
+  "1.1.1.3.5.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 10000001000010010001010010101110100010001110000000111101110010100101111110110100011001110110110000000100011011000000101110011101101000101010110100011000001101100101000010001101010000101100100000110011111101011110000 \r8 1 010100001110011110010000; 
+    "ALLPOs" = LHHHLHHLLLHHL \r8 H L \r8 H LHLHHLHLLLLLLHHLLLLLHLH \r8 L HHLLLLHHHHHLHLHLLLLHHHLHHHHLLHLLLLHHLLHLLHHHHLHHLHHLLLHHHHHLLLLHHHLLLLLHHHHLHLLLHLHLHHLHLLLLHLHHLLLHHLHLLLL \r10 H LLLLLLHLLLLLHHLLHHHLHHLHHHHHHHLLHLLLHLHHHHHHLHLLLHLHLLHHLHLHHHLLLHLHHLLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............22       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.6.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.6.2.1:  Measure_PO: 
+  "1.1.1.3.6.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00010100100101010000001111010010010010101111111 \r8 0 1011101100100101000110001000011111001 \r9 0 111010110100001010001111010110010111110110100101111000001011111110101000 \r3 1101 \r8 1 001101011111110101001011001111010101001100111111000000; 
+    "ALLPOs" = HHLHHHHHLLLHHHHLHHLHHHHHLHHLHHHLLHHLHLHHHHLH \r14 L HHLHLLLLLLLHHHLH \r8 L HHHLLLHLHLHLLHHHHHHLLHLLHLLHHHHHLLHHHHLLLHHHLLLLLLHHHHLHLHLHHHLHHLHLHLLHHLLLHLHHLHHLL \r11 H LLLLLLHHHHLLLLLHLHHHH \r12 L \r13 H \r7 L HLHL \r3 HLHH LLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............23       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.7.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.7.2.1:  Measure_PO: 
+  "1.1.1.3.7.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1100000110100011 \r5 10 00111110111000010000010010010011111101110011010101000001100011100111000000010101111010110110101000100011101000000011001 \r18 0 110001001010001 \r9 0 110101110101010011101000011100111100100111101101111010000000; 
+    "ALLPOs" = HLHHLHHLLLLLLHLHHLLHLLHLHHLLHLLLHLHLHLLHLHLLHLLLLLHHLHHLHLLLLLHHLHLHHLLHLHLHHLHLHHLHLLLHLLHHLLHHHLLLLHLHHHHLLHLLHLLLHHHHH \r11 L HHHHLHHLLL \r4 HHLH HLHLLLHLLHLHHHLLLLHH \r20 L HLLHHHHHLLLLLLHLLLHHLHLHLLLHHHHLLHLLHLLHL \r10 H L; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............24       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.8.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.8.2.1:  Measure_PO: 
+  "1.1.1.3.8.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1111011111101000000100000010000011101010010000101100100000101100010010100000101100001010001101 \r8 0 1100011011000100110001101001000011100011111100000111010001010110000110010100010010010100010100101101010101111110101110111100110111101011010001011; 
+    "ALLPOs" = LHHHLHHHLLHLLHHLHHHLHLHHLHHHLHLLLLLLHHLHLHLHHLHHHHLLLLHLHLLLLHHHLHLLLLLLLHHHHLHLLLLHHHLHLLHLLLHHHHLHHLLLLHLLHLLHHLLLHHHHLLHLHHHHLLHLHHHHLHLLHLHHLHLLHLHLLHHLLHHLHLHHHL \r13 H LLHLHLLLHHHLHLLLLLHLLH \r9 L HLLLLLHLHLLHHLLLLLLHLHLLHHHLHHLLHHLLLLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............25       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.9.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.9.2.1:  Measure_PO: 
+  "1.1.1.3.9.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1000010100000 \r9 1 010101110000111010010001010000010100100000010010010100010100000001010100101000001001001100110101111011010100011000 \r13 1 \r8 0 10110000010110100101001110111001110010000100101110000001101110111101000010001100 \r8 1 01; 
+    "ALLPOs" = HLLHLHHHHLHLHLLLHHLLHHLLLHHLLHHHHLLLHLHHHLLHHHHLLLLLLLHLLLHHLHHHHLHHLLLLLHLHHHLHHLLHHLLHLLLLLLHLHHLLHHLLHLHHHLHLLLLHHHHHLLLLLHLLLLHLHHHHLH \r15 L HLLLLHLLHHLL \r18 H LH \r8 L HLHHLLH \r10 L HLLLHLLHLLHLHHLHLHHLLLHHHHHLH \r5 HL L; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............26       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.10.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.10.2.1:  Measure_PO: 
+  "1.1.1.3.10.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 101001111101100001101 \r9 0 1001011111100011110001000001100100010101101011010111000110110011000000011101100100100010110000110001100001110111100110101100100011000001001000100100111111010011110001011001011000010011100100111010111010111011010100111; 
+    "ALLPOs" = HLLLLHHHLHLHLLHLHHLLHLLHLHHLLHLHHHHLLLHLLHLHHHHHHLLHHLHHLLLLLHHLHLHLLLHHLLLHLHLHLLLLLHHHLLLLHLLHHHHLLLHLLHLHLLLHLHLHHHHHLLLLLLHLLLLLHHHHLHLHLLLLLHHLHLHLLLLHLLLLHLHLHL \r12 H LLLLLHLLHHLLHLLLHLLHHH \r8 L HLHLLLHLLHHLHLHLLHLLLLLHLHH \r3 HLLL HLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............27       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.11.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.11.2.1:  Measure_PO: 
+  "1.1.1.3.11.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0100011000110 \r3 0011 110001011011111000010000101010100011000 \r12 1 0010110001110110111000000100001001010011110110 \r8 1 000001110111111001101001101110100011000010101101001110010010100111101111110000001010 \r9 1 0100001101 \r14 0 ; 
+    "ALLPOs" = \r7 L HLHHLLL \r8 H L \r9 H LHHLLHLHHHLHLHLLLLHLHLHHHLHHLHLLLHLLLLHHLLHLLLHLLLLHHLHLHLLHHLLHHHHLLLLHHHHHHLHHHHLHHHHHHHLHLHLLLLLLHHHHLHLHHHHHLLHLHLLLHHLLLHLLLHHHLLLL \r10 H \r8 L HLLHHLHHHLHHLLHH \r8 L HLHL \r8 H LLLHLHHHLHHHHLLLLLHLLLLHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............28       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.12.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.12.2.1:  Measure_PO: 
+  "1.1.1.3.12.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1110001111110000011111010111001011111011100111010110010101110 \r11 1 0110011100000011010011101010110000000101010000110000110101000111010001111000111001000101001101110000110010111111000110011001010000010110101101110000110111110001011111010110100; 
+    "ALLPOs" = LHLHHHHHLLHHLHHLLLLLLLHHLLLLLLLHHLHLLHHLLHHLHLHHHH \r10 L HLHHHHHLHHLHLLHHHHHHLHHLHLHHHHHLLHHHHLHHHLLLLLLLHLLLHLLHHHHHLLLLLHLLLHLHHHHHLHLLHLLH \r9 L HLHLHLLLHL \r15 H \r7 L HHLLHLLLLLLHHHHH \r9 L HLLLHLLHLLLLHLLHLHHLLHHHHHHHLLHHLLHLLHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............29       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.13.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.13.2.1:  Measure_PO: 
+  "1.1.1.3.13.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 110110111111000100011110101100111101011001001001111 \r6 10 00100110011000010000010111010000110001100010110001101101011010111010011011010111001101010111001101111001001111110110011000 \r8 1 010101111010101011111110101000110101001100111011001000; 
+    "ALLPOs" = LLHHLHHHLLLHHHL \r8 H L \r9 H LHLHLLHLHHHH \r9 L HLHHLLHHHLLHLLHLLHLHLHLLHLLHLHLHHHLHHHLHLHHLHLHLLLHHLLHHHLHLHHHHHHHLHLHLHLLLLLHHHHLHHLHLLH \r9 L HLLHLHHHLHLHLLHLHHHLHLHHHLLLLLLHLHLHHHLLHHHHHHLH \r10 L HHLHHHLLHLHLLHHHHHHLHLHHH \r5 HL HHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............30       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.14.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.14.2.1:  Measure_PO: 
+  "1.1.1.3.14.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000010100100000100101000110010000011110011 \r12 0 100 \r9 1 0000100010011000111110100111000000110010111011011010010100000110011101111000011101 \r8 0 111100111010010011100011100111100001110 \r8 1 0111001011110000111010010100 \r8 1 0111000; 
+    "ALLPOs" = LLHHHHHHLLHLLHL \r8 H LHHHHHHHLLHHLHHLHHHHHLHLLLLHLHLHLLLHHHHLLLLLLLHHHLHHLLLLLLLHHLLLLLLLHLHHHHHLHHLLHLLHLHLLLLLLLHHHH \r12 L HHHHLHHLLLHHLLHLHHLHLHLHLHHLLHHLLHLHL \r9 H LLLLLLH \r8 L HHHHLLLHHLHLLHLHLHLLL \r10 H \r7 L HLHLLL \r11 H LL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............31       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.15.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.15.2.1:  Measure_PO: 
+  "1.1.1.3.15.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1101011011101 \r8 0 100110111000 \r9 1 0001 \r11 0 1001100000010101 \r8 0 100111111001 \r8 0 110001010100101011010111010001010010101101011101 \r9 0 11110010011001011111011101101001100101010110011101001011101111111000111001100011110111011; 
+    "ALLPOs" = HLHHLHHHLLLHLHLLLLHHLHHLLLLHHLHLLHHLHLHHHLLLHHLHHHHHHLLHLLHHLLHHHHLHLLHHLHLHHHHLHLLHLLLHLLLLLLHHHHHLHLHLLLHLHLHHHLLLHHHHLHLHLLLLLHLHHHHHLHLLLHLHLLLHLLHLHLLHLHLLHLLLLHHL \r10 H LHHHLLH \r8 L HHLLHH \r11 L HLLLHLLHLLHHLH \r9 L HL \r3 HLHH LHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............32       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.3.16.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.3.16.2.1:  Measure_PO: 
+  "1.1.1.3.16.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 001010100010100000001000100000010101001001000001 \r8 0 110000100101001110000011000010000011001110101000011100101101110101011011000110100110110001 \r12 0 11001110011010111101111100110101010110101101100100111111010000111100101010000 \r8 1 0110; 
+    "ALLPOs" = LHLHLHHLLLLHHHLHHHHLHHHLHHHHLHHLHLLLLLLH \r9 L HLLLLHLLH \r11 L H \r12 L HHLHHHLLHLLLHHHHLHHHLLHHHHLHHHHLHLHHHHLLHLLLHLHLLLHHHHLHLLHLHH \r12 L HLHLHLLLLLHHL \r9 H \r16 L HLHHHLH \r9 L HL \r15 H LLHLHLLHHHLHHLLHHLHHHHH; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............4        TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................33:48       //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............882      PERCENT STATIC FAULTS.....86.816566   //
+//  TEST SEQUENCE.............33       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.1.2.1:  Measure_PO: 
+  "1.1.1.4.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000111010100000010101 \r8 0 10110010100010111100001000111100000011001100100101100000010100101101110101101011010111110000001100000110001001010011011111100100101100100111101001 \r11 0 1101010010011111110011101001011111001111101101010001000110000; 
+    "ALLPOs" = LHHLHH \r9 L HHLHHHHLLHHLHHHHLLLLLHLHH \r14 L H \r18 L H \r9 L HHLLHLLHLLLLHHLHLLHHLLHLLLLHHLLLLHHHHLLLLLHLLLLLLHHHHLHLLLLLH \r9 L HHLLLHLHHHLLLL \r11 H \r7 L HHHLLHLLHLHHLHLH \r9 L HLLLHLHHHHHHHLHHHLHLLLHHHLHLHHHLLHHHHLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............34       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.2.2.1:  Measure_PO: 
+  "1.1.1.4.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 111101101110100110100101100000101101010001 \r8 0 11010010001000010011001011001000000010100111001100100111101000110111111011101100000011111011110011000000100010110000001011111110101110111000010001101110011100110101011011000111100010001111011010000; 
+    "ALLPOs" = HHLHLHHLLLHHHHHLHHHHLHHHLHHHHLHLL \r4 LLHH H \r8 L HHLHHLLHLLHLLLHHLHLLHLLHLHHHHHHLHLHLLHHHHHLLLLHHHHHLHHHHLLHHLHLHHHHHHLHLLHHHHHLHLLHH \r16 L HHLLLHLL \r15 H LLHHLLLLLHLLHHHLHLLH \r9 L HHLHHHHHHHLLLLLLLHLLLLHLHHHHLLHHLHHLLHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............35       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.3.2.1:  Measure_PO: 
+  "1.1.1.4.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 010110110111100000101011010 \r8 1 001101 \r15 0 10111100010111000010110001000110101011 \r8 0 10110101101111001001010011011110010010001001 \r12 0 11001101001011110000010011100001001001110101010111001110110010010 \r8 1 0101011010111110; 
+    "ALLPOs" = LLHHHHHLHLLLLHHLLLHLHLHHLLLHLHLLLHLHLLLHLHLLHLHLHHLHLLLLLHLLLLLHHHLHLLHLHLLLHHHLHLLHLLHLHLHLLLHHHLHLHHHLHLLLLHHLHLHLHHHHLHLLLLLHLLHHHHHHLHHHHLLHLHLHHHHHHLLHHHLLHLHHLLLL \r14 H \r12 L HHLHLHLL \r8 H LLLLLLHLLLLLLLHHHLLHLHLLHHLLLLHLLHLLLHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............36       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.4.2.1:  Measure_PO: 
+  "1.1.1.4.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 010111100101100011111110000010010101 \r3 0100 00100100100110000100011101101110000001101001000111001111000100010011101001100111111000110100111001111 \r10 0 1000011111101111010011100110111011000110000010100011111011001011101101010010101011000101; 
+    "ALLPOs" = LLLHLHHLHLLHHHLLLHLLLHHLLLHLLLHHLHHLLHHHHHLLHLLLHLLLLLHLLHHHLLLLLHHHHLHHLLHLLLHHHHLHLHHHLLHHLLLHHHHHHLLHHHHLLLHLLLHHHHHLLLHLHLHHLLLLHHHHLHHLHLLH \r9 L HLLHLHHLLLHL \r15 H \r17 L HLHH \r10 L HLLHHHLHLHLLLHHHHHLLLHHHHHHLLHHLLHLHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............37       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.5.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.5.2.1:  Measure_PO: 
+  "1.1.1.4.5.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0101100000110111100110110001001001101100111 \r7 10 1111100 \r12 1 0100000011011011001010010100000101001000111110111111001011010010101101110110011001111001100000110110110000111110011111100010111110011110110 \r8 1 011001010010001000010000; 
+    "ALLPOs" = HHHLLHLHLLLHLHHHHHL \r8 H LHHHHHHHLLLHLHLHLH \r9 L HLLLHHHLLHHHLLLLHHLLLLHHHLLLLLHHLHLLHLLHHHHLHLHLHLHHHHHLHHHLLHHHHHLLLLLHHLLLLLHHHHLHLLLLLH \r9 L HHLLHHHLHLLLHL \r11 H \r7 L HHLLHHLLHHHHHHH \r10 L HLLLHLHHHHHHLLHHLHHHLLHLLLHLL \r10 H L; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............38       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.6.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.6.2.1:  Measure_PO: 
+  "1.1.1.4.6.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 11010010111110000011010101111011100000010010000000100000101001100100010010101 \r8 0 1111110110000011010000001010001101010101101101100000110011011 \r13 0 1110100011000101001110000101001101110010011010011110100100111110111110100010111110011111; 
+    "ALLPOs" = LHHLHHHLHLHLLLLHLLLHHHLLHLLLHHHHLHLLLHLHHLLLHLLHHHLLLLHLLLHHLLHLLHLHHHHLLLHHLLHLHHHHLHHHLLHLLLHHHHLLLHHHHHLLHLLHLLLHHHHHLLLLHLHLLHLHHHHHLHLLH \r12 L HLLLLHLLHHLLHL \r11 H LHHLHLH \r8 L HLH \r14 L HLLLHLLHLLLLLHLLHLLHLLLLHH \r5 HL LHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............39       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.7.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.7.2.1:  Measure_PO: 
+  "1.1.1.4.7.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000110100000101100111101010010011011110110001010100000111101010010000001101001001 \r7 10 \r7 0 101111101010001000011100000100011100011000101 \r9 0 1100110100101100001101001000011011010011011011111110111010110110111 \r5 10 1111110000000; 
+    "ALLPOs" = HLHHHHHLLLLHLLLLHLHLHLLLLHLHLHLLHLLLHHHLHLLHLLLLLLLHLLHLHHHHLHLLLLLLLHLLLHHLLLLLLLHLLHLHLLHLHLHHHLHHLLHLLLHLLLHHLLHLHHHHHHLLHLHLLLLLHHHHLHHHHLLHLHHHHHLLHHLHLLLLLHHHLLLL \r10 H LLLLLLH \r9 L HLHHLHL \r11 H LHLHHHHHHHLHHHLLHHLLHLHHLHHLHLLHLHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............40       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.8.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.8.2.1:  Measure_PO: 
+  "1.1.1.4.8.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 110101101110100001110000101101000110000001000001001001000001111001 \r3 0111 10000010100001110100001000110011001011110111000101111100000011110001101 \r9 0 11000000011001111011110001011001101011010000010100110010111001101010010101100101011011011; 
+    "ALLPOs" = LHLHLHHHLLHLHHLHLHLLLHHLHLHLLLHHHLLHHLLHLHLLLHLHHHLLLLLHLLLLLLHHHHHLHHLLHHLHHHHHLHHHLHHHHLLLLLLHHLLLL \r9 H LLLHLHHHHHLLLLLLHHLHHHHHHHLHLLLHLH \r10 L HLLHLLLLHLHL \r12 H LLHH \r12 L HHLHLHH \r9 L HLLLHLHHHHHHLLLLLHHLLHLHHHHHLHLHLLHHHHHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............41       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.9.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.9.2.1:  Measure_PO: 
+  "1.1.1.4.9.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00001011111010100011001001110110000111101100010000000100111111011110100000111100000010011111101010000100110010110010100001001010100101010100001101001 \r9 0 10101001001100111111100100010101011011101011110110011001001110111000111101001011011110000; 
+    "ALLPOs" = LLLHHHHLLLLLHHLHHHLH \r3 HHHL LLHHHHHLLLH \r12 L HHLLLH \r10 L HHHH \r9 L HHHHHLHLHLLHHHHLLHLHLHLLLHLHHHHLHHHHLLHHHHHLLLLLHHHHLHHHLHLH \r9 L HHLLHHLHLLLHLL \r11 H \r15 L HLLLLHH \r10 L HHHHLHHHHHHHLLHLLHLHLLHHHHHHLHLHLHLHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............42       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.10.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.10.2.1:  Measure_PO: 
+  "1.1.1.4.10.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0101101000010000111011011010110001011001000110000001110111111100111110010011001 \r8 0 1010000101111101011011011100111110101110101000011011101010000010000110111010010001111000001111101010010000001011011011011110111011001110100110010110111111100000; 
+    "ALLPOs" = HHHLHHHLLLHHHLLLHHLHHLLLLHHLHHLHLLLHHHLHLHLLHH \r8 L H \r9 L HHHHLLLLHHHLLHHHHLLHHHLHLLLLHLHHHHHHLLLLHHHHLHHHLHLHHHHHLLLHLHHLLLLLHHHHLHLHHLLH \r9 L HLHLHLLHLLLLHLHLHHLLLHHH \r8 L HLLLLHHLLHHHHHLH \r9 L HLLLHLLLHHHLLHHHLHLLLHHLHHHHLLHLLLHLHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............43       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.11.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.11.2.1:  Measure_PO: 
+  "1.1.1.4.11.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 10001000111101001001110100110101001000101111101 \r8 0 111011110000 \r9 1 0011000101101111 \r13 0 11101011110001010011100010110000110100011010111100001010110100001010100011100100101 \r6 10 \r7 1 01111000 \r9 1 01011000110110110100000; 
+    "ALLPOs" = HHLHHLHLLLLHLHHHHHLHHLHHHHHLHHLHLHLLLHLLLHLLHLLLLLLHHHHLHLLLLLHHLLLLLHHLLLHHHLLLLLHLLHLHLLHHLLHHHHLLHHLLLLLLHLHHLLLHHHHHHLLLHLHLLLLLHHHHLHHLHLLHLHHHHLHHHHHHLHLLLHLLLHLL \r10 H \r7 L HHHHLLLLLLHHLHLHLHLLHHLHHLLHHLL \r11 H LHHLLHLLHLHHLHLHHLHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............44       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.12.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.12.2.1:  Measure_PO: 
+  "1.1.1.4.12.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 001010111111100000011000001100100100111001 \r9 0 1010011011000010101101001101000000011101011010001011011011000011101010100011001101101100011100100100000100000001101100100011000111010111100011110001001100101000111001000101000110100110 \r8 1 0010; 
+    "ALLPOs" = LLHHLHHLLLHLHHHHHHLLHHHHHHHLLHHHLLHHHLLHLHHHLLHHHHLLLLHLLLLLHH \r9 L HHH \r9 L HLLLHLLHLLLLHH \r5 HL HHLHLLLLHHHHHLLLLHLLLLHLLHHHHLHLLH \r12 L HHLHLHHHLHHLLLHL \r13 H LHHLLLLLHLLLLLLHHLH \r9 L HLLLHLHHHHHHLHHHLHLHLLLHHHHHLHLHLHLHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............45       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.13.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.13.2.1:  Measure_PO: 
+  "1.1.1.4.13.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 10001001000001111100001101100111011011001111111000100001001110001110010101011010000010001001 \r5 10 111010111100010001111001101011011001111110 \r8 1 000001110110011000110001110001111110111001111011111110011 \r3 1110 \r7 1 0010011010111010000; 
+    "ALLPOs" = HHHLLLHHLLHHHLHHHHHHHLLHHHHHHHLHLLLHHHHHHLHLLH \r8 L HHLLHHHLHHHLHLHLLLHHHHH \r5 HL HHLLHHHHHHHLHLHHHLLLHHHLL \r10 H LHLLHLLLLLHHHHLHLHHLHH \r9 L HHLLLHHLHLHLHL \r11 H LLLLLLHHHHLLLLLLHHHHLLH \r9 L HHHLLHHHHHHHLHHLHLHLLHHHLL \r8 H LHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............46       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.14.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.14.2.1:  Measure_PO: 
+  "1.1.1.4.14.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 110011100111100000010010011 \r8 0 \r7 1 000101 \r8 0 1000110001011011010111 \r8 0 111000010010101011011011000010101010010100010100011110010100111 \r9 0 11011111010110111111101110 \r11 1 0101101011010111101111000111100011011011001011100011; 
+    "ALLPOs" = HHLLHHHLLLL \r8 H L \r8 H LHHHHLLLHLHLLHLHHLLLHHLLLLHLLLLLLHHLLHLLLLLLLHLHLLHLLLLLHHHLLLHLLLLHHHHLLHLLLHLLHLHLLLLHHHHHLLLLHHHHLHLLHHHHLHLLHLLH \r9 L HHLHLLHHHL \r18 H LLLH \r9 L HHLLLH \r10 L HLLLHLHLHLHHLLHLLLHLLHHHHHH \r6 HL L; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............47       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.15.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.15.2.1:  Measure_PO: 
+  "1.1.1.4.15.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 11000011010100000010110101010111010010000100010101 \r9 0 10010010001110100001100001001001011000001111100111011100100101001000111100111101011000010100001000010111101101010001000110111100110100110110010011110001011111010101101111101110001110010101; 
+    "ALLPOs" = HLLHHHHHHLLLLLHHLLLHLHLHHLL \r5 LH HHHLHHHHLHLHLLLLLHLLHLLHHHLHHLLLHLHLHHHLHHLLLHHLLLHLHHHLHLHHLHHLLHHHLLLHLHLLLLLHHHHH \r9 L HLHHHHLHLLLLHH \r10 L HLHHHLLLHLHHL \r11 H LLLLLLHLLLLHLLLHHHLHLLH \r12 L HLHHHLHHHHHLHHLHHLHLHHHHHLHLHLLLLLHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............48       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.4.16.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.4.16.2.1:  Measure_PO: 
+  "1.1.1.4.16.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 01011011000000100001001110111000110111 \r12 0 10010011011110010101000011100011111 \r8 0 1011001010111101101100010110111011111101100110001001001 \r11 0 \r10 1 000010111000101001111101101001101011100110101000110010110111000101111110001000; 
+    "ALLPOs" = HHLHLHHLLLLHLHLLHLHLHLHLLHLHLHLHLLHHHHLLHHHHH \r10 L HLLHHHHLLHHLHHHLHHHHLLHHLHHHLLHLHLHHLHLLHLHLLHLHHHHLHLHHLHLLHHHHHLHLLHLHLLLLLHHLLHLLHHLLLLHHLHLHLLHLHHLLLLHHHHLL \r11 H LLLLLLH \r8 L HLLLHHLLLLHLLHLLHHLLLHLHLLHLLLHHLLHLLLLHLHHLHLLHHLLHHHHLH; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............5        TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................49:64       //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............536      PERCENT STATIC FAULTS.....90.047623   //
+//  TEST SEQUENCE.............49       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.1.2.1:  Measure_PO: 
+  "1.1.1.5.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 10100111011110000001100111100000111 \r3 0010 10010000011111110100011111011101100100110011110100000011000001110 \r9 1 00001001000110010111000111100000100 \r3 0011 0101101001011100101101000100011100011011000011010101111000111001001111110011000; 
+    "ALLPOs" = HLHLHHHLLLLHLLLLHLHLLHLLLHLHLLHHHHHLHLHHLLHHHHHLHHLLHHHLLLLLHHHHLLLLHHHHLHLHHLLLLHHHLLHHLHLLLLHHHLLLHLLHLHHHHLLLLLLHHHHH \r8 L HHLHHHHHLH \r10 L \r7 H LLHLHLLLLLHHL \r11 H LLLLHLLLLLHLLLLHHLHHLHLLLLLLHHHHLLLHLLLLLLHHHLHLLLHLHHLHHLLH \r5 HL L; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............50       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.2.2.1:  Measure_PO: 
+  "1.1.1.5.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1100011101111000011001101000101001010110010000101010 \r9 1 001111010001110111000001111101100110010000001100001110100110000101011101011011010011010000110011100010100001101111001101010110011010000001011011100011000100010110101100111011111110010011; 
+    "ALLPOs" = HLLHLHHLLLHLLHHLHHLHHHHHLHHLHHHLLHLLLHLHLHLLHLHLHHLLLLHLLLLLLLHLLHHHHLHLLLHHLLHHHHLHHHHHLLHLLL \r8 H LH \r3 HLLL HHHHLLLLLHHHHLLLHHHHLHLLLLLH \r13 L HHHHLLL \r14 H LHL \r4 LLHH HHHH \r9 L HLLLH \r8 L HLLLHHHLHLLHLHHLHHHLHHLLHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............51       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.3.2.1:  Measure_PO: 
+  "1.1.1.5.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000100000111110000100010110100101000110101001 \r8 0 101011000000110110001000101000000111001110010011000001111100000010000101001 \r9 0 10100101110101000000111110110100100110010100100001011010001101111110010110001111101011100 \r8 1 0001010011000; 
+    "ALLPOs" = LHLLHHHHLLLLLHLLHLHHHLHLLHLHHHLLLLLLHLLLHLLLLH \r9 L HHHHH \r13 L H \r11 L HHLLLLHHLHHHHLLLLLLHLHLLLLHLLHLHHHHLHHHLLHLLLLLHHHHLHLHLLLH \r9 L HHHLLHHHHHLLLL \r11 H LLLLLLHLHLLLLLLHHLHLHH \r11 L HLHL \r8 H LLLLHHLLLLHHLLLLHHLLHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............52       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.4.2.1:  Measure_PO: 
+  "1.1.1.5.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001011101011000000011000000010001011110011110100001001100111110 \r11 1 0101000000101101011110001100101110011110101110000010000010111101111000011011000101111001010110011100001011110111100001011000111011111001011111101110101101010100101110110111; 
+    "ALLPOs" = HLHHHHHHHLLHLLHHLHHHHLLHHLHHHHLHLHLLLHLHLLHHHHHLHLLLLLHHLLLLHHLLLLLLLHHLLLHLLLLLLLHHLLHHHHLLLHLHHLHHLHLLLLHHLLLLLHLHHHHHLHLHLLLLLLHLHHHHLHLHLLLH \r11 L HHHLLLLLHLLHHLHLHLHHLHLLHLLHLLHHLLLHLHLHHHHLLH \r9 L HLLLHLHLHHLLLHLHLLHHLHHLLHHLHLHHHLHLHLLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............53       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.5.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.5.2.1:  Measure_PO: 
+  "1.1.1.5.5.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000011110010000011001010011001110011110110000001010010000111110100010100101011100000100101101000000011001100001100010111100101100001000100001111 \r13 0 11000111000101110010001100000010111000010010011101010111101101110100010100100101110001010; 
+    "ALLPOs" = HLHHLHHHLLHLLHLLLLLHLLHLLLLLHLLLLHHLLHLLLLLHHLHHLLLLLLHLLLLLLHLLLLHLHHHHLLHLLLLHLHHLHHHHLLHLLLHHHLLLHLLLHHLHHHLHHLLLHHHHLLLLHHHLLHLHHHHHLHLLH \r14 L HLHHLLLHLLLHHLHHHHHHLLHLLLHHH \r10 L HLLLLHH \r9 L HLLLHLLHLHLLHHLLHHHHLHLLHHHLLHHLHLHLHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............54       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.6.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.6.2.1:  Measure_PO: 
+  "1.1.1.5.6.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0011001011011000001101110101001100011000010000111000111111100101000011100011011 \r9 0 1110100100011110000110001101100011100100110101110111101101000001100111011111010101110101001011101010110110000101100 \r3 0111 11000111000101000010111111011101; 
+    "ALLPOs" = HHLHHHHLLLLHHHHLLLHHLLHHLLLHHLLHHLHLHLLHHHHLLHLHHLLLLLHLLLHHH \r10 L HLH \r9 L HHHLHLHLLLLHHHHHHLHLHLHLLHHLLLLLHHHHHLLLLLHHHLLLLHHHHLHLLLLLH \r9 L HHLLHLLLHLLHLLHL \r15 H LHLLLLHLHHLHHLHHH \r9 L HLLLHLHHHHHHLHLLHHLHLHLLHHHLHLLLHLLHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............55       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.7.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.7.2.1:  Measure_PO: 
+  "1.1.1.5.7.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1000010100110101011111100110110010100000011001000111010 \r8 1 0111 \r9 0 101010011110110111000010100000010010 \r11 1 0100001101110111000111111100001000111000 \r8 1 00000011101000 \r3 0001 101111100100010101 \r8 0 110001100010011001000000; 
+    "ALLPOs" = LLLLHHLLLLLLHLLLLLHHHLLLLLLHHHLLLHLLLLHHHHHHHLLLLLLHHHHLHLHHHHHHLLHHHHHLLLLHHLLHHHHHHLLLLLHHLLHHHHLHHLHLLHHHHHLHLLLLHHHHLLLLHHLLLLLLHHHLLHHLLLLHLLLHLHHHHHHLLHHLLHLLLHLL \r10 H LLLLLLHLLLLHLLLLHHHLHLHLHHHHLLLLLLHHLHHHHHHHLLLHLHLLLHHHLLHLLHHLLHHHHLLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............56       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.8.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.8.2.1:  Measure_PO: 
+  "1.1.1.5.8.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000001010111000010010101010000101111 \r5 10 111010101101111111010010011001001000010010110101011111000011011010000001101110001001011111000001110101100111001101111100001111100110111111101011001111100100111010111010 \r10 1 0100110100001111001100; 
+    "ALLPOs" = HLHHLHHLHLHLHHHHLHLHLLHHHLHLHLLLHLLLHHHLHLHHH \r12 L HHHHHLHHLHLLHLLLHHLHHLHLLHLHHHHLHHLHLHHHLHHHLHLHLLHLHHLLHHLHHHHHLLHHHHHHHLLHHHHLHLLHLHH \r11 L HLHLLHLHHLLL \r11 H LLLLLLHHLLHHHLLHHLHH \r13 L HHLHHLHHHLLHHLHHHHHLLLHHHHLLH \r9 L H; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............57       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.9.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.9.2.1:  Measure_PO: 
+  "1.1.1.5.9.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 01110 \r13 1 0110110100101110011111101000010000010000110000010000000101001011010111001011 \r9 0 11001001101111 \r3 1110 11110101111111010001 \r9 0 10111011101000000110100001010010100110101011011100110111110010000101100101011100110001100; 
+    "ALLPOs" = HHLHLLHHLLHLLLLHHHLHHLLLHHHLHHLHHHLHLHLHHHL \r8 H LLLHLHLHHLHLLHHHHLLHLHLHLLHHHHLLHLHLLLLLHLLHHHHLHHHHLHHHHLHHLHLLHLHHHHLLLHLHHLLLHHHHHLHLLHLHLLLLHLHLHHHLLLLHLHHHLHHHHLHHHLHHLHHLLHHLH \r9 L HHHLLLL \r9 H LHHLHLLHHHHHHLHLHHHHHLHLHHHLHLL \r9 H L; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............58       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.10.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.10.2.1:  Measure_PO: 
+  "1.1.1.5.10.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000110110011000000110101110011101100111001 \r14 0 111110100100111011011101011001100111111000000100010010110 \r12 1 010011000001111110001001 \r11 0 110001001000010011001001110100111101100110001000100101010100111100101010010011111100110; 
+    "ALLPOs" = HHLLLHHLHLLHHHLLLHHHLLHLLLHHHLLLLHHLHHLHHHLHHHHLLHLLHHLHLHHHLHLLHLLHLHHHLHHLLHLLHLHHLLLHLLLLLLLHHHLLLLHLL \r9 H LL \r8 H LLLLHLHHHHHHLHHLHLHHLHLLLHLHHHHLLLHHHLLLHLLL \r10 H LHLHHLH \r8 L HLHLHHHLHHHHHHLLLLHHLHLLHLLLHHHHLLLHHLLLH \r3 HHLL LLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............59       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.11.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.11.2.1:  Measure_PO: 
+  "1.1.1.5.11.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00001010111110110110000000100101010100000111111101100011101000000111011110000110000010101110000100010110101111001001101010011100010011000001000110100011010011111000100010100110 \r5 01 11001011000011011100100011010110 \r9 1 01001110010111001000; 
+    "ALLPOs" = LLLLHLHLLLLHHHLLHHHLHHHLLHHHLHHHHLHHHLHHLHHLHH \r8 L HLLLLLHLLLHLHLHLLHHHLLLHLHLHLHHLLHLLLLLLHHHLLLHLLLLHLLHLHHLLLHHHHHLLLLHHLLLLLLHHHHLHLLHLLH \r9 L HLLHHHLLLLLHHL \r11 H LLLLLLHLHHLHLLHHHLHHLHH \r9 L HLLLHLHHHHHHLHHLHLLHLH \r8 L HHHLLHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............60       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.12.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.12.2.1:  Measure_PO: 
+  "1.1.1.5.12.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000010101101100101010010000101111110110001000010000011100001001001010100011101000000111101001 \r8 0 111000011000011101101000000110101100000110110110001000110010101101011110111100011011011 \r3 0010 01010100001011110 \r14 1 0100101011100000; 
+    "ALLPOs" = LLLHLHHHLLLLHHLHHLLLHHHLHHLLLHHLLHHLHLLHLHHLH \r9 L HLLLLLHLLHHLHLLHHHLHLLHHLHLLHHHLLHLHHLLHLHHLLLHLHLHHHLHLHLLLLLHHHHLLLLLHLLLLLLHHHHLHLLLLLHLHLLLHLLLHHLHHHHLLHHLLLHLHHHLLLHLH \r9 L HLLLHHLLLLHLH \r10 L HLLLHLHHHHLLLLHLHHHLLHHLHHHHLLHHLLHLHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............61       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.13.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.13.2.1:  Measure_PO: 
+  "1.1.1.5.13.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 01011110000010111001010001010001100000101111101110101011111010100 \r8 1 001 \r8 0 11001110100100110111000000110001001111100001001100001111111010101101100001001100110001111111000010111110101101101110101101000111100 \r8 1 011011110000100010111000; 
+    "ALLPOs" = LLLHLLHLLLLLLHHHHHLHLHHHHHHLHLHLHHHLLHLHHLLHHH \r8 L HLLLHHLHLLHHLLHHHHLLHLLHHLLHHHLHHHLLLHLLHHHHLLLHHLHLLHHHLLLLLLHHHHHLHLHLHLLLLLHHHHLHLLHLHH \r9 L HHLLLHHLLHHLLL \r11 H LLLLLLHHLHHLLLLHLHHLH \r11 L HLLLHLHHHHHHLLHLH \r3 LLHL LHLHHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............62       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.14.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.14.2.1:  Measure_PO: 
+  "1.1.1.5.14.2": 
+  Macro "TEST" { 
+    "ALLPIs" = \r7 0 110000110110100001000111101000010111110100010001101110110001111110111000001100011001111 \r12 0 11010000100110100100110111010100111011100001110000011000110010000011101000111101000101011001 \r3 1100 000 \r10 1 \r7 0 \r7 1 \r10 0 ; 
+    "ALLPOs" = LLHLHLLHLLHHLHHHHHHLLHHHHHHHLLH \r10 L HHLHHLLLLHLLHHLLLLLHLLLHLHHHHLLLLLLLHLHHHHLHLHHLLLLLHHHHLHLLH \r6 HL LLHHHHLLLLLHLLLLLLHHHHLHLLLLLHLLHHHLLLHHHLLLLLHHLHHLLL \r10 H LLLLLLHHHHLLLLLLHHHHHLLHHHHLLLLLHLLLHLHHHHHHLLLLHLHHLLLLLHLLHHLHHLHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............63       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.15.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.15.2.1:  Measure_PO: 
+  "1.1.1.5.15.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000110000110000010111000101000100100111000001 \r7 10 00010011000111000000100000100000101000010000111111101100011011101100011010100010000011111001111101100110111010011111011110010001101100011000110111000000101110000111100100001010011110000000; 
+    "ALLPOs" = HLLLLHHHLLHHLHHHLLHHLHHHHLLHHLHLHHLHHHHLLHH \r17 L H \r8 L HHLHHHLLLLLLLHLHLHHLLHLHHHHHHLLLHLHLHHHHHHHLLLLHHHHLHLHHHLLLLLLHHHHLHLLHH \r11 L HLHHLLLLHLLLLL \r11 H \r10 L HLHLLHLLHHH \r11 L HLLLHL \r10 H LHLLLLHLHLLHLHHHLHHHHHHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............64       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.5.16.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.5.16.2.1:  Measure_PO: 
+  "1.1.1.5.16.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 01000011010100000111110111000 \r9 1 01110010010010000010101000 \r5 01 11 \r9 0 111000000101011100100101010000110111000001010100000100011011011001 \r10 0 100101110100111000001111111011 \r8 0 100010011101011110011110110110001101101110100111; 
+    "ALLPOs" = LHHLHHHLHLHHLHHLLHHLLHHHLLHHLLHLHHLLHLLHLLLHHLHLHLLLLLHLLLLLLHLHHHHLHLHLLHLLHHHHLHLHHLLHLLHLLLLHHHLLLLLHHHHLHHLLLLLLHHHHLLLLLHLLHLHHHHHHLHLLLLLH \r9 L HLHLHLLHHLLHLLHLHLHLLHLHHLHHHLHHLH \r10 L H \r12 L HLLLHLLLLHLHLHLHHLHLLHHLHHHLHLHLHHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............6        TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................65:80       //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............245      PERCENT STATIC FAULTS.....91.524506   //
+//  TEST SEQUENCE.............65       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.1.2.1:  Measure_PO: 
+  "1.1.1.6.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000111111011000100111110010000010001110001 \r11 0 1001010111011000110 \r5 01 1010110110011100101011011111010110100001001001000111010111110010001 \r9 0 1101010000001100111011010000010101000 \r9 1 0111111101110011011101111001110011110000000; 
+    "ALLPOs" = LHHHHHHLLLLHLLLLHLHHHHLLLHLHHHHLLLLLHHLLLLHLLHLLLLHLHLHLHLLLH \r8 L HLLLHHLLLLLLLHLLHLHLLLLHLHHHHHLHHLLHHLLLHLHLLHLHHHHLHHHHLH \r8 L HLHLHHHLHLHHHHLLHHHHHHHLLHHLLHHL \r11 H LLLLLLH \r9 L HHLLLHLHLHHHHLLLHHLHL \r15 H LHLHHHLHLHLLLLLHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............66       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.2.2.1:  Measure_PO: 
+  "1.1.1.6.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000 \r3 0111 1101110100010000001001010010011000101000100111101100001011011 \r9 0 1100010011101101100001000101101110000001111100110110001111011101010011001000011010000001101101111 \r10 0 1111001011010010011101011101110101001100111011010011000; 
+    "ALLPOs" = LLLLHHHHLLLLLHLHHLLHHLHLHHLLHHLHLHHLLLHHLLLLLH \r9 L H \r14 L HH \r11 L HLHHHHLLLHLHHHHLHHHHLHHHHLLLLHLLHHHHHLLLHLLHLLLLLHHHHLHLHHLLH \r9 L HHLHHHLHLHLLHL \r11 H \r8 L HLLHHLLLLLHH \r12 L HLLLHLHHHHHHLLHHLLLHLLLHHHHHLLLHLHLHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............67       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.3.2.1:  Measure_PO: 
+  "1.1.1.6.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 111011110001 \r8 0 100010100100000 \r8 1 0011011110000110111111000000011110011 \r8 0 1000010111000111011010111011001111000111111000101110001110100001111000010 \r5 01 0010111010100000011110100010000010110001111001010110011100110100011111100111; 
+    "ALLPOs" = LLLHHHHLLLHLHH \r8 L H \r8 L HLLHLHHHHLHLHHLHLLLLLLLHLLLLLLHHLLHLLHHLHLHHHLLHLLHHHHLLHLLHLLLHHHHHLHLLHHLLLHHHLLLLHHHHHLLLLHHLLHHHLHHHHLHLLHLLH \r11 L HLHHHLLLLLHL \r11 H LLLLLLHLLHHHHLLLLHLLHLH \r9 L HLLLHL \r10 H LLHLLLLLLHHHHHLLLHLHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............68       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.4.2.1:  Measure_PO: 
+  "1.1.1.6.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1001010110100110000010000100001101100010010111000101000110 \r8 1 0111011000000100001011110000101001100000100100101000111010000111000101000110001111 \r3 0110 0111100110110101111110010000101 \r6 10 11000110001011001110110101101101011011100000; 
+    "ALLPOs" = HHLLLHHLLLLLHHLLLLHLHLHLLLLHLH \r8 L HLHHHLHH \r9 L HLLHHHLHHHLLLLHLLLLLHHHLLLLHLLHLHLHLLLLHHHLHLLLLHHLLHHLLLLLLLHHHHLHLLLLHLLLLLHHHHLHLH \r13 L HHLHHLLHLHLHLL \r11 H LLLLLLHHHLLHHLLLHLHH \r12 L HLLLHLHHLHLHHLLHHLLLLLHLHHHLHHLLHHLHLHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............69       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.5.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.5.2.1:  Measure_PO: 
+  "1.1.1.6.5.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1010011000001000000100000010110111011100110001 \r10 0 \r7 1 0 \r9 1 00000110010011011111 \r9 0 1101100010010010110100110110111011001011100011 \r9 0 1110000001001000001000100111011010110010110010111110011 \r3 1110 001001001110 \r10 1 0; 
+    "ALLPOs" = HLHHHHHLLLHLHLHLHLLLHLLHLHLLLHLHLHLLLLHLLLLLHLLLLLLHHHHHLLLLLLHLHLLHLHHLLLLHLHLLHLHLLLLHLLHLHLLHHL \r8 H LHLHLHLLLHHHHH \r9 L \r7 H LHLHHLLHLHHLLHLHLHLLLHLLHHLLLHL \r11 H \r16 L HHHHHLHLLLLLHHHHHLLLHLLLLLLLHHLLHLLHLHHLHHLLLLLHLLHLLHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............70       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.6.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.6.2.1:  Measure_PO: 
+  "1.1.1.6.6.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1001011001101010001001001111101011000010111111101101100101111101101101111011001000100111010011 \r8 0 10110000110101011101111100011111110111110001100111001010010101111100101111001111100110101001110110 \r8 1 0001010 \r8 1 001011010111110110111000; 
+    "ALLPOs" = HLHHHLHHLLLHLHHHHHL \r8 H LHHHHLHLHLHHHHHHLHHLLLLHLHLLLLLHHHLHLLLLHLLHLHLHHLLLLHLLHLLHHLLLLL \r10 H LLLHHLHHHLLLHHHHHLHLH \r8 L HHHHLHLHHHLLLHLLLHLHLHHLLHLLHHLLHLLL \r10 H \r7 L HHHLLHLHLLHLHHLH \r9 L HLLLHLHHHHHHLH \r11 L HLHLHHHHHLHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............71       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.7.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.7.2.1:  Measure_PO: 
+  "1.1.1.6.7.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1100010011100000011011110001111010101111011110001101011111010110100011111110101100000110100100110001011000001001101101100101001110110111110010011100110100100110010011001011001111001001110100101011100001011011111011001110110110111110011111110111000; 
+    "ALLPOs" = HHHLHHH \r8 L HLHLLHHLLHLHLLHHLLHHLHHLHLLHHH \r9 L HLLHLL \r8 H LHHHL \r8 H LHHHHLHHHHLLLHHHHHHLHHHHLHLLHHLHHLLHHHHHLLLLHHLLLLLHHHHLHHHLHLH \r9 L HHLLHHHLHLLHLLHLLHHHLHLHLLLLLLLHHLHLLHLLLHLHLHLH \r9 L HHHLHLHHHLHLHHLHLHHLLLLHLHHHLLHHHLLHHLLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............72       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.8.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.8.2.1:  Measure_PO: 
+  "1.1.1.6.8.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00000010110100000110111111011000101000000100010000100100010000100101100100111000000011100001100000100111011010100110110000001101111100001001110100111 \r9 0 1011110111110 \r8 1 00100011011111011101111101011110000111110011000000010011000111011011; 
+    "ALLPOs" = HHHLHLHHLLHHHHL \r8 H L \r8 H LHHLHLHLLHLHLHLHHLLLLLLHHHLLLHLHLLHHHHHHLHLLHLLHHHHLHHHLHLLHHLLHHLLLLHHHHHHLLLLHL \r11 H LHHHHLLHHHHHLHHHLH \r14 L HLLHLHLLLLL \r11 H LHHHH \r10 L HHLLLH \r11 L HHHHLHHHHHHHLHLHLHLLLLHHHHHLHLHHLLHHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............73       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.9.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.9.2.1:  Measure_PO: 
+  "1.1.1.6.9.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 10001010011101111000001100110100111111100110001101111001 \r9 0 \r7 1 01110100010000111010101 \r8 0 101100110101011000010100 \r11 1 0100011011111110101111000110000110100100111101011001100011110110111010110111100100011111110011001010111111000; 
+    "ALLPOs" = HHLLHLHHLLHHHLLHLHHHLLLLHLHHHLLLHLLLLLLLHHHHLHLLLLHHLLHL \r9 H LLLHLLLLLLHHHLLLHLLHHHLHLLLLHL \r12 H LLLLHLHHLHHHHHHLHLHHLLLLLHHHHLHLLHLLHLHHLHHHLHHLHLLLLLLLHHLL \r11 H LLLLLLHHHHHLHLHLHLHHLHL \r10 H LL \r9 H LHHLLLHHLHHHLLLLLHHHHHLHHLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............74       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.10.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.10.2.1:  Measure_PO: 
+  "1.1.1.6.10.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000010001101110100001011100101101 \r8 0 11101011101100101000110100001111001001010100110001010100000001001010110110011010010101011010101101100000110111000010101110000100011011001010110 \r5 01 11101111110110010111001000111110110110010011011111000; 
+    "ALLPOs" = LLLHHHHHLHHL \r19 H LHHLLLLHLHHHHLH \r10 L HLHHHHLLLLLLLHH \r11 L HLLHLHLLLLLHLHHLHLLHLHLHHHLLLHHLHLHHHHLLHLLLHLLLLLHHHHLHLLHLHLLHLHHHHHLHLLLHHHLHLLHLLL \r10 H LLLLLLHHHLLLLHLLHHLLHLHLLLLHHHHHLLHLLHHHHHHHLLHHLLLHLLLHLHLHLLLLLLLHHHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............75       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.11.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.11.2.1:  Measure_PO: 
+  "1.1.1.6.11.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00010101100101011101011001110001100101111010000000100000111000100101000111001111011001100001111000000100100011011010011100101101010101110100110001011 \r10 0 1010000010010011110100001111000111111000101011100000111011011010110101001100111111000000; 
+    "ALLPOs" = HLLHLHHLLLLHHHLHLHHLHHHLHLHHLHHHLHHHHHLLHHHLH \r8 L HLHLLHHHLLLHLHLHHHHHHHLLHLHLHHLLLLHHHHLLLLHHLHHHLHLLHLHHLLLHHLHHHHHLHLLHLLLLLLLHHHHLHLHHHLLLLLLHLHLHHHHLLLLHLHLLLLLLHLHHLHLLH \r20 L HHHHHLLLLLLLHLLLHLHLLHLHHHLLHLHLLHHHHHL \r5 LH HLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............76       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.12.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.12.2.1:  Measure_PO: 
+  "1.1.1.6.12.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000111011011011010010011111101111000011001000101000001010100100010101101101001110011011011011110000000110100000100111001001101000001111001 \r5 10 \r9 0 101101010000110101011111100111000101101110011110111110101111110001110111101011111110110000; 
+    "ALLPOs" = LHHHHHHH \r9 L HLHHHLLLLHLHHHHHHLLLHHHHLH \r8 L HHHHLLLHHH \r9 L HLLLH \r8 L HLHHHLLHLLHHHHHLHHHLLLHLHLLHLLHLHHHHHHLLHLLHLLLLLHHHHLHHHHHHLLHLLLLLLHHHLHLHLHHLHLHL \r11 H LLLLLLH \r8 L HLHHLHHH \r8 L HL \r14 H LHHLLLLLLHHLHLLHHHLHHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............77       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.13.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.13.2.1:  Measure_PO: 
+  "1.1.1.6.13.2": 
+  Macro "TEST" { 
+    "ALLPIs" = \r7 0 1101110101001011100110111100111100111001001011101100000100111100110110000111010 \r9 1 00000010101100010100100010001101111101000101000011000100101101010111001101110101111110000011011 \r8 0 1110111110001001111000111110100111100011010000000; 
+    "ALLPOs" = HLLHHHHLLHHLLLLLHHHHLHLLLHHHHLHLLLHLLLLHLHLHLLLLLLHHHHHLLLLLLHLLLLLLLHLH \r10 L HHHLHHLLHLLLHHHLLLHLHHHLLHLLHHHLLLHHHHLLLLHHLLLLLLHHHHLHLLLLLHLHHLLHHLLHLHLHHHHLHHHLL \r11 H \r8 L HHHHLLLHHHLLLLLHHHHLHHLLHLLLHLHHHHHHLLLLHHLHLLLHLLLHHLLLLLLHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............78       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.14.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.14.2.1:  Measure_PO: 
+  "1.1.1.6.14.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 01100111010100010011101101110110110001000101110101110100101100110010001000001101 \r8 0 110100100100101100101011011011100000001101001111011111110000111001100000001001100010111011111001010000101001111111010001101011011101100100100110101001010001001; 
+    "ALLPOs" = LHHLLHHLLLHLLHLLHHHHHHHLLHHHHHHLHLLLHHHLLHHLHHHLHLLLLLLHHLLLHLLLHHLLHHL \r3 LLHH LHLHLLHLLHLLHHHHHHHLLLHHHLLLLLHLLHHLLHHLHHHLHLHHHHHHHLHHHLHLH \r9 L HHLLHLHLLHHLL \r13 H LHHHHHHHLLHHLLLLHLHLH \r11 L HHHHLLHHHLLHLLHLHLLLLLHHHHLHLHLHHLHLLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............79       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.15.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.15.2.1:  Measure_PO: 
+  "1.1.1.6.15.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1100100100001100110000000111110001010110100110010101010011011100000111101101011 \r10 0 11001011010010010011111011001100000011100100100110000011100011001100010011011010000001000010111001110101100100011001110010001001100111110111101010111010110011; 
+    "ALLPOs" = HLLHHHHLLLLLLLHLLLLHHHLHLLLLHHHHHLHHHHLLLLHHHLHLLLLLLLHLHHLLHHHLHHHHLLLHHHHHLHHHHLLLHHLHLHHHLLHLHHLLLLHLHLHLLLLLHLLHHLLHHLLLHHHLLHHLHHHHLHHLLLH \r12 L HLHLLHLLLLHL \r11 H LLLHHLHHHLLHHLLLHLLHHHH \r14 L HLLHLLLLLHLLHHHLHLLHHH \r3 LLHL H; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............80       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.6.16.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.6.16.2.1:  Measure_PO: 
+  "1.1.1.6.16.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 110101110010100110011101111111000100101011111011111000111011010 \r10 1 0101 \r8 0 111000001000101110111111101111001100000010011100001000010001101110011000111110101000001011000001010001101000111110110111110001110 \r10 1 01010011110100100100000; 
+    "ALLPOs" = HLLHHLLLLLHHLHHHLLHHLHHHHLLHHL \r8 H LLLHLLH \r11 L HHLLLLHLLHLHHLHHHHHHLLHLHHLLLLLHLLHLHLHHHLHLLLHHLLHLLLLLLLHHHHHHLHLHHLLLLLLLHHHHLHLLHHHH \r9 L HHLLHHLHHLHHHL \r11 H LLLLLLHHLLHHLLLHHLHH \r16 L HLHHHHHHLHLHLLLLLHHHLHLHLHLHHLHHHLLL; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............7        TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................81:96       //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............221      PERCENT STATIC FAULTS.....92.856712   //
+//  TEST SEQUENCE.............81       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.1.2.1:  Measure_PO: 
+  "1.1.1.7.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 01001010000011001000101100110101011010110001011000101011010011111000001001100100000001011111000011011011111001000100011110001000101101000100110111011000001100101000011 \r8 0 100110010101110110000101010010110111011001110110000101011010111011000000; 
+    "ALLPOs" = LHLHHHHHLLLHHLHLHLLHLLLHLHLLHLLLLHLHLLHLLLHLH \r9 L HLLLLLHLLHLHLLHHHLHLLLHLHLLHHLHHLLLHHLLHHHHHLLLHHHLLHHHLLHLLHLHHHHHLHLLHHLLLLLHHHHLHLLLLLH \r9 L HHHHHHLHLLHHHL \r11 H LLLLLLHLLLLLHHLHHLLHHH \r10 L HLLHLLHLHLHHLLHHHLHHLLHHHHH \r9 L HHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............82       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.2.2.1:  Measure_PO: 
+  "1.1.1.7.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 11001100011101101001000001110010011011111000011000000101001111000 \r8 1 0111001000001000111010110101010011010100101011001101101100101011100101100000001000001 \r9 0 11001010000011111011001101010110111111000101000111110111110100000101111011001000; 
+    "ALLPOs" = HHLLLHHHLLHHHHHHLHHHHLHHHLHHHHLHLHLLHLHHHLHHH \r9 L HL \r10 H LLLLHLLHLHHHHLLLLHHLLLLLHLLHHHHLHHLLHLHHLHLLHLHLHHHHHHHLLLLHLLLLLLHHHHLHHLLLLH \r9 L HHHLHHHHHLLLLL \r11 H LLLLLLHLLH \r8 L HH \r16 L \r9 H LHLLHLHLHLLHLLLLHHLLHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............83       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.3.2.1:  Measure_PO: 
+  "1.1.1.7.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00011001001100101001110110010001100110101000010100000100110011110111101011111010011111010100011110110010100010111110111110001011101101110000111110111 \r9 0 1001010000100010110011101110001101011101011101001000 \r8 1 01000010010001011001010010000; 
+    "ALLPOs" = LLLLHHHL \r3 LLHH HHLHHLLHHHHLHHLHHHHLLLHLHLLLLLHLHLHHLLLLHLLLHLLLLHHLHHHLLHLLLLHLHLHHHHHLLLLHLLHHL \r8 H LLHHLLLHHHHLHLHHHLLLLLLHHLHHLLHHHLHLLLLLHHHHHLLHHLLHHLHHLLL \r10 H LLLLLLH \r9 L HLLLHLHHHLHHHLHLHLLLHLHLHHLHLLHHHHHLLLHHHLLLLHHHLHHHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............84       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.4.2.1:  Measure_PO: 
+  "1.1.1.7.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000001111010010000011000010100100100100101111110100111100001101001101100001 \r10 0 11010111000110011010101100000010001111110110100111011111001011101111011101000110 \r8 1 00011011110 \r12 1 00010101011000110100 \r9 1 0101111101011011010000; 
+    "ALLPOs" = LLLHHHHHLLLLHLHHLHHLHLLHHLHHLHLLLHHLHLHHHHHHLH \r8 L HHLLHHHHLLLLLLLHHHLH \r8 L HHHLHHHHLLLHHHHHLHHLLLHLLHHHHHHHLLHHHHLHLLHHLLLLLLHHHHLHLHHLLH \r9 L HHHHHHLLLHHHLL \r11 H LLLLLLHHHHHLHHHLHHLH \r12 L HLLLHLHHHHHHLLLHLHLHLLHLLHHHHLHHHHLHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............85       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.5.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.5.2.1:  Measure_PO: 
+  "1.1.1.7.5.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000110001111101100010010111101111101001110 \r8 1 00011011111110110000011110100000001001011101000010101001000000111010011111011010000011100101010100100100011010100010101111001010010110111100000 \r3 0011 110101101111101000111111101110101110000000; 
+    "ALLPOs" = HHLHHHHLLLLLLLHLLHHHLHLHLLHHHLHHHLLLLLHLHLLHLH \r8 L HHLLHHLHLLLLLLLH \r12 L HLHLLLLLLHLLLHHLHHLLLHLHLHHHHLHHLHHHHHLHLHHHLLLLLLHHHHLHLLHHLH \r9 L HLHLHHLHHLLLHL \r11 H LLLLLLHLLHLLLHHHHLLHH \r12 L HLLLHHHHHHHLHHLHHHHLHLHHHHLLLHLHLLHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............86       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.6.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.6.2.1:  Measure_PO: 
+  "1.1.1.7.6.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 100000100110010010110001111010111001000001100100101110 \r9 1 001100000010001100000100001011010101001101100000100000001111111011101000011 \r3 1100 1110100100000101000010111110001010111101101000111100 \r8 1 01111 \r9 0 11100010111100100110000; 
+    "ALLPOs" = HHHHHLLLLLHHLHHLHHHLLHHHLHHHLLHHLLHHLHHLHHLHLH \r8 L HLLLHHLHHLLLLHHHLHHLHHLLLLHHHLHHHLLLLHLLLHHHLLLHLHHLLHHHHHLLHHHHHHHLLLLHHLLLLLHHHHLHHLH \r12 L \r5 HL LLLL \r11 H LLLLLLHLHHHLHLLLLHHLHHH \r9 L HHLLHLHHHHHHLHLLHLHLLLHHHLHLLHLHHHHHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............87       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.7.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.7.2.1:  Measure_PO: 
+  "1.1.1.7.7.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000011101101101101011010110100100001110101101111110011111101110110011000111 \r9 0 1110100111 \r7 10 1110011010111100100000001111101010010111111101000101010000000101001010001011000000100011001110011111010010010101111101110010011101010001010; 
+    "ALLPOs" = HLHHHHHLLLHHLLHHHLHHLHLHHHLHHLHLHHLHHLHLLLHHHLLHHLLLLLHHLLLLHHLLHLHLLLHLHHLLLHLHLLLLHHLHHHHLHLLHHLHHHLLLLHLHHHLHLLLLHLHLLHLHHHHHHLLLHHHHLHLLLH \r11 L HLLLHLHLHLLL \r13 H LLLHHHHHHHLHLLLLLHHLH \r11 L HLLLHLHHHHHHLLHHLHHLLHHHLHHHLLLHHHLHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............88       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.8.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.8.2.1:  Measure_PO: 
+  "1.1.1.7.8.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001010010111101110100001001001101011111000001000000100101000010 \r12 1 0010110100101101011000101010111101101100001010000 \r8 1 0100100111000011110011100111010011001110010111110011111010110000111101111110100000 \r8 1 01000010 \r9 1 0011000; 
+    "ALLPOs" = HLHHHHHHLLHLLLLLHHHHLHLLLHHHHLHHLLLHLLHLLHLLHLLLLLLHHHH \r9 L HLHLLHLLHLLLLHLHLLHLLHLHLLHLLLLHHHLHHHHHHLLLHLLLHLLHHHHHLLLLHLHLLLLLHHHLLHLLLLLLLHHHHHHHLHLLHLLLLHLLLHLL \r10 H LLLLLLHHHLLHHHLHHLLHHLHHLHHHLLHHHLLLHLHHHHHHLHLLHLHLLLHHHLLLHLLLLHHHHHHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............89       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.9.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.9.2.1:  Measure_PO: 
+  "1.1.1.7.9.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 110100011110010110111100010000110110001011111110001111111010111001011111101110010000000101001010000001110101100101100001001100111010000101101000011111101000000110111000100111110101011111000110010010 \r9 1 0101101011101111 \r5 10 01011011101000; 
+    "ALLPOs" = HHLHHHHLLLHLHHHL \r8 H LHHHHHHLLLHLHHHLH \r13 L HLLHHHLLHHHHLLHHLHLHHHHHHLLH \r3 HLLL LHHHHLLLHHHLLHLLHLHLHLHHHHHLLLHLLLLLLLHHHHLHLLHLHH \r9 L HHLLLLLHHHLHLL \r11 H LLLLLLHHHLHLLLLHLHLH \r12 L HLHLL \r8 H LLHHHLLLHHHLHHLHHHHHHLHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............90       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.10.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.10.2.1:  Measure_PO: 
+  "1.1.1.7.10.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0100001110000001110111110101001011001100 \r9 1 011101110100010011010100010001100000011001010111100111001011011101101101011000101101010011010100010000110001100011101100110101111001111111000110010000111110000101001111001101110011011110011110011000; 
+    "ALLPOs" = LHLLLHHLLLLHLLHHLHHHHHLHHLHHHHHLHLHLHHHHHHLLH \r9 L HLLLHHLLLLHHHLHHLHLHHLLHHHLHHHLLHHLLHLLLHHHHLH \r6 HL LLLLHHHH \r12 L HHHHLHLLLLLH \r9 L HHLHHHHLHLHHHL \r11 H LLLLLLHLLHHLLLHLLHHHLLH \r9 L HLLLHL \r8 H LHLLLHLHLLLLHHHHLHHLLHHLLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............91       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.11.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.11.2.1:  Measure_PO: 
+  "1.1.1.7.11.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00001101001001011101010110100001011000101111111000110011100000001110100001 \r10 0 1001010010101000011011 \r8 0 1010001000010011101100101011101 \r8 0 1000010110011011111101011000011111001111100011010111101101110010111101110011101101100000011000; 
+    "ALLPOs" = HHHH \r10 L HLHHLHLHLHLHHLHLHHLLHHLLHLLHHH \r10 L HLLLLLHHLHHLHLHLLHHLLLHHLHLHLLLLHHLLHLLLHHHLLLHLHHLHLLHLLLLLLHHHHHLLLLHLLLLLLLHHHHLHLLHLLH \r9 L HHLHHLLHHHLHLL \r11 H LLLLLLHLLLLHLLLHHHLH \r12 L HLLLHLHHHHHHLLHLHLHLLLLLLLHHLLHHHHHHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............92       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.12.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.12.2.1:  Measure_PO: 
+  "1.1.1.7.12.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 01011011000101011100000111111101011011001111111000010111000100001110010100011 \r10 0 1101110100001011011010100010111101111010010101000000111010000010100110010010100111111010100100000110100010011011011111011001110110110010100111110101100101011000; 
+    "ALLPOs" = HLHLHLLHLLLLHHLHHHLHHLHLHHHLHHLHLLHHLLHHHLLLHH \r9 L HLLHHLLLHLHHHLLLHHLLLHLH \r3 HHLL LHLHHHLLLHLHHLHHLHHHLLHLHHHHHLLLHHHLLLLLLHHHHLHLHHLLH \r9 L HHLHHHHLHHHLLL \r11 H \r7 L HLHLLHHLLHLLH \r12 L HLLLHLHHHHHHLHHLHHLHLLLLLLHHLHL \r9 H ; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............93       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.13.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.13.2.1:  Measure_PO: 
+  "1.1.1.7.13.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 001000111011111100001111000001110001111110110110111011111110100011001111000001 \r8 0 11101010111110110010100101110100111010110101110111010000000110011101011100101001001010011100100101100111011011011000001101000011001001111110100011101111111000010; 
+    "ALLPOs" = HLHHLHHLLLHHHHLHHLLLLHHLHHLLLLHHLLHHLHHHHHHLHLHHLHLLLLLHLLHHHLLLHLLLHLLHHLHLLHLLLHLHLLLHHHHLHLHHHHHHLHHLHLLHHLLHLLLHLHH \r8 L HLLHLHHHHLHLLLH \r13 L HLLLHHLHHLHL \r11 H LHHLLHHHHHLHLHHHLLHLHH \r10 L HLLLHLHHHHHLLHLHHHLHLLLLHHHLHLLHHLLLHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............94       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.14.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.14.2.1:  Measure_PO: 
+  "1.1.1.7.14.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1001100101010001000101000110101000111011011011100101111000100000001000111101010111101001010110100011000011101111010010111110010011001001110110011101110011011001001100011010011010001100100101000001001000010110101101110100111010101110010111110011001; 
+    "ALLPOs" = LHLHHHHHLHLLLHLLHLLLLHHLLHLLLLHHLLLHHHHLHHLHHHHLHLHLHHLHLLHHLHHHLLLHLLLLHHHHHLLLHLLLHLLHLLLLHLHLLHHLHLLHLHLHHHLLLLLHLLHLLLLLLHLLLHLLLLLHHLLLHHLHLHHLHHLHLHHLHLHHLHHHLHLL \r10 H \r4 LH LLHHLHHLLLLLLHLLLHLLLLHHHLLLHLHLLHLHHHHLLHHLLLHHLHHLHHLLHLHHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............95       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.15.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.15.2.1:  Measure_PO: 
+  "1.1.1.7.15.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001101100011011110001100010101000001100111111011111100101000100 \r9 1 01101110000011010 \r3 0111 0101111110001110100101010000011101100011101101000110011101100001101010100000 \r8 1 01010100011110111100101101010 \r8 1 000100010100111010000000; 
+    "ALLPOs" = LHLLHHHHLLHHLLHLHHLHHLLHLHHLHHLHHHHLHLHHLLHHH \r9 L HHLHLLHHLLHLHHHLHHLHLLLHLHHHLHLHHHLLHLHHHHHLHLHHLLLHLLLHHLLHHHHHHHLLHHHLHLLLLLHHHHLHLHH \r12 L HLHHLLHLLLLHHL \r11 H \r9 L HHLLHHHLLHLHHH \r12 L \r10 H LHLLLLLLHH \r9 L HHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............96       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.7.16.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.7.16.2.1:  Measure_PO: 
+  "1.1.1.7.16.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000101011010001011110011111101001100000011111100010010111010010111 \r12 0 1 \r5 10 0001111111010111110011010010011101111100 \r10 1 011101011100011100110100001101010001111000000100110010011011111100000111111001 \r9 0 11000010011010110000; 
+    "ALLPOs" = LLLLLHHLLHLHLLLLHHHHHLLLLHHHHHLHLLHHLHHLLLHHLHLLLLLHLLHLHLLLHHLHLLHHHHLHHLHLHLLHHHHLHHLLLLLHHLL \r8 H LHHL \r13 H LHLHHHHLLLLLLHHHHLHHHLLHLHHHLHLHLHHLHLLLLLHLLHL \r11 H LLLLLLHHLLLHHHLLHHLHHLLLLHLLHHHLHHHHLLHHHHHHHLHHLHLLLHHHLLLHLLLHHHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............8        TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................97:112      //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............81       PERCENT STATIC FAULTS.....93.344986   //
+//  TEST SEQUENCE.............97       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.1.2.1:  Measure_PO: 
+  "1.1.1.8.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001000001010010000010111111011001010000011 \r9 0 1001101111000110010111 \r10 0 1110001011011111001101011100100111000101001100101010010000110010101011001100011110111100010000111110010100110100101001110010011001110110011110100100000111110011000; 
+    "ALLPOs" = LLLLHHHLLLHLLHHLHHLLHLHHLHHLLHLLLHLLHLLH \r14 L HLH \r13 L HLLH \r9 L HHHLHLLHLLLLHHHLHHLHLHHHLLHHLHLLLHHHHHLHLLHHLLLLLHHHHLHLLLLHH \r9 L HLLLLHLLLHLLLL \r11 H \r8 L HLHHLLHLLLHLH \r14 L \r9 H LHLHLLHHLHLHLLLHHHHHHLHHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............98       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.2.2.1:  Measure_PO: 
+  "1.1.1.8.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0100110110110110010110101000001011111010110111101000010111000001110101110100100110000110100011 \r8 0 100001000101100010100010100110100101111010010 \r11 1 001101010010001010011011010000000111111001010111000010111111001000001011100 \r8 1 000000; 
+    "ALLPOs" = HLLHLHHLLHLLHLLHLLHLHHLLHLLHLHHLLHLLLHHLLHLLHH \r8 L HLHLLLLLLHHHHLLLHLLLHLHHHHLLLLLLHLHLLLLLLHHHHLHLHLLLLLHLLHHLLLHHHHLHHLHLLLLLLLH \r3 HHHL LLHLLLHHHLLHHLHHHLLLHLL \r10 H LLLLLL \r10 H LHHHHLLH \r10 L \r7 H LHLHHHHLHHLLHHHHHLHLHLHLLHHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............99       TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.3.2.1:  Measure_PO: 
+  "1.1.1.8.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 010010110000011000000101100000010100111011101011010111010111110001100000010000101110101000111 \r8 0 11111010001111100110100100011000011110010010010001111010101101000101001000100011100111010111001011100111001010101 \r10 0 10010010101111110111000; 
+    "ALLPOs" = HLHLLHHHLHHHLLLLHHHLLLLLLHHHLLLLHLHHLHLHLHLHH \r8 L HHLLLLLLHLLLHLLLLLHHLHLLLHLLLLHHHLHLLHLHLHHHHHHLLLHLLLHLHLHLHLLHHHHLHLLHHHLLLLLHHHHLHLLHLLLLHLHLLHHHHHLLHHHHHLLLLL \r11 H LLLLLLHLHHHHLHLHLLHHHLHLLHLHHLLLHLLLHLHHHHHHLHHLHHHHLHLLLLLLHLLHHHHHHLLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............100      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.4.2.1:  Measure_PO: 
+  "1.1.1.8.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 01001100101100011011001000010001101010101111101111001101111000100110100011000001000011110011000011100110001011011010100000 \r5 01 00101100100000101110101000101010111011011010110 \r10 1 0110011011001111001110110111111101111011011110110001010000; 
+    "ALLPOs" = HHH \r8 L HHLHHHHLLHHLHHHHLLHHHHHHLHHLLLHLH \r10 L HHLLLLLHLHHHLLLHHHLHHLHHHLLLHLLHHHHLHLHLLHHHLHLHLLHHLLLLHLLHLHHHHHLLLLLLHLLLLLHHHHLHLHHHLH \r9 L HHHLLLHHHHLLLL \r11 H LLLLLLHHHLHLHLLHHLLLH \r11 L HLLLHLHHHHHHHLHLHHHHLHLHLLLLHLHL \r8 H ; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............101      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.5.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.5.2.1:  Measure_PO: 
+  "1.1.1.8.5.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1001100100000100001101110001000001011110011001011001111100101001000 \r9 1 001010100110111011 \r8 0 1111010111010000000110011110010111010001111111010000000101011010111000111111100011111011001 \r3 1110 000101100011111110011010111001100100111000; 
+    "ALLPOs" = LHLLLLLHLHHLLHHHHHHL \r8 H LHHHHHLHLHHLHLH \r8 L HHLLLLLHHHLHLHLLLLLHLHLHHLHLLLLLLHLHHLLHLLHHHHHHHLHLHHLLLLHLLHLLHHHHHLLLHLHLLLLLLHHHHLHLHHHLHLHLHHHLHLHLHLLLLLLHHHLL \r11 H \r7 L H \r10 L HHLLHLLLHHHHHHHLLLHLHHHHHHLHHLLHHHLLHLLHLHHL \r8 H LL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............102      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.6.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.6.2.1:  Measure_PO: 
+  "1.1.1.8.6.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001001010010001111000011100000 \r8 1 00110000001110 \r3 0011 110101101010010000011000101001110101110000100011111110000010011000111101111001110110000100111111001110111100 \r3 0011 1101010011000 \r8 1 00111000111110001101000010011110101101000; 
+    "ALLPOs" = HHLHLLLLLLHHHLLHHHHHHLLLHHHHHHLLLHHLLHLHLLHHLH \r8 L HLLLLLHHLHHLHLHLHHLLHLHHLHLHLHHHLHLLLLLLLHHHLHHHLLHHHLLLHLHLLLHHHHLLLLHHHLLLLLHHHHLHLLLLLH \r9 L HLHLLLLLLLHLHL \r11 H LLLLLLHLLLHLLHHHHHHHLLH \r9 L HLLLHLHHHHHHLHLLH \r3 LHLL \r9 H LH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............103      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.7.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.7.2.1:  Measure_PO: 
+  "1.1.1.8.7.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001011 \r8 0 1001011010010010001011110011001 \r3 0111 101011100 \r9 1 001000000011010010100101011000100111001010000100010000110011000001110111110011001011101000010110110100000011111101000010101111111001001101011111011011010011100110000010000; 
+    "ALLPOs" = HLHLLLLLLLHHL \r8 H L \r8 H LHHLHLLHH \r15 L H \r9 L HLLLLHLHLLHLLHLLLLHLHLHLLLHHLLLHHLHHLHHLLHLLLHLLLLHHHHHHLLLLHHLLLLLLHHHHLHLLHLLH \r9 L HLHLHLLLLHHLHL \r11 H LLLL \r3 LLHH HLLHHLH \r9 L HLLLLLHHHHHHLLLHLHHLLLHHLHHLHLLHHLLHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............104      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.8.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.8.2.1:  Measure_PO: 
+  "1.1.1.8.8.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 10001011011100100100111010000001010111100110010111101101001111100110000101111001101111010000101100010011010101110010011101001110010001110000001001100110110011011100101001010111101001110111000 \r3 0001 11111101101010101100111000101011010110000000; 
+    "ALLPOs" = HHHHHLHHLLHLLHHHHHLLLHHHHHHLLLHHHHLLLHHLLHHLHLLLLLHLLLHLLLL \r5 LH HHLLLHHLHLHLHHLLLLHLLHLLHHHLLHHLLLLLLHHLHLHHLLHHHHH \r12 L HLLLHLLLHLLHLHLHHHLLHHLHLLLLLLHLHHL \r11 H LLLLLLHHH \r3 LHHL LLHHHLLLLLLHLLLHL \r13 H \r7 L HHLLHHHHLHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............105      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.9.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.9.2.1:  Measure_PO: 
+  "1.1.1.8.9.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 001111110100100000111100110000001001000001 \r3 0110 001011100111111011000000010000101101001001011000100000100001111101101001011110110100011111000100101000111011000001001101101111001000010011101 \r8 0 10010101111011011101010110010000001010011010; 
+    "ALLPOs" = LHLLHHHLLLHHLHHHLLLLLHHHHLLLLLHHHLLLHLLHHHHLLHHLHLLLLLHLLLHHH \r12 L H \r9 L HHLLHLHLLLLLHHLHLHLHHHHHHHLLLLLLHHHHHLLLLHHLHLHLLHHHHLHLLHLLH \r9 L HLLLLLHLLLHLLHHL \r9 H LHHHLHLLHLHLLLHHHLH \r13 L HLLLHLHHHHHHHLHHLLLLLLHLHHHHLLLLLLLHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............106      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.10.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.10.2.1:  Measure_PO: 
+  "1.1.1.8.10.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 111111001011111011110101011011011011011111100000100010011001110100100001101100100011010111101110110111000100100101111011010010000001010100100101100010101111111001100100001100101 \r8 0 10000010111111010010001110000110101000011101010100 \r9 1 000; 
+    "ALLPOs" = LHHLLHHLLLLHHLLHHHLHLHLLHHHLHLHLLHHLHHLHLLHLHLLHLHHHHLHLHLLLHLHHLHHHLLHHLHHHHLHHHLLHHHLLHHHLHLHLLLHLLHLL \r5 LH LLHHLHLLHHLHHLLHHHLHHLHHLLLHHHLHLLLLLHHHHHHHLHLLLHLLHL \r14 H LLLLHLHHHHHLHHHLLLHLLLLHLHHHLHLLLLHHHHHHLHHLHLLHLHLHHHHHHLLLHLHHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............107      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.11.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.11.2.1:  Measure_PO: 
+  "1.1.1.8.11.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000101101110110010110111011111101101000 \r13 1 0 \r10 1 010 \r9 1 0110010001011010011 \r8 0 1010111111001010001001011111001011100 \r11 1 000110000001111110110110001011 \r3 1100 1001010001111100010110 \r8 1 010110100100111011100000; 
+    "ALLPOs" = HLLHHHHLLLHLHHHLHHLLLLHHLHHLLLLLHHLLHHHHLHHHLLLLLLHHLLHLHHLLHHLHLLHHHHHLLHHLHLLHHHHHHLHLLLHLLLHHLHHLLLHHHLHLLHLHHLHLHHHHHLLLLH \r16 L HHLHLHHHHLLHHLLLHLLHLLLHL \r11 H \r7 L HHLLLHHLLLLLHHHHLHLHLHHLLLLHL \r8 H LLHHHLHHLLHHLHLLHHHHHHLHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............108      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.12.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.12.2.1:  Measure_PO: 
+  "1.1.1.8.12.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000001100111000010001010110111100010000110110101000011000001110000111000000011 \r8 0 111111010111101101000111 \r6 10 011001000110111 \r3 1110 01011011010001001100111101111110010111111100000110011011101110001110101110100101101100011010001000; 
+    "ALLPOs" = HHHHLHHHLLLLLLHLLHLHHHLHLLHLHH \r5 HL LLLHHH \r8 L HLLLLLLHLHLLLHLLLHLHLLHLLLHLLLHHHLLLLLLL \r8 H LLHHLLHLHHLLLLHHHHLLHLHHHLLLLLHHHHLH \r15 L HHHHHHLHLHLHLL \r11 H LLLLLLHLHLHHLHHLHHLLLH \r10 L HHHHLLHHLHLHLLLHLHLHLLHLHHHLH \r8 L HHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............109      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.13.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.13.2.1:  Measure_PO: 
+  "1.1.1.8.13.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001010111001000010111110110010011100101011101100100011100111001101010100011000101001110110110001110001101011000010101110010101011000110010001010000101110101000110101011001011010010010011010010011011110011010000101011011100100100010010 \r8 1 0000; 
+    "ALLPOs" = HLLLHHHHLL \r10 H L \r8 H LHLLHLLHLHHHHHLHLLLLLLHHHLLLLHHHLLHLLHLLLHLLHLLHLLHLLLHHLLHLHHLLHLHHHLHLLLHLLHHLLLHHLLLHHHHLLLLHHLLLLLLHLHHLLLHHHLLLHLHLLLHLHHHLLLHLLLHLHL \r11 H \r8 L HHHLHLHHLLLHLLLHLLHHLHHLHLLLHLLLHLHLHHLHLHLLLHLHHHHHLHLLHLHLHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............110      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.14.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.14.2.1:  Measure_PO: 
+  "1.1.1.8.14.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1010001000010011111000011111101010110000011001110001010110111111011111110010001110011111001010001111100000 \r3 0011 101111010010100010001100101111101000011011110011010100110010110010101010010111001011010111111011100111101011111010011111110000010; 
+    "ALLPOs" = LHHHHHHLLLLHLHHHHLLHHLHHHHLLHHLHHHLLHLHLHLLLHHLLLLHLLLLL \r3 LLHH LHHLLHLHHLLHHLHLLHHHLLLLLLHHHLLHLLHHLHHLHHHLLHLHHLHHLLLHLLHLHHLHHLHHHHLHLLLHLLLLHLHHLLHLHLLHLHLHLHLL \r11 H LHHHHHLHLLLLHHHHHLLLLHLHHHLHLLLHLLLHLHLLLLLHHLLLHLHLHHHHHHHLLHHHHHLLLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............111      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.15.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.15.2.1:  Measure_PO: 
+  "1.1.1.8.15.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001100001100101100101101100010111000101110011011100111011010111000001101111010000001100011011000110100010111111101000000010110111001010000111011110111000110100010000011100001011011100111100110011100 \r9 1 0001110001010111101100010010 \r8 1 011; 
+    "ALLPOs" = HLHHHHHLLLHHHLLHLHHHHHLLHL \r8 H LHHHHLHHLLLHLLHHLLLLHLLLHH \r9 L HHLHHHLLLLLLLHLHLLLHLLHLLHLHLLHHLLHHLLLLLLHLHLHHL \r8 H LHHLHHHHHHLHLHHH \r11 L HHHHHLHLHHLHLL \r11 H LHLHLLLHHLLLHHLLLLHLLLH \r10 L HHL \r8 H LHHLHHHHLHLHHHLHLLLHLLLHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............112      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.8.16.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.8.16.2.1:  Measure_PO: 
+  "1.1.1.8.16.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000110111000101100110100000011000110010111100010110111010100111111011100000011101011111100111011110001101111100111011110100101011101100011110100101000110101110000111000101110011011100000111011101010110011011100101100111100110110110110011010111000; 
+    "ALLPOs" = HHHLHHHLLLHLLHLLLLHHLLHLLLLHHLLLHHLLHLLLLHHLHHLLLLHHLHLHLLLLHLLHLLLLHHHLLHLLHLLLLHHLLLHHLHLLLLHHHHLLHLHHLHHHLHLHHLLLHHHHLHLH \r9 L HHHLLLLHLLHLHHHHLHHHHLHLHHHLHHHLHL \r11 H LLLLLLHLLHHLHLHLHHHLLHHHLLHHHHHHHLLLHLLHHHHLHLHHLHLLLHHLLLHLLHHLLLLLLHHH; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............9        TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................113:126     //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............33       PERCENT STATIC FAULTS.....93.543915   //
+//  TEST SEQUENCE.............113      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.1.2.1:  Measure_PO: 
+  "1.1.1.9.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1001101111001001111000011011001011001010001011100001000000101111000010110010000100000100100000010000110001001011001010110110110100101111000000010110010001010110101110001110110110000110010010110011111011101101111010011110111100100111001000111110010; 
+    "ALLPOs" = HHHHLLHHLLHLHHHHHHLHHLHHHHHLHHLHLHHLHHHLHLHLHLHHHLLLLLLLHLHHHLHLLLHLLHHHLHHHLLLHLLHLHHHLLLHHLHHHHLHHHLHLHHLHLHLHLLLHHHL \r8 H LHHLHHHHHLHLHLLLH \r10 L HLLLHLHLHHHLL \r12 H LHLHHHHLLLHLHLHHLHH \r12 L HHLLL \r10 H \r9 L HHHLHHHLHHLHHLLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............114      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.2.2.1:  Measure_PO: 
+  "1.1.1.9.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00110000100010011100101011011111100010011001001011010000110000110010110101101110101000001111010001101010 \r11 1 000110110 \r9 1 0001110010001101101 \r9 0 11110001101000010011100011011000110101000011000100110111101100111101011110111011110100; 
+    "ALLPOs" = HHLLLHHLLHLHHLLHHHLLLLLLHHHLLLLHLLLHHHLLHHLHHLLHLLLHHHHLHHHHLHLLLLHHLHLLHHHLLLLHHLHLLLLLLLHHLLLLLHLLHHHHHLLHLHLHHLHHLLHHLLLLLLLHHLHHLLHHLHLLHLHHL \r8 H LHHHHLHHHLLLLLL \r10 H LLLHHHLHLHLLLLLLLHLLHHHHHLHLLHHLLHLL \r8 H LLLHHLHHLHLHHHLHHHHLHLHHHHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............115      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.3.2.1:  Measure_PO: 
+  "1.1.1.9.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001011011011010100110110100010110110100001001110111110100110110100000011001110011100101101001101110010110001000 \r9 1 001011001110010010000001011000101111001010010111010011111000111100111001111101010001111010000010000010001101000100011111010000; 
+    "ALLPOs" = HLHHHHHHLHLHHHHHHLLHLHHHHHLLHLHHHHHHHLHHLHLLHLLLLLHHLLLLLHLLLLLHHLLLHHHHHHLLHHLLLHHHLHLHLLHHLLLHLHLHLHHLLHHHHLHL \r8 H LLLHHLHLLLLLLHHHLLHLLHHLLLLLLL \r8 H \r9 L \r11 H LLLLLLHLLHLHHHHLLLLLLHLLHHLLLLHLHHHLLHHHHHHHLHLHHHLHLLHLHHLHLLHLLLLHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............116      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.4.2.1:  Measure_PO: 
+  "1.1.1.9.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0011000010010101101110010000 \r5 01 00011001111001101000101111000001011010011100000110010010011100110000001110110111000011000000 \r8 1 \r5 01 111100100111001010011011100011000000011000110101010110010011101011011110011110001001001011010100010; 
+    "ALLPOs" = LHHLHHHHLLLHLLLLLHHHLLLLLLHHHLLLHHHLHLHHHLHHLHLHLLLLLLHLLLHHHHLLLLLLLHHHLH \r8 L HHHLHHLHLLLHLLHHHHHHHLLHHLLLHLLHLLHLHHLHLHHHLLLLHLHHHHLHLLLLLH \r9 L HLLHLHHLLLLHLL \r12 H LHLLLLHHHLLHLLLHLHHLHH \r9 L HLLLHLHHHHHHHLLHHLLLLLHHLHHLHLHHHHLHHHHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............117      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.5.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.5.2.1:  Measure_PO: 
+  "1.1.1.9.5.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 11000101001111110010010001101010111110101110 \r3 0001 1010100111111001 \r8 0 10 \r9 1 0110111110010000011010100011101111110000111 \r10 0 11011100001011011110100101001001000 \r8 1 001010010111001001001000010000011100111100100110011010000110; 
+    "ALLPOs" = HLHLLHHLHLHLLLHHHHLLHLLHHHHLLHLHHHLLHHLLHLHLHLHLLHHHHLHLLLHHHLHHHHLHLLHLLHHHHHHLHLLLLLHHLHHLLLHLHLLLHHLLLLHHLHHHHLHHHHHLLLHLLLLLLHLHLHHHHLLLLLLHLLLLHLLHLLLLLHLHHHHLLHHL \r12 H LHLHLHLLLLHLHHLLHHLLLHLHHHLLLLHLLLHHHH \r11 L HLLHHHLHHHLHLHLLLLHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............118      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.6.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.6.2.1:  Measure_PO: 
+  "1.1.1.9.6.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1101111010010011110101111011001110100100111110001010000101010111001111000101100110110110000110111011011100001010010110100001011101000101101000100011100100001101010011100001000010001011110101011010100110010111011011011101001110011000111101010100110; 
+    "ALLPOs" = LLHHHHHHHLLHLLHHLHHHLLLHHLHHHLLHLHHLHLLHLHHHHLLHLLLLLHHLLHLLHHHHHHHLHHHHLHLHHHHHLHHHLHLHLHHLLHLHHLHLLLLLHHLLLLHLHLHHHLHHLLHLLLHHHHLHLHLHHLHLLLLHLLLLLHLHLHHHHHLLLHHLHLHHLHLHHLLHLHLHHLHHHLLHLLLLHLLHHLHLLHHHLLHHLLLHLLHLHHLHLHHLHLHLHLLHHHHHHHLLHHHLHLHLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............119      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.7.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.7.2.1:  Measure_PO: 
+  "1.1.1.9.7.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001100000110000101001101011001101001110110100111101111000011110110111101000110100001111110101011011100011010110101101001100010100001000101001000101010001110101011000111110010010001100101110011101111100011110001101100111011110010101100001010010001; 
+    "ALLPOs" = HLLHHHHHLLHLLHLLHLHLLLHLLHLHLLLHHHL \r3 HLLL LLHLLLLLHLLLLLHLLLLLLLHHLH \r9 L HHLLLLLLHLHLHLHLLLHLLLHLHLHHLLLLHHLLLHLHHLLLLHHHLLHHHHLHHLHLHH \r10 L HLLHHHHHHLHLL \r13 H LLHHLHLLLHHHLLLHHHLH \r11 L HLL \r9 H LHLHHLLLHHLHHHHHLLLLLLHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............120      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.8.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.8.2.1:  Measure_PO: 
+  "1.1.1.9.8.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 10010100000111110100010101001111001111100110000000 \r9 1 00101010 \r10 1 01010011110000110100110000001010011011000001110010001010000101 \r3 1000 110001111011010000010010100011011011001001111101010110100111100 \r9 1 001110010100110100100000; 
+    "ALLPOs" = LHLHLLLLLLHHLHHHHHLHLLHHHHHLHLLHLHLLLHLLHHLHLHLLLLLLLHLLHHHHLHHHHLHHHLHLLLHHHHLHHHLLHH \r9 L HHLLLLHLLLLLLHHLLLLHHHHHHLHLHLHHLLLLLHHLHLLHLHLHHLHLHLHLHHHLHLHLHLLHLHLLL \r10 H LLLLLLHLLHHLLLHLHHHLHLHLLHHLHHLLHLLLHLHHHHHHLHLLHHHLLHHLLHHHHLHLHLLHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............121      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.9.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.9.2.1:  Measure_PO: 
+  "1.1.1.9.9.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 10001000011101111110000001101100101111100110010000101011101001110 \r11 1 00001010011111100010110101011010010000100111000110010111001011010010001000010000001000000110111101011010001011011110011111100011001000001001101111101100 \r3 0111 1011000; 
+    "ALLPOs" = LLLLHHHLLHHLHHHHHHLLLLHHHHHLLLLLLHHHLLHLLHLHHHLLLLHHHLLLLHLLLHHHLLHHHHHHHLLHHLLHHHHLLLLHLLLHLLHHHHLHLHHLHLHHLLHHLLHLHHHHHH \r10 L HLHLHLLLLLHLLLHLHLLLHHLLLL \r8 H L \r11 H LLLLLLHLLHLLLLLLHLLLLLLLHLLHLLHHHHLHLLHHHHHHLHHLLLHHLHHLLHLLLLLHHHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............122      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.10.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.10.2.1:  Measure_PO: 
+  "1.1.1.9.10.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 101000011010110001111010111110101011001000010100110 \r8 1 0010111111011111 \r9 0 11101100001001110010110100101011001011001000 \r3 0001 0100100110010000111110010110110001110100000100110101000011111100001000010100101010111011111010 \r8 1 01100; 
+    "ALLPOs" = LLLLHHHLLLLLHHLLHLHHHHHLLHLHHHHLLHLHLLHHLLLLHHHHLHLLLLHLHHLLLLHHHLHHLLHLHLLHHHLHHLLHLLLH \r8 L HLHLLHLLLLLLHHLHLLHLHLLLLLHLLLLHHHLHHHHHLHLLH \r12 L HHHLHHHLLHLHHL \r12 H LLHHHLLLHLLLLHHHLHLH \r11 L HLHLLLHHHHHHLHLHLHHLLHHHHLHLLHLHHHHHHHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............123      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.11.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.11.2.1:  Measure_PO: 
+  "1.1.1.9.11.2": 
+  Macro "TEST" { 
+    "ALLPIs" = \r7 0 \r8 1 01001010000001111010111100110010000101111000111100 \r11 1 001100101110100001010010000010110010011010111111100100000010101101111100110100101101110010 \r8 1 0100011010110111011011101000110011110000010111111011000001110100001111000; 
+    "ALLPOs" = LHHLHLLHLL \r8 H LLLLHHHHHLLLLLLHLHLLHLHLLHHHLLLLLHLLLLLHHHLHLLLLLHHHHLHLLLLLLLHHHLHHHHLLLHLLHHHLLHLLLLHHLHHHHHLLHLHHHHLHHLLHH \r8 L HLLHLLLLLLLHHLHLHHHLHLHLLLLLLHHLL \r10 H LLLLLLHHLHLLHLHHLHHHLLHLLHHLLHHHHLLLHLHHHHHHHLLLHHHLLHHHLHLHLLHHHLHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............124      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.12.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.12.2.1:  Measure_PO: 
+  "1.1.1.9.12.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00111111001001111011110110100101110 \r3 1101 1100110110000001011101111001111000000100010100001111110010001001000001100001101011110101010001001101100011011101100010100110001010101001001000111011100000001 \r8 0 11011110011010010110101100100100110; 
+    "ALLPOs" = \r7 L HLLHLLHHHLHLLLLHHHLHLLLLHHLLLLLLLHHLHLLHLLH \r8 L HHLHLLLLLLLH \r12 L HLHLLHLLHLHLLHHLLHHLHHHHHLLLHLLHLHLHHHLLLLHHLL \r8 H LH \r15 L HLHLHLHHHHHLLHHL \r12 H LLLLLLHHLHHHLHLLHLH \r10 L HLLLHLHHHHHHLHHHHLLHLLHLHHHLLHLLHHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............125      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.13.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.13.2.1:  Measure_PO: 
+  "1.1.1.9.13.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 010011011000000101100000001000011111 \r9 0 10001110110010001010010100110010011001100010111100100101000001110011110101001011101000101100001111110111110101100100111111010 \r3 0001 00001111100001100011010101110001110101010110100111001001011001010; 
+    "ALLPOs" = LHHHLHHHLLHLHHLLLLLHHLHLLLLLHHLHLLLLHHHLLLHLHHHHLLHLHHLHHHLLHLLHLHHLHLLLLHHLHLHHLHLLH \r5 HL LLLLHLHLLHHLLLHHHLLHHLLHLHLLHHHHLLHLHHLLHLHLHLLLLLLHHLLHHHLLLHHHLLLLLHLHL \r11 H LLLLLHHHLHLHHLLHLLHHLHLHLLLLLLHLLHLLHLHHLLHHLHLHHLHLL \r9 H LLLHHLLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............126      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.9.14.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.9.14.2.1:  Measure_PO: 
+  "1.1.1.9.14.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000110111110101010000101111000111000111000101010110101010010011000000100100000101010000 \r12 1 0011011000101011000010010110111010011110010000110010110101010000111010001110000010110100111100001110100010011000101110111101100111011000011011111000; 
+    "ALLPOs" = LLHLHHHHLHLHHHHLLLHLLLHHLLLHLLLHLLHHLHLLHHLHLLLLLLHHHHLLLHHHLHLLLLLLLHLHHLHLLLLLLLHLLLHHHLHHLLHHLHHHLHLHHLLHLLLHLL \r8 H \r10 L HHHHLLLLHLLHLHLLHLLHHHHLHLLHHLLHHLLL \r10 H LLLLLLHHLHHLHLHLHLLLLLHHHLHHHHHHLLLLLHHHHHHHLLHLHHLHLHLLHHHLLHHLLLLHHHHH; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............10       TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................127:142     //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............58       PERCENT STATIC FAULTS.....93.893547   //
+//  TEST SEQUENCE.............127      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.1.2.1:  Measure_PO: 
+  "1.1.1.10.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000101100010100001001000110110001101110000110011110010111100111110011101110110000101101011100000011100110100110 \r10 1 011100110110100001011100101100110101001111011000001000011011011000110101000001110010010011001000010010110111000011011110011000; 
+    "ALLPOs" = LLLLHHHLLLLHLLHLHLHHLLLHLHLHHLLLHLLLHHLHHLHLHLLLLLLHHLHLLLHHHLLLHLHHLHLLLHHLLHLHHLHHLHLHLHHLLLLHHLLLL \r8 H LHHLLLLHHHHLLLLLLHLLHLLHHLHHLLLLLLHLHLLHLHHHHLLHHLLHLLHHHL \r11 H LLLLLLHLLHHLHLHHLHLHHLLHLHHLHLHHHLLLHLHLLLHLLHLHLLHHLHHHHHLHHLHLHLLHLLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............128      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.2.2.1:  Measure_PO: 
+  "1.1.1.10.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0000111011100000100100110111011001001111000110101100111110100010011000110011010100000110011110000110011011101000010111011000010100110000001110010001101101111010101110110101001100011110111101001000110010010011001111001111111011001110111101111110011; 
+    "ALLPOs" = LLHLHHHLLLLLHLHLLHLHLHLHLLHLHLHHLHHHHLLHLLLLLHLHHHLLLLH \r14 L HHHHH \r8 L HHHLLLLLLHLLLHHLLLLHHLHHHHHLLLLLHHHHHLLLLLLHLHLHHLHHHHLHHLHLLH \r9 L \r8 H LHHLHHHL \r9 H LLHHHHHLHHLHHHHHHHLHLH \r10 L HLLL \r11 H LLHLHLLHHHHHLHHHLLHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............129      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.3.2.1:  Measure_PO: 
+  "1.1.1.10.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 11000001001 \r3 1110 01111101010011110011001000111100110111100011 \r8 0 110001110110000100100010101000111001101101010110100100110101110010010000111001001010011110110100011001000001111110100100101110011010010000011100011100000001 \r8 0 11100000; 
+    "ALLPOs" = LHLHLLHLLHHHHHHLHHHLLLHHLHHHLLLLLHHLLHHLLHLHHH \r15 L HHLHHHHHLHHLLHHLHHHHHLLLLHHHLLLHLLHLLHHHLHLLHLLHHHLHHLLHHHHLH \r12 L HLH \r8 L HHHLHLHHHLLLLLHLLLHLLLL \r10 H \r7 L HLLHLLHLHLLH \r8 L HLHLLHLLLHLHHHHHHLLLHLLLHLHHHLLLHHHLLLLLHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............130      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.4.2.1:  Measure_PO: 
+  "1.1.1.10.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1011011000101011111110101011100101110101010001011100101010001011000111011100101110100011000110111110101111111011111001111100101100010111111000101 \r8 0 1100000101101001001100110110010011110100001111111011011101001011110111100101010000111011000111; 
+    "ALLPOs" = HHHLHHHLLHLHHLHLHHHHHLLHLHHHHHLLHLLHHHHLLLHHHLLLLHHLLHHHHHLLHHHHLLHHLHLLHHHHHLLHHLHLLLHHLHHHHLHHHHHHLHLLHLHHHHLHHHLLHLHHHHLHHLLHHHLLLHHHLHLHLLLHLHHHLHHHHHLHHLHHLLLHLL \r13 H LLLHLHLLLLHHLLHLHLHLLHHLLHHLLLLHHLHLLLHHLLLHLLHHLHLLHLLHHHLHHLLLLHLLHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............131      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.5.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.5.2.1:  Measure_PO: 
+  "1.1.1.10.5.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1001110110111011111110001010110110100000111101110111101110010110 \r9 1 0110111100011101110110111111000111001010111101011101010111101010000111010001010100000100001101111010000110001111101010101110011011100010001100 \r8 1 \r9 0 100111100101000; 
+    "ALLPOs" = LLHLLHLLLHHHLLHHHHHLHLLHHHHHLHLLHHLHLHHHHHHLH \r9 L HHL \r3 LHHH HHLHLHHHHLHHHHHLLLHHLHLHLHHHLHLLHHHLHLLHHLHHHLLHHHHLH \r11 L HHHHHLHHLLLLHHLHLLHHHLHLH \r10 L \r10 H LLLLLLHLHLHLLLLLHLLLLHHLLLLLLHLHHLLLHL \r11 H LLHLHLHLLHLLHHLHLHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............132      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.6.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.6.2.1:  Measure_PO: 
+  "1.1.1.10.6.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000101011100111010 \r8 1 0101111100100001011110000000100100001101110101110100110111111100100100 \r8 1 0100011000010101000110100010011100111101101001101101010100100111110010110000100010110 \r3 1001 1011101001111110110010110101010110111010101000; 
+    "ALLPOs" = HLHHLHHHLLLHLLLLLLLHHHLLLLLLHHHLLHHLLLHHLLHLLHLLLLHLLLHLLLLLH \r8 L HHH \r10 L HHHLHLLHLHLHHHHLHHLLHLLLHHLLHHHLHLHHHHLLLLLHLLLLLLHLHHHHHLHLHHLHLLHHLLLHHLHHH \r8 L \r11 H LLLLLLHHHLHHLHLLLHHHHLHHHHLHLHLHHLLLHLHHHHHHHLLHHLHHLLLLHLLLHLLHLHHHHHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............133      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.7.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.7.2.1:  Measure_PO: 
+  "1.1.1.10.7.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0101111001111110011111011100110111100000 \r9 1 011000100110011110111111011000100110010011111010001010101000100100110000101011110001010110011000011110101010111011000011110110011001010010010100110001110110111010010011111101001111101101101010000000; 
+    "ALLPOs" = LLHHHHHHLLLLLHHHHHHHLLHHHHHHHLLHHLHLLLHHLLLH \r8 L HHHLLLLLLHLHLHHHHHLHLLLLHLHHHHHHLHHHLLHLLLLHHHLHHLLHHHLLLHHLHLLHHHHHLLLLLLH \r9 L H \r8 L HLLHLHLLHHLHHLLLHHLHLL \r11 H LLLLLLHHLHLHLHLLHLHHLLLLHH \r3 LLHL \r7 H LHHHLLHLLHHLHHHHLLHHHHHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............134      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.8.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.8.2.1:  Measure_PO: 
+  "1.1.1.10.8.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 110010011010100 \r9 1 011011011001111001100001100010 \r8 1 00 \r9 1 011000010010101101111111010010111101011010101100001101101010100101100100001010011011110111100011011011101010111110000010110111100110001000000101111111010110011111101000110000; 
+    "ALLPOs" = LLHLLHLLLLHHLHHHHHHLLHHHHHHHLLHLHHHHHHLHLHHHHHLLLLHHLHHLLHLLHHHLHHHHLLHHHHHHLHHHHLLH \r11 L HLLLLLHLLHLHLLLHHHLLLHHHHLLH \r9 L HHLHLLLLLLHHLHHL \r6 LH HHLLLHL \r11 H LLLLLLHHLLHHLHHHHHHLHLLLLLHHHHHLHLHLLHHHHHHHLLHHHLLHLHHLLLHHHHLHHHHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............135      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.9.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.9.2.1:  Measure_PO: 
+  "1.1.1.10.9.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 010100100101001101010111110011111101 \r9 0 101001101001010 \r8 1 01011111001010010100110111011110000011100010010100100011010010011100011001101011101011101110010100111101101001110000100111001000110111010100001000010000110011111010000110100011100; 
+    "ALLPOs" = LLLHLLLLHLLHLLLLLLHHHHLLLLLHHHHHHHLHLLHHHLHLHLLLLLLHHHHLLHHHHLLLLHHHHHHLHLLLLLHHHHHHLLHHLHHHLLLHLHLLHHLHLLLLLLHLLLHHHLHLLLLLHLLHHLHHHHHHLLHLLLLHLHHLLHLHLHLHHLLLLHLHLLLL \r10 H LHHHLHLLHLHHHLHLHHHHLLHLHLHHHLHHLLHHLLHHHHHHLHLLHHHLLHHHHLHHLHLHLLHHHLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............136      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.10.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.10.2.1:  Measure_PO: 
+  "1.1.1.10.10.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 11010011100101000111101011111101100000110110101100100101111011010000001101100100111010011001001101001001101111011110111100001011001010001 \r8 0 101111011100101011110011010101001110010000001010011100010011110001101011010000100101011011111011100000; 
+    "ALLPOs" = HLLHHHHLLHLHHLHHLLLHLHLHHLLLHLHLHLLHHHLLLLLHHLLLLLHHLHHHHLLLLHHLLHHHHLLLHHHHLLHHHHLLLLHLHLHLLLLHLLLLHLHLHHHHLLLHHLHLHHHHLLHH \r8 L HLHLLHLLHHLHLLHHHLHHHHHLLHLHHHLLHLL \r11 H \r7 L HHLHHHLLLLLHLHHLLLHHLLHLLLLHHLLHLHLHHLLLHHHHLLHHHHHLHHHHHHLLHHLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............137      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.11.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.11.2.1:  Measure_PO: 
+  "1.1.1.10.11.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1000010110011000001100100110111110011110101001110101100101111110011 \r10 0 11111 \r12 0 1110110000111100010001111011100000011110100011 \r5 10 01111100111011011000000010011000000101110110111110111101010011111 \r11 0 110100001011111101000; 
+    "ALLPOs" = LLHHLHHHLHHLHLLHHHLHHHLLHHHLHHHLHLLHLHHHHHLLHH \r8 L HLHLHHLLHLLLLHLHLLHLHHLLLLHLHHLLLHHLLHHLHHLLLHHHHLLHHLHHLLLHHLHHHHLLHHHLLLLLLLHHLHHLHHHHLHLHHHLLLLLHLLLHH \r9 L \r10 H LLLLLLHLLHHHHHLHHHLLHHHLHHLHHHLHLLHHLL \r8 H LLHLLLLLLHHLLLHHLHLHHHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............138      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.12.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.12.2.1:  Measure_PO: 
+  "1.1.1.10.12.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 100111010001011100101100111111101001111001100001101001010010001101011110111100100101100001111101111111000000111101111000100000100101001000110111001010010000001000110000001111100111011111001111101100101011001011000 \r10 1 011010011000101101011000; 
+    "ALLPOs" = LHLLHHLHLL \r8 H LHLHHHHH \r5 HL HHLHLHLLLHLLLLLLHH \r8 L HLHLLHHHLHLHHHLHLL \r8 H \r7 L HLLLHLHLLLHLLHLLLHLLLHHHHLHLHLHHLLLLLHHHHHHLLHHLHLLLLHHLHHHLLLLLHHLLHHLLL \r10 H LLLLLLHLLHLLLLLLHHLLL \r5 LH HHLLLHLHHH \r3 HHHL HLHLHHLHHLLHLHHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............139      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.13.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.13.2.1:  Measure_PO: 
+  "1.1.1.10.13.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1000101111101110010001010000111000100100 \r12 1 0001001100010010011111100001010100101100100110110111101111000010001100001011010 \r11 1 00001100000010111000100111001010110110110001010 \r3 0111 1111000100011110110111001110110100100001111000; 
+    "ALLPOs" = HHLLLLLHLLHLHLLHHHHHHHLLHHHHHHHLHLHHHLHLLHHHHHLLLLLHHLHLHLLLHHHHLLHHHLLHHHLHHLLHHHLLLLHHHLLLHHLHHHHHHHLLHLLHLLLHHHLL \r8 H \r9 L HLHHLHHLHLLLLHHHLLLHHLHLHHHLLHHLLL \r11 H LLLLLLHLLLLLHLHLHHHLLLLHHLLLHHHHHL \r11 H \r3 LHLL HHLHLLLHLHHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............140      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.14.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.14.2.1:  Measure_PO: 
+  "1.1.1.10.14.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001110001110001110000101110000001000000111000111001001000011111010010000010110100001110001001101001110011000110110110001101011010110110100100001011010111110001111000111000010010010101100010001010111001100111100000001001111111010001110111010011001; 
+    "ALLPOs" = LHHHHHHHLLHHLHLHHLLLHLHLHHLLLHLHHHHHLLLHLLHHLHLLHHLLLLHLLHLLHHLLHLHLLHHHHLLLLHLHLLHHLLLLLLLHLHLLHLLHLHHHLHLLHHHLHLLHLLHHLLLLHLLHHHLLHHHHLHH \r15 L HLLHLLLHLL \r14 H LLLHLLHHLHHHHHLHLLLHLH \r11 L HLLL \r8 H LHLLLLHLLHHHHHHHLLLHLHHHHHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............141      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.15.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.15.2.1:  Measure_PO: 
+  "1.1.1.10.15.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 110101011100010001 \r3 0110 0011111110011011111101101110101011111000 \r3 0001 1100010000010111000111110110101011 \r5 10 00010011101101 \r8 0 1110110001101111000001110000100010100111111101110011011100100101111 \r9 0 11100011110101111001000; 
+    "ALLPOs" = LLLLHHHLLLHHHLHHHHHLHLLHHHHHLHLLHLHHHL \r8 H LLLLHLLLHHLLHHHHHHLHHHLHLHHHLHHLHHHLHHLHLHHLLLHLLHLHLHHLLLLHLLHLLHLHLLHHHHLHLLLLHLLLLLHHHLLLLHHLLLLHLHLHHLHHLHLHLLLLLHHHL \r11 H LLLLLLHHHLHHLLLHHLHHLHLHLLLLLLLHHLLLHLHHHHHHLHLHLLHLLLHHLHLHHHLHHLHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............142      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.10.16.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.10.16.2.1:  Measure_PO: 
+  "1.1.1.10.16.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1101100001010111101100001111110011010010011010110100101110001101011001000001110011100111000101110100010101001111010010110101001010101101001101010100110111100001011011100001101010101110110011011111001101011110111011001101000001010000111001111100100; 
+    "ALLPOs" = HHLHHHHLHHHHHLHHHHHLHHLHHHHHLHHLHHHLHHLLLLHLHHLLLLHLLHHHLLLLHLHLLHLHLLHHLHHHLLHLHLLLHHHHHHLLHLLHHLHLHLHHLHLHLHHLHHLLHHHHLHLLHHHLHHHHLLHLLLLHLHLHLHLLHHLHLHLLLHHLHLLLLHLHLHLLLLHHLLHLLHHLLHLHHHHLLLLHLHLHLLLHLLHHLLHLLLHLHHHHHHLHHLLLLLLHLHHLLHHLHLHHLHHHHL; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............11       TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................143:146     //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............9        PERCENT STATIC FAULTS.....93.947800   //
+//  TEST SEQUENCE.............143      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.11.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.11.1.2.1:  Measure_PO: 
+  "1.1.1.11.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 1100111100100001111110000000101011011110011000010101100110111110011010101111100011100100010010111000001011101011101110001100100110000110001000110011000100110100001111011010100111100011111101111100111101111110100111011000011101010111000101011011000; 
+    "ALLPOs" = HHLHHHHLLHHLHLHLHHHLHLLHLHHHLHLLHHLHHHLHLLH \r9 L HLHLLLLLHLHLHHHHLHHLHHHHLHHHHLHHHLHLLLH \r3 HLLL HHHLLHHLHLLHLHHHHHLHLLHLLLLLLHHLLLLHLHLHHLHHLLHHLHHLHLLLLLLHHHLLLL \r9 H \r9 L HLLHHLLLHHHLLLHHLLHHLHHHHHHLLHHHHHHLLHH \r3 LLHL HHHHHLHHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............144      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.11.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.11.2.2.1:  Measure_PO: 
+  "1.1.1.11.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 100110001110011101100001100010001010111111000000011011101010000 \r9 1 010101100101000010000001100011000000110011110110011100100000101011000100101101000110111010011011001110101110001011011111101000 \r6 01 1111101010110110111010000111010011000; 
+    "ALLPOs" = LLHHLHHLLLLHLLHHLHHLHHLHHLHHLHHLLLHLHLLHHLLHHLLLLLLHLLHLLLHHLHHHLLHHHLLHLHLHHLLHHHLHLHHHLLHLLLLHLHLHHLLLLLHLLHHLHLLLHHHHLLLLLLHLLLLLHHLLLHLLHLLHLLLLHLHHHHHLHLLHLLLHLLLLLLHHLLLH \r8 L HHLLLHHLHHHLHLLHHLHLLLHLHHHLLLHLHLHLLLLLHLLHHLLLHLHHLLLHHLHLHLHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............145      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.11.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.11.3.2.1:  Measure_PO: 
+  "1.1.1.11.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0110110101110111100000010000 \r8 1 001001000000010010 \r8 1 0110000101001001000110001011001110011111100100100101111010100101001111110101010 \r10 1 001110101001010111100100101110010100000001111110011010110000001011111100100111111010001111100111; 
+    "ALLPOs" = LLLHHHHLLLLLHLHHLLLHHLLHHLLLHHLHLLHLHHLHLHHLHHHLHHLHHLHHLHLLHLLHLHLHLLLHLHHLHLHLHLLHHLHLHHLLLLHLHHHLHHHHLHLLHLHLLLLHHHHHLLLHLHLLLLHHHHLHHHHHLLHHLHLLLLLHHLLLLHHLHLLLHLHL \r10 H LLHLLHHHHLLHHHLLLLHHHHLHHHHHHHLLHLHHLLHHHLHHLHHLHLLLLLHHHHHLHLHHLLLLLLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............146      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.11.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.11.4.2.1:  Measure_PO: 
+  "1.1.1.11.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = \r3 0011 0100010000000111110100110001100010111110001100100001101100001111001000000011001001000110100100100111011000100011110011111001101010100100010000011000110101101111111001111010010010110001110101011011010001011111100010000100100101010110101; 
+    "ALLPOs" = HLHLHHHHLLHLLHHLLHHLHHHHLLHHLHHHHLLLLHLLHHLHHLHLLHLLLLLLHLHHLHLHLLHHHLLLLLHLHLLHHHLLLHHLHLHHLLHHHLHLHHHHLLLLLLHHLHLHLLLLHHHLLLHLLHHLHHH \r5 HL \r10 L HLHHLLLHLLLL \r11 H LLLHHLHHLLLLLHHHLHLLLLH \r11 L HHHLLHLHLLLLLLHLHHLLLLHHHHLHLLHLHLHLHL; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............12       TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................147:165     //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............38       PERCENT STATIC FAULTS.....94.176865   //
+//  TEST SEQUENCE.............147      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.1.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.1.2.1:  Measure_PO: 
+  "1.1.1.12.1.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 001100001111000110110100101110101111100001011100011010100100100 \r3 0001 1110100110111111010110000100110110100001110100010101010011110101001100010111110111110001111010110000001011011100011010000101001010010010111100111001000110011000001000110110; 
+    "ALLPOs" = LLLLHHLHLLHHLLHLHLLLHLLHLHLLLHLLLHLHLLHHHLHHHLLHHHHHHLHLLHHHHHLHHLLHHLHLHLLLHHLLHHLHLHLLLHHHLHLLHLLHHHLHLHLLLLLHHLHLLLHHLLHLLLHLHHLHLLLLLHLLHLLLLLHHHLLLHHLLHLLHLLLHLLL \r13 H LLHHHHHHHLHHHLHHHHHHLLHLHLHHHLLLHLHLHHHHHHHLLLLLLHLHLHHHHLHHHHLLHHHLHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............148      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.2.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.2.2.1:  Measure_PO: 
+  "1.1.1.12.2.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00011011011101100010001111011001110001101110100001011101100101100 \r8 1 00000 \r10 1 000 \r9 1 00010110001000111010101000111010110000111010100111010100010010100000101101011000 \r5 01 11010011110011100001001001111110000010 \r9 1 0011111000; 
+    "ALLPOs" = HLLLLLHLLLLLHHLLHHHLLLHLLHHHLLLLLHLLLLLHHLHLHHLLLLHLLHHLHLHHHLLLHLLHLHHLLLLLLHLLHLHHLHLHLLLLLLLHHLLLHLHHHHLLHLLLHLHLHHHHHLHLLLHLLLLLLHHHHLLLLLHHLHHLLHLLHHHLHHLHHHHHHHL \r11 H LLLLLLHHLHLHLLLHLHHHLLHLLLLHLHHHHHLLL \r8 H LHLHHLLLHHHLHHLHLLHHHHHHHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............149      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.3.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.3.2.1:  Measure_PO: 
+  "1.1.1.12.3.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0100000010101011011010011011000111000011010000010011111110110110000110011110101111101000001111100110111000100111000001101110110101100000110001110001101101000111101110011111000010110110010010110000111000010100011110001111101111111000110011111011111; 
+    "ALLPOs" = LLLHLHHLHHLHHLHLHHLLLLLHLHHLLLLHHLHLLHLLHHLHHLLHLHLLLHHLHLHHLHLLLHHLHHLHLLHLLLHHLHHLHHLLLLHHLLLLLHLLLLHLHLHLHHLHLLLHLHHLHLHLHHHLHHLHLLHHLHLLHLLHLLHLHHLLLLHHHHLLHLLLLHLL \r11 H \r4 LH HLHLLLHHLHHLLHHLHHHHLHHLHLHL \r9 H LHHHHHLLHHHHHLHHHLLLLHHHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............150      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.4.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.4.2.1:  Measure_PO: 
+  "1.1.1.12.4.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 11110011011000101100101101010000100110011100010101101001110001101000000010100111011110010110001011011000000110101111101001111110011011100110001111101100011010001000110001001 \r8 0 101100 \r9 1 0111010111111010010100011010010 \r5 01 1111011101; 
+    "ALLPOs" = \r7 H LLLLHHLLHHLHLHLLLHHLHLHLHHLLLHLHHHHHLHLHLHHHLHLHLLLHHHLHLHHHLHHLLLHLHLHHHLHHHHLHHHHHLHLHHLHLHHLHLLHLLLHHHHLLHHLLHLHLLHHLHLLLHLHHLHHLHLLLHLLLHLHHHHLHHLHLHLLLLHLLL \r10 H LLHHHLHHLLLHHLHHLHLLHHHLHLLHLLHHHLLLHL \r8 H LHLLLHLHLHHHLLLLHHLLLHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............151      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.5.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.5.2.1:  Measure_PO: 
+  "1.1.1.12.5.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 01111001 \r8 0 11111010110100 \r9 1 0000011111110111110100001001010011011 \r8 0 11110010010000001010111000110000011100110011011100011100010001101 \r8 0 100101101101110110110001000110011110011110100011000010111001111011110001111101011010101001; 
+    "ALLPOs" = HLLLLHHLLLLLLHLHLHHLLLHLHLHHLLLLHHLHLHHLHHLHHLH \r8 L HLHHHLHLHLH \r6 HL HHLHLLLHHLHLHHLLLLHHHLLHHLHLHHLLHLHHHLLLLHHHHLHLHHHLLHHHHHLHLLH \r12 L HLHHHLLLHHHHLL \r12 H LLHHHH \r8 L HLLHH \r12 L HHLLHLHHHHHHLLHHHHLHLLLHHHHLHHLHLHLHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............152      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.6.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.6.2.1:  Measure_PO: 
+  "1.1.1.12.6.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 11110001001011111001001011101001100001010000100110 \r3 0111 10110100011110101011011011101010010100000101110100101010100011110101000010111010100110010010000111011110111011001100111000100000010011101001011101111001110110001111111010010101010000111; 
+    "ALLPOs" = HHHHLHHLLLLHLLLHHLLLHHLLHHLLLHHHHLLLLLLLHHLHHLHLLHHHLLHLLHHHLHHLLHLHLHLLLLLHLLHLHLHLLHL \r5 LH HLHLLLLHHLLLLHHLLLHHHHHLLHLHLHHHHLHLLHLLLLHLHLHLHHHHLHLHHHLHLLHLHHHHHL \r11 H LLLHLLHHLLHLLLLLHHHLHLHLHHHLHLLLHLLHHLHLHLHLLLLLHHHHLHLLHHHHHHHLHLLLHLLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............153      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.7.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.7.2.1:  Measure_PO: 
+  "1.1.1.12.7.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00010011000010100001111110010010000000101110101001011111010001110000100111010010000000111100000111110110110 \r9 1 0000100100010011100111000101011101000111011011000001101110111110110000110010000100100001101110100 \r9 1 0001110001101 \r6 10 ; 
+    "ALLPOs" = HHHLHHHHLLHHLLLLHLLLLHLLLHLLLLHLLLHHHHLHLLLHLLHLLLLLLLHLLLLLLHLLLLLLLHLHHHHLLLLLLLHHHLHHLLHLHLHHHHHLHHHLHLLLHLHLLLLLH \r8 L HLHHLLLHHHHLHLLLHLH \r9 L HLHHHLLHLLLHLL \r11 H LHHLHHLHLLLHHHLHHLHLHLH \r9 L HLLLHLHHHHHHLLLHLHHLLLHHHHHHLLLHHLLHHHLH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............154      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.8.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.8.2.1:  Measure_PO: 
+  "1.1.1.12.8.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 000011000011101010011010101011100011111001101100011101011110011011100000010001010111001011011011110011101001111010101110101 \r8 0 1011010110001110100111011111010100110010001 \r8 0 100110110011011110111110010000111 \r10 0 1100111101011111010000; 
+    "ALLPOs" = HLHLLHHLLLHLHHHLHHLHHLHHLHHLHHLLLLHHHLHLHLHHHHLLLLLHHHLLHHHHHHLHLLLHHHLHHHLLHLLLHHHLHLLLHLLHHLHHHLLHLHLLLHHLHLLLLHHLHHHHLLLHHHLLLLLLLHHLLHHHLLHLLLLHHHHLHHLHLLHHHLHLHHLL \r10 H \r8 L HHHLHHHHHHHLHHLHLLLHLLHLLLLLLL \r10 H \r3 LHHL HLLHLLHHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............155      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.9.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.9.2.1:  Measure_PO: 
+  "1.1.1.12.9.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 00011001011011010111110110101110001010001001101010100001001010101001101100010111000001010101000101110100110010000011110000110010111101011101000101111000111011110110001110110011010100001010000001000101101 \r18 0 10110101101011010111100000; 
+    "ALLPOs" = LLLLLLHHLLLLHLLLLLHHLHLLLLLHHLHLLHHHHLLHHHHHLH \r8 L HLLLHHHHLHLL \r8 H LLHLLHHHHHHLLHLLLLLHLHHHHLLHHHLHHLLLHLHLLLHHHHLLLLLHLLLLLLHHHHLHLLLLLH \r9 L HHLHLHLHHHLHHL \r11 H LLLLLLHLLLHHHLHLHLHLLHH \r9 L HLLLHL \r10 H LLLLL \r8 H LLHLHLHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............156      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.10.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.10.2.1:  Measure_PO: 
+  "1.1.1.12.10.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 110000101010010110001010001110111110100111001111100110011110100010000001101000010110010101001111000011100111100001000110010100011011 \r15 0 1001110101000101001111110101110111101010001100011111011011110010011001001110110101000010011111001000; 
+    "ALLPOs" = HLLHHHHLLLLHHLLHHHLHHHL \r3 LHHH LHLHLLLLLHLLLLLHLHLHLHLLLLLHHHHLHLLHHLHLHHHHLHLLLLHHLHLHLHLLHLLLLLHHHHLHLLHHLLHHLHHHHHLLHLLHLLLLLHLLLLHLHLHLLLHHHLLLHLHHHLHHLLHLLHLLL \r10 H \r8 L HHHLHLHHLLLHHLLHLLHHLLLHHHLHHHHLLLHLHHLHHLLLLHHLHHHLHLLLHLLLLLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............157      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.11.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.11.2.1:  Measure_PO: 
+  "1.1.1.12.11.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 101100000101000001110000100001101110011000011100000101001111110111100100010110011 \r8 0 1110111110100110000111100001 \r3 1110 11010110110001010011010001100010111110101001011011101000111101001101001000001001000111000100110101111010 \r9 1 00000; 
+    "ALLPOs" = LHLHLHHLLHLLHLLHLHHLLHLLHLHHLLHHLLLLHHHLHHLLHLLLHLLLLLHLHHHHLLHHLLHLLLLLLHHHHLLHLLLLLLHHLLHHLLLLHHHHHLHLHHHHLHHLHLLHLLLLHLLLLLLLHLHHHHHLHLLLLLHLLLLLHHLLLHLHLHLLLHLLHLL \r12 H LLLLHHLHLLLHHLLLHLHHLLHLHHLHHLLHLHHLHHHLLLLHHLLLHHHLLHHHHLHHHHHLHLLLHHL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............158      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.12.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.12.2.1:  Measure_PO: 
+  "1.1.1.12.12.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0111101111101011100011100111101111001011101110001111110011010100100110000111111011100111110011000000011111110011101000101111010011100111001111001010101111010101100001000011001010001110111101110001111001010110100101001010110001110100010001011100100; 
+    "ALLPOs" = LHLHHHHLLHHLHLHLHHLLHHLHLHHLLHHHLHHHLHLLHHHL \r9 H LHHLLHHHLLLLHLHHLHHHLHLLLHLHHLLLLLLLHLHHLHHHLHHLLHHLLLLHHHLLHHHHLHHHLHLHLLHLHLHHHHHLHLHHHLLLHHHLHHLHLHHHLHLHHHLHHL \r11 H LHLHHHLLHHHHLHLHLHHHHHHLHHLHHHLLLHLLHHLHLLHLLLHHHHHLLLLHHHLLLLLLHLLLLHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............159      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.13.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.13.2.1:  Measure_PO: 
+  "1.1.1.12.13.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 110011101011010011011101010100101 \r8 0 111001000001011011100010101001100010000100100110011101101100111110111011001111000011000001011 \r10 0 1011111001000010010001100101111110000001111001000001000111111100011111010110010101011100100010000101000; 
+    "ALLPOs" = HLLHLLLHLLLLLHLLLHHHHHHLLLHHHHHLLLHHHHLHLLHLHLLLLLHLLHLHLLLLHLHLHHHLLLLHHHHHLHHHLLLHLHHHLLHLLHLHHLLLHLHLLHHLLLHHLHLLHHHHLHLHHLHLLLLLLLHHLLLHHHLHLHLHHLHLLHHHLHHLLLLHLLLHLLLLLHLHH \r8 L HHLLHLLLLHLLLHLLHHLLLHHLHHLLLHLHHHHHHLLHHLLLHLLHHLHHHLLLLLLLHHLLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............160      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.14.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.14.2.1:  Measure_PO: 
+  "1.1.1.12.14.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 10001100010001101010110110000111 \r8 0 101101010111001110010000 \r9 1 0110011111110001101010001110000111001111110011101101110111100101001111011001101011011100010010011010010000100111101011100011110001110000111100 \r8 1 010 \r5 01 11111001000; 
+    "ALLPOs" = HLLLLHHLLLHLHLHLHHLLLHLHLHHLLLHHHLLHLHHLHHLHHHLLLLLHHHHHLHHHLHHLHLLLHLLLHLHHLHLLLHLLLHLHLLLLHLHHLLLHLHHHLLHHLHL \r10 H LHLLLHLLLLLLLHHHLLLHHLHLHHLHHHHHHLLLLHLHHHLHHLL \r10 H LLLLLLHHLHLHHLHLHLHLLLHLLLHHHLLHLLLLLL \r11 H LLLLLLHHLLLHLLLHLHHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............161      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.15.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.15.2.1:  Measure_PO: 
+  "1.1.1.12.15.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 0001101100010100101101111000011111001100100100011101101100010101111101001111000001010111010111000111101101100101111100010101101001111001001010100010000010011000101010000000101100100101111110011100000110101010111010011100000110101110001110100111000; 
+    "ALLPOs" = HHLLHLLH \r9 L HHHLHLLLLHHHLHLHHLLLHLHLH \r8 L HLHHH \r9 L HLLLLLHLLLHLLHLLLLLHLHHHLLHLLLHHHLHLHHHLLLLHLHHHHLLLHHHHLLLLHLHLLLLLHHLHHHLLHLLHLHHLHLHHHHHLHLHHLHHHLLL \r11 H LLLLLLHLLLHLLHHHLHLHLLLHHLLLLHHHHLLLHLHHHHHHLHHLHLHLLHLLHLHLHLHLLHHHHLHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............162      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.16.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.16.2.1:  Measure_PO: 
+  "1.1.1.12.16.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 011100101001101011 \r5 10 01011111100110100110111110100001000111100101000011 \r8 0 110000100010100011010110011111011111001001001110010011 \r8 0 101010011100001110100111111011011100111010011101011001011110001001111011100011011110000101110011011; 
+    "ALLPOs" = HLLHHHHHLLLLLHLLHHLLH \r3 HHLL LLLHHHHLLLLHHLHLLLLLLLHLLLLLLLHLHHLHLLLLHHLHLHHLHLHLLHHLLLLHLLHHLHLHHHLHLHHHHLHLHLLHLLHLLLLHLL \r9 H \r4 LH \r11 L HHLLHLHHHLLL \r12 H \r7 L HLHLLHHLLHHHLH \r10 L HLLLHLHHHHHHLHLHHLLLLLLHHLHLHHHLHLHHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............163      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.17.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.17.2.1:  Measure_PO: 
+  "1.1.1.12.17.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 010001010110000111111000100001101101100000011010010010011001011011100111111 \r9 0 101100000011100 \r8 1 01000101101111111000000100010110101001100011111 \r6 10 000111100100001001011011111110111000111011101011110011011100100111101010000010000; 
+    "ALLPOs" = HHHLHLLLLLHLLLLHHHLLLLLLHHHLLLLLLLHHHLLHHLLHHH \r8 L HLHHHHLHLLHHHLLHLHHHLLLHHHLLHHLLHLLLLHLLHHHHLHLLHLLLHHHHHLLLHLHHHHHLH \r9 L HHHHLHHLLLHH \r9 L HLHLHLLLHHHHLLHLHLHLLLLHLLLLLLLHHHHHHHLHHHLLH \r12 L HLLLHLHHHHHHLLLHLLHLLHLLHLHLHLHHLHLHHHLL; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............164      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.18.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.18.2.1:  Measure_PO: 
+  "1.1.1.12.18.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 110000010010111110000010101000000111110100001 \r3 0111 1010110011010 \r8 1 0000011110001101101110000000101010110001100101010001100001111101010110000111011001010101110111000011110110010111001101011000010000010111101000100100101001111111011010000; 
+    "ALLPOs" = LLLLLHHLLLLHHLHLHHLLLLLHLHHLLLLHHHLLHLLLLHLHHHLLLLLLLHHHLLLLLHHHLHLLHHHLLHLHHLHLLHHLHHLHLLLLHLHHHHHLLLHLLLHLLHHLLHLHHHHHLLLLHHHLLLLLHLHHLLLLHLLLLLHLLHHHLHLHHLLLHLHLHLLLLHLHLH \r10 L HLLHHHLHHLLHLHHHLLHHHHLLHLHLLLHLHLLHHHLLLLLLHHLHLLHLLHLHLLLHHHHHHH; } 
+
+//***************************************************************************//
+//  TEST SEQUENCE.............165      TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.12.19.1.1:  Stim_PI: 
+//  Processing the Static: EVENT 1.1.1.12.19.2.1:  Measure_PO: 
+  "1.1.1.12.19.2": 
+  Macro "TEST" { 
+    "ALLPIs" = 11011010101000101111001110111001010010001101000101101110001 \r3 0010 00001001001010000111010011110110010111100001010100110100010110110101110101100011100001010010011111000010110100101100110011110011010010111001011101111110110110000011111010111000; 
+    "ALLPOs" = LLHHHHHHLLHHLHLHHLLHLLHLHHLLHLLLHLHHHLLLHLHHHHLLLLLHHLHLLLHHHHHLHHHHHLLHHHLHLHHHHHLLLLLHLHLLLHHHLLLHLHHHLHLLLHLHLLLLHHHH \r12 L HHHHLHLLLLLHLLHHHLLLHHHLLLHLLHLLLHLLLHHLLHLHLHLLLLLLHHHHLLLLHLHHLHLLHLLLLHHHHHHLLLHLLLLLHLLLHLHHLHLHLLHHHHLLHHLHHHHLHH; } 
+// Inserted final non-scan Pattern
+  Macro "TEST" { 
+    "ALLPIs" = 11011010101000101111001110111001010010001101000101101110001 \r3 0010 00001001001010000111010011110110010111100001010100110100010110110101110101100011100001010010011111000010110100101100110011110011010010111001011101111110110110000011111010111000; 
+    "ALLPOs" = \r250 X ; } 
+  } 

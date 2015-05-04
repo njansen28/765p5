@@ -1,0 +1,1359 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model stepid=pd__build_model_043015184707-070098000 workdir=/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work designsource=/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Thursday Apr 30 18:47:07 2015  EDT
+            Host machine is ece001.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 21016.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work
+
+            logfile=/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/testresults/logs/log_build_model_043015184707-070098000
+            stepid=pd__build_model
+            DESIGNSOURCE=/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v
+[end TDA_009]
+
+Build Model Controller starting:
+
+
+Search Order  1:  "/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v"
+
+
+
+Reading Verilog data from /afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v
+
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|10): input/output/inout 'g678' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|16): input/output/inout 'g332' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|22): input/output/inout 'g123' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|28): input/output/inout 'g207' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|34): input/output/inout 'g695' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|40): input/output/inout 'g461' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|45): input/output/inout 'g18' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|51): input/output/inout 'g292' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|57): input/output/inout 'g331' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|63): input/output/inout 'g689' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|68): input/output/inout 'g24' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                                                                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|74): input/output/inout 'g465' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                                                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|79): input/output/inout 'g84' not declared in port list [12.3.2(IEEE)].
+  g23, g678, g332, g123, g207, g695, g461, g18, g292, g331, g689, g24, g465, g84, g291,
+                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,18|85): input/output/inout 'g291' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|5): input/output/inout 'g676' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|11): input/output/inout 'g622' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|17): input/output/inout 'g117' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|23): input/output/inout 'g278' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|29): input/output/inout 'g128' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|35): input/output/inout 'g598' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|41): input/output/inout 'g554' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|47): input/output/inout 'g496' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|53): input/output/inout 'g179' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|58): input/output/inout 'g48' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|64): input/output/inout 'g590' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|70): input/output/inout 'g551' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|76): input/output/inout 'g682' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|81): input/output/inout 'g11' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|87): input/output/inout 'g606' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|93): input/output/inout 'g188' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                                                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|99): input/output/inout 'g646' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|105): input/output/inout 'g327' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                                                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|111): input/output/inout 'g361' not declared in port list [12.3.2(IEEE)].
+  g676, g622, g117, g278, g128, g598, g554, g496, g179, g48, g590, g551, g682, g11, g606, g188, g646, g327, g361, g289,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,19|117): input/output/inout 'g289' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|5): input/output/inout 'g398' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|11): input/output/inout 'g684' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|17): input/output/inout 'g619' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|23): input/output/inout 'g208' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|29): input/output/inout 'g248' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|35): input/output/inout 'g390' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|41): input/output/inout 'g625' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|47): input/output/inout 'g681' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|53): input/output/inout 'g437' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|59): input/output/inout 'g276' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|63): input/output/inout 'g3' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|69): input/output/inout 'g323' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|75): input/output/inout 'g224' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|81): input/output/inout 'g685' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|86): input/output/inout 'g43' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|92): input/output/inout 'g157' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|98): input/output/inout 'g282' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|104): input/output/inout 'g697' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|110): input/output/inout 'g206' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|116): input/output/inout 'g449' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                                                                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|122): input/output/inout 'g118' not declared in port list [12.3.2(IEEE)].
+  g398, g684, g619, g208, g248, g390, g625, g681, g437, g276, g3, g323, g224, g685, g43, g157, g282, g697, g206, g449, g118, g528,
+                                                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,20|128): input/output/inout 'g528' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|5): input/output/inout 'g284' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|11): input/output/inout 'g426' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|17): input/output/inout 'g634' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|23): input/output/inout 'g669' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|29): input/output/inout 'g520' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|35): input/output/inout 'g281' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|41): input/output/inout 'g175' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|46): input/output/inout 'g15' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|52): input/output/inout 'g631' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|57): input/output/inout 'g69' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|63): input/output/inout 'g693' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|69): input/output/inout 'g337' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|75): input/output/inout 'g457' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                                                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|81): input/output/inout 'g486' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|87): input/output/inout 'g471' not declared in port list [12.3.2(IEEE)].
+  g284, g426, g634, g669, g520, g281, g175, g15, g631, g69, g693, g337, g457, g486, g471, g328,
+                                                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,21|93): input/output/inout 'g328' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|5): input/output/inout 'g285' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|11): input/output/inout 'g418' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|17): input/output/inout 'g402' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|23): input/output/inout 'g297' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|29): input/output/inout 'g212' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|35): input/output/inout 'g410' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|41): input/output/inout 'g430' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|46): input/output/inout 'g33' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|52): input/output/inout 'g662' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|57): input/output/inout 'g453' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|63): input/output/inout 'g269' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|69): input/output/inout 'g574' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|75): input/output/inout 'g441' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|81): input/output/inout 'g664' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|87): input/output/inout 'g349' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|93): input/output/inout 'g211' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                                                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|99): input/output/inout 'g586' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|105): input/output/inout 'g571' not declared in port list [12.3.2(IEEE)].
+  g285, g418, g402, g297, g212, g410, g430, g33, g662,g453, g269, g574, g441, g664, g349, g211, g586, g571, g29,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,22|110): input/output/inout 'g29' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|5): input/output/inout 'g326' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|11): input/output/inout 'g698' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|17): input/output/inout 'g654' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|23): input/output/inout 'g293' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|29): input/output/inout 'g690' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|35): input/output/inout 'g445' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|41): input/output/inout 'g374' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|45): input/output/inout 'g6' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|51): input/output/inout 'g687' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|57): input/output/inout 'g357' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|63): input/output/inout 'g386' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|69): input/output/inout 'g504' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|75): input/output/inout 'g665' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|81): input/output/inout 'g166' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|87): input/output/inout 'g541' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|92): input/output/inout 'g74' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|98): input/output/inout 'g338' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                                                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|104): input/output/inout 'g696' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|110): input/output/inout 'g516' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|116): input/output/inout 'g536' not declared in port list [12.3.2(IEEE)].
+  g326, g698, g654, g293, g690, g445, g374, g6, g687, g357, g386, g504, g665, g166, g541, g74, g338, g696, g516, g536, g683,
+                                                                                                                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,23|122): input/output/inout 'g683' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|5): input/output/inout 'g353' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|11): input/output/inout 'g545' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|17): input/output/inout 'g254' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|23): input/output/inout 'g341' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|29): input/output/inout 'g290' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|33): input/output/inout 'g2' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|39): input/output/inout 'g287' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|45): input/output/inout 'g336' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|51): input/output/inout 'g345' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|57): input/output/inout 'g628' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|63): input/output/inout 'g679' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|68): input/output/inout 'g28' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|74): input/output/inout 'g688' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|80): input/output/inout 'g283' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|86): input/output/inout 'g613' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|91): input/output/inout 'g10' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|96): input/output/inout 'g14' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|102): input/output/inout 'g680' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|108): input/output/inout 'g143' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|114): input/output/inout 'g672' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                                                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|120): input/output/inout 'g667' not declared in port list [12.3.2(IEEE)].
+  g353, g545, g254, g341, g290, g2, g287, g336, g345, g628, g679, g28, g688, g283, g613, g10, g14, g680, g143, g672, g667, g366,
+                                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,24|126): input/output/inout 'g366' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|5): input/output/inout 'g279' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|11): input/output/inout 'g492' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|17): input/output/inout 'g170' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|23): input/output/inout 'g686' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|29): input/output/inout 'g288' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|35): input/output/inout 'g638' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|41): input/output/inout 'g602' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|47): input/output/inout 'g642' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|53): input/output/inout 'g280' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|59): input/output/inout 'g663' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|65): input/output/inout 'g610' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|71): input/output/inout 'g148' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|77): input/output/inout 'g209' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|83): input/output/inout 'g675' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|89): input/output/inout 'g478' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|95): input/output/inout 'g122' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|100): input/output/inout 'g54' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                                                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|106): input/output/inout 'g594' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|112): input/output/inout 'g286' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|118): input/output/inout 'g489' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|124): input/output/inout 'g616' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                                                                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|129): input/output/inout 'g79' not declared in port list [12.3.2(IEEE)].
+  g279, g492, g170, g686, g288, g638, g602, g642, g280, g663, g610, g148, g209, g675, g478, g122, g54, g594, g286, g489, g616, g79, g218,
+                                                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,25|135): input/output/inout 'g218' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|5): input/output/inout 'g242' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|11): input/output/inout 'g578' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|17): input/output/inout 'g184' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|23): input/output/inout 'g119' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|29): input/output/inout 'g668' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|35): input/output/inout 'g139' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|41): input/output/inout 'g422' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|47): input/output/inout 'g210' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|53): input/output/inout 'g394' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|59): input/output/inout 'g230' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|64): input/output/inout 'g25' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|70): input/output/inout 'g204' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|76): input/output/inout 'g658' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|82): input/output/inout 'g650' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                                                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|88): input/output/inout 'g378' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|94): input/output/inout 'g508' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|100): input/output/inout 'g548' not declared in port list [12.3.2(IEEE)].
+  g242, g578, g184, g119, g668, g139, g422, g210, g394, g230, g25, g204, g658, g650, g378, g508, g548, g370,
+                                                                                                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,26|106): input/output/inout 'g370' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|5): input/output/inout 'g406' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|11): input/output/inout 'g236' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|17): input/output/inout 'g500' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|23): input/output/inout 'g205' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|29): input/output/inout 'g197' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|35): input/output/inout 'g666' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|41): input/output/inout 'g114' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|47): input/output/inout 'g524' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|53): input/output/inout 'g260' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|59): input/output/inout 'g111' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|65): input/output/inout 'g131' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|69): input/output/inout 'g7' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                                                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|74): input/output/inout 'g19' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|80): input/output/inout 'g677' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|86): input/output/inout 'g582' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|92): input/output/inout 'g485' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|98): input/output/inout 'g699' not declared in port list [12.3.2(IEEE)].
+  g406, g236, g500, g205, g197, g666, g114, g524, g260, g111, g131, g7, g19, g677, g582, g485, g699, g193,
+                                                                                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,27|104): input/output/inout 'g193' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|5): input/output/inout 'g135' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|11): input/output/inout 'g382' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|17): input/output/inout 'g414' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|23): input/output/inout 'g434' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|29): input/output/inout 'g266' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|34): input/output/inout 'g49' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|40): input/output/inout 'g152' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|46): input/output/inout 'g692' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|52): input/output/inout 'g277' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|58): input/output/inout 'g127' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|64): input/output/inout 'g161' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|70): input/output/inout 'g512' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|76): input/output/inout 'g532' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                                                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|81): input/output/inout 'g64' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|87): input/output/inout 'g694' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|93): input/output/inout 'g691' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                                                                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|97): input/output/inout 'g1' not declared in port list [12.3.2(IEEE)].
+  g135, g382, g414, g434, g266, g49, g152, g692, g277, g127, g161, g512, g532, g64, g694, g691, g1, g59;
+                                                                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,28|102): input/output/inout 'g59' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|5): input/output/inout 'g4130' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|12): input/output/inout 'g6823' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|19): input/output/inout 'g6940' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|26): input/output/inout 'g6102' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|33): input/output/inout 'g4147' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|40): input/output/inout 'g4841' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|47): input/output/inout 'g6725' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|54): input/output/inout 'g3232' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|61): input/output/inout 'g4119' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|68): input/output/inout 'g4141' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|75): input/output/inout 'g6726' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|82): input/output/inout 'g6507' not declared in port list [12.3.2(IEEE)].
+ g4130, g6823, g6940, g6102, g4147, g4841, g6725, g3232, g4119, g4141, g6726, g6507, g6590,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,34|89): input/output/inout 'g6590' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|5): input/output/inout 'g3231' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|12): input/output/inout 'g5330' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|19): input/output/inout 'g5147' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|26): input/output/inout 'g4839' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|33): input/output/inout 'g6105' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|40): input/output/inout 'g5138' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|47): input/output/inout 'g4122' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|54): input/output/inout 'g6827' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|61): input/output/inout 'g6745' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|68): input/output/inout 'g6405' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|75): input/output/inout 'g6729' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|82): input/output/inout 'g6595' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|89): input/output/inout 'g6826' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|96): input/output/inout 'g4134' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|103): input/output/inout 'g6599' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|110): input/output/inout 'g4857' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|117): input/output/inout 'g6406' not declared in port list [12.3.2(IEEE)].
+ g3231, g5330, g5147, g4839, g6105, g5138, g4122, g6827, g6745, g6405, g6729, g6595, g6826, g4134, g6599, g4857, g6406, g5148,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,35|124): input/output/inout 'g5148' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|5): input/output/inout 'g4117' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|12): input/output/inout 'g6582' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|19): input/output/inout 'g3229' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|26): input/output/inout 'g5700' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|33): input/output/inout 'g4136' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|40): input/output/inout 'g4858' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|47): input/output/inout 'g5876' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|54): input/output/inout 'g3239' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|61): input/output/inout 'g5698' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|68): input/output/inout 'g5328' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|75): input/output/inout 'g4133' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|82): input/output/inout 'g4847' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|89): input/output/inout 'g5877' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|96): input/output/inout 'g6597' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|103): input/output/inout 'g4120' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|110): input/output/inout 'g3235' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|117): input/output/inout 'g4137' not declared in port list [12.3.2(IEEE)].
+ g4117, g6582, g3229, g5700, g4136, g4858, g5876, g3239, g5698, g5328, g4133, g4847, g5877, g6597, g4120, g3235, g4137, g6407,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,36|124): input/output/inout 'g6407' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|5): input/output/inout 'g5470' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|12): input/output/inout 'g6841' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|19): input/output/inout 'g4149' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|26): input/output/inout 'g6101' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|33): input/output/inout 'g4844' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|40): input/output/inout 'g4113' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|47): input/output/inout 'g6504' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|54): input/output/inout 'g3224' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|61): input/output/inout 'g4855' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|68): input/output/inout 'g4424' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|75): input/output/inout 'g5582' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|82): input/output/inout 'g6502' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|89): input/output/inout 'g6107' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|96): input/output/inout 'g5472' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|103): input/output/inout 'g6602' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|110): input/output/inout 'g5581' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|117): input/output/inout 'g6587' not declared in port list [12.3.2(IEEE)].
+ g5470, g6841, g4149, g6101, g4844, g4113, g6504, g3224, g4855, g4424, g5582, g6502, g6107, g5472, g6602, g5581, g6587, g4145,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,37|124): input/output/inout 'g4145' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|5): input/output/inout 'g2585' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|12): input/output/inout 'g4842' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|19): input/output/inout 'g2586' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|26): input/output/inout 'g1291' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|33): input/output/inout 'g4118' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|40): input/output/inout 'g3225' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|47): input/output/inout 'g4853' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|54): input/output/inout 'g4849' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|61): input/output/inout 'g6512' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|68): input/output/inout 'g3233' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|75): input/output/inout 'g4851' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|82): input/output/inout 'g4856' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|89): input/output/inout 'g6854' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|96): input/output/inout 'g1831' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|103): input/output/inout 'g4843' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|110): input/output/inout 'g6510' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|117): input/output/inout 'g6591' not declared in port list [12.3.2(IEEE)].
+ g2585, g4842, g2586, g1291, g4118, g3225, g4853, g4849, g6512, g3233, g4851, g4856, g6854, g1831, g4843, g6510, g6591, g4846,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,38|124): input/output/inout 'g4846' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|5): input/output/inout 'g1288' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|12): input/output/inout 'g5478' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|19): input/output/inout 'g6840' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|26): input/output/inout 'g6594' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|33): input/output/inout 'g5580' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|40): input/output/inout 'g6853' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|47): input/output/inout 'g4840' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|54): input/output/inout 'g4150' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|61): input/output/inout 'g5490' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|68): input/output/inout 'g6511' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|75): input/output/inout 'g4142' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|82): input/output/inout 'g4845' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|89): input/output/inout 'g5694' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|96): input/output/inout 'g6722' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|103): input/output/inout 'g4139' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|110): input/output/inout 'g5480' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|117): input/output/inout 'g5697' not declared in port list [12.3.2(IEEE)].
+ g1288, g5478, g6840, g6594, g5580, g6853, g4840, g4150, g5490, g6511, g4142, g4845, g5694, g6722, g4139, g5480, g5697, g6498,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,39|124): input/output/inout 'g6498' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|5): input/output/inout 'g4126' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|12): input/output/inout 'g5471' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|19): input/output/inout 'g6505' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|26): input/output/inout 'g6588' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|33): input/output/inout 'g5475' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|40): input/output/inout 'g4148' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|47): input/output/inout 'g6501' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|54): input/output/inout 'g6506' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|61): input/output/inout 'g4135' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|68): input/output/inout 'g5479' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|75): input/output/inout 'g6824' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|82): input/output/inout 'g3240' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|89): input/output/inout 'g5476' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|96): input/output/inout 'g3230' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|103): input/output/inout 'g6721' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|110): input/output/inout 'g3227' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|117): input/output/inout 'g6925' not declared in port list [12.3.2(IEEE)].
+ g4126, g5471, g6505, g6588, g5475, g4148, g6501, g6506, g4135, g5479, g6824, g3240, g5476, g3230, g6721, g3227, g6925, g5477,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,40|124): input/output/inout 'g5477' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|5): input/output/inout 'g5489' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|12): input/output/inout 'g4131' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|19): input/output/inout 'g6727' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|26): input/output/inout 'g4140' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|33): input/output/inout 'g6842' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|40): input/output/inout 'g4423' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|47): input/output/inout 'g6723' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|54): input/output/inout 'g6724' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|61): input/output/inout 'g4132' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|68): input/output/inout 'g6401' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|75): input/output/inout 'g5491' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|82): input/output/inout 'g4127' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|89): input/output/inout 'g6278' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|96): input/output/inout 'g6106' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|103): input/output/inout 'g6744' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|110): input/output/inout 'g6404' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|117): input/output/inout 'g4138' not declared in port list [12.3.2(IEEE)].
+ g5489, g4131, g6727, g4140, g6842, g4423, g6723, g6724, g4132, g6401, g5491, g4127, g6278, g6106, g6744, g6404, g4138, g3228,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,41|124): input/output/inout 'g3228' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|5): input/output/inout 'g1289' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|12): input/output/inout 'g4123' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|19): input/output/inout 'g4658' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|26): input/output/inout 'g5878' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|33): input/output/inout 'g4125' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|40): input/output/inout 'g4124' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|47): input/output/inout 'g5874' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|54): input/output/inout 'g6103' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|61): input/output/inout 'g1294' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|68): input/output/inout 'g1292' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|75): input/output/inout 'g4115' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|82): input/output/inout 'g6584' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|89): input/output/inout 'g6596' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|96): input/output/inout 'g3226' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|103): input/output/inout 'g2587' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|110): input/output/inout 'g4657' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|117): input/output/inout 'g6589' not declared in port list [12.3.2(IEEE)].
+ g1289, g4123, g4658, g5878, g4125, g4124, g5874, g6103, g1294, g1292, g4115, g6584, g6596, g3226, g2587, g4657, g6589, g3234,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,42|124): input/output/inout 'g3234' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|5): input/output/inout 'g3238' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|12): input/output/inout 'g6592' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|19): input/output/inout 'g5473' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|26): input/output/inout 'g4114' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|33): input/output/inout 'g6800' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|40): input/output/inout 'g5141' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|47): input/output/inout 'g4854' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|54): input/output/inout 'g6839' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|61): input/output/inout 'g5699' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|68): input/output/inout 'g3236' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|75): input/output/inout 'g6601' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|82): input/output/inout 'g5875' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|89): input/output/inout 'g4425' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|96): input/output/inout 'g5329' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|103): input/output/inout 'g5695' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|110): input/output/inout 'g6499' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|117): input/output/inout 'g6825' not declared in port list [12.3.2(IEEE)].
+ g3238, g6592, g5473, g4114, g6800, g5141, g4854, g6839, g5699, g3236, g6601, g5875, g4425, g5329, g5695, g6499, g6825, g5693,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,43|124): input/output/inout 'g5693' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|5): input/output/inout 'g4850' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|12): input/output/inout 'g3237' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|19): input/output/inout 'g6497' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|26): input/output/inout 'g6100' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|33): input/output/inout 'g6509' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|40): input/output/inout 'g4128' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|47): input/output/inout 'g4116' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|54): input/output/inout 'g6503' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|61): input/output/inout 'g3241' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|68): input/output/inout 'g6277' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|75): input/output/inout 'g5139' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|82): input/output/inout 'g6598' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|89): input/output/inout 'g6600' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|96): input/output/inout 'g4129' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|103): input/output/inout 'g6593' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|110): input/output/inout 'g6801' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|117): input/output/inout 'g4426' not declared in port list [12.3.2(IEEE)].
+ g4850, g3237, g6497, g6100, g6509, g4128, g4116, g6503, g3241, g6277, g5139, g6598, g6600, g4129, g6593, g6801, g4426, g5474,
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,44|124): input/output/inout 'g5474' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|5): input/output/inout 'g5140' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|12): input/output/inout 'g5696' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                   |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|19): input/output/inout 'g4852' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                          |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|26): input/output/inout 'g4848' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                 |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|33): input/output/inout 'g4659' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                        |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|40): input/output/inout 'g6583' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                               |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|47): input/output/inout 'g6402' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                      |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|54): input/output/inout 'g4144' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                             |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|61): input/output/inout 'g6104' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                                    |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|68): input/output/inout 'g6941' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                                           |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|75): input/output/inout 'g6403' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                                                  |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|82): input/output/inout 'g6500' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                                                         |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|89): input/output/inout 'g6508' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                                                                |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|96): input/output/inout 'g6586' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                                                                       |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|103): input/output/inout 'g4146' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                                                                              |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|110): input/output/inout 'g4143' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                                                                                     |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|117): input/output/inout 'g6720' not declared in port list [12.3.2(IEEE)].
+ g5140, g5696, g4852, g4848, g4659, g6583, g6402, g4144, g6104, g6941, g6403, g6500, g6508, g6586, g4146, g4143, g6720, g6585;
+                                                                                                                            |
+ncvlog: *E,NOPORT (/afs/ece.cmu.edu/usr/njansen/18765/p5/test_run/work/s9234_comb.v,45|124): input/output/inout 'g6585' not declared in port list [12.3.2(IEEE)].
+WARNING (TEI-813): [Severe] Build Model NC (IEEE 2001 Standard) Verilog Parser: 
+           return code of 1 received from ncvlog process.  It is recommended  
+           to check for ncvlog messages in the Build Model log.  [end TEI_813] 
+NC Verilog Parser complete - 0 modules, 0 gates, 0 user defined primitives.
+
+INFO (TEI-003): The 'cell noCellNameFound' was selected as the top cell.   [end TEI_003] 
+ERROR (TEI-002): The 'cell noCellNameFound' was not found in the design source file(s) specified.   Note that for Verilog, a change has been made to no longer automatically search the directories for explicitly specified files. Therefore it may now be necessary to add the directory of this missing cell to build the complete design.  [end TEI_002] 
+ERROR (TEI-400): Build Model FAILED:
+  Cell named 'noCellNameFound' could not be resolved
+  Unexpected Model Build Failure
+  [end TEI_400] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           36,426,128  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:02.68                    [end TDA_001]
+
+
+
+Build Model Controller completed.
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-003): The 'cell noCellNameFound' was selected as the top cell.    
+
+  WARNING [Severe] Messages...
+      1 WARNING (TEI-813): [Severe] Build Model NC (IEEE 2001 Standard) Verilog Parser: 
+
+  ERROR Messages...
+      1 ERROR (TEI-002): The 'cell noCellNameFound' was not found in the design source file(s) specified.   Note that for Verilog, a change has been made to no longer automatically search the directories for explicitly specified files. Therefore it may now be necessary to add the directory of this missing cell to build the complete design.   
+      1 ERROR (TEI-400): Build Model FAILED:
+
+
+*******************************************************************************
