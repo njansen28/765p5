@@ -1,0 +1,84 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            report_fault_statistics stepid=pd__report_fault_statistics_050315204844-954355000 experiment=exp_comb testmode=FULLSCAN inputcommitted=no reporttype=static workdir=/afs/ece.cmu.edu/usr/elliotr/Private/18765/765p5/test_run/work coveragecredit=redundant,tested  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Sunday May 03 20:48:45 2015  EDT
+            Host machine is nemesis.lab.ece.cmu.local, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 17647.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=/afs/ece.cmu.edu/usr/elliotr/Private/18765/765p5/test_run/work
+            TESTMODE=FULLSCAN
+            EXPERIMENT=exp_comb
+
+            logfile=/afs/ece.cmu.edu/usr/elliotr/Private/18765/765p5/test_run/work/testresults/logs/log_report_fault_statistics_FULLSCAN_exp_comb_050315204844-954355000
+            stepid=pd__report_fault_statistics
+            reporttype=static
+            coveragecredit=redundant,tested
+          + inputcommitted=no
+[end TDA_009]
+malloc: using debugging hooks
+Logic Model(GM)   05/04/15
+                  00:33:13
+File Id     faultModel        faultStatus         experiment
+Created (GM)  05/04/15           05/04/15           05/04/15
+              00:35:16           00:35:16           00:36:59
+Modified(GM)  05/04/15           05/04/15           05/04/15
+              00:35:16           00:35:16           00:37:01
+Code Level        2012.1             2012.1             2012.1            
+Max Fault Id       16589
+
+
+Global Ignored Static Fault Count          0
+Global Ignored Dynamic Fault Count         0
+
+
+INFO (TFM-701):  Fault Statistics for Testmode:  FULLSCAN Experiment: exp_comb: 
+
+
+                   ---- ATCov ----   ---------------- Testmode Faults --------------------  ------------------ Global Faults --------------------
+                 Testmode Global      Total     Tested   Possibly  Redundant   Untested      Total     Tested   Possibly  Redundant   Untested
+
+Total Static       100.00 100.00      16589      15623          0        966          0      16589      15623          0        966          0
+Collapsed Static   100.00 100.00       7107       6655          0        452          0       7107       6655          0        452          0
+
+[end TFM_701]
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-701):  Fault Statistics for Testmode:  FULLSCAN Experiment: exp_comb: 
+
+
+*******************************************************************************

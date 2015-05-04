@@ -1,0 +1,223 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            create_logic_tests stepid=pd__create_logic_tests_050415054818-466437000 experiment=poutine maxpatternstatic=99999999 testmode=FULLSCAN reportcircuit=yes workdir=/afs/ece.cmu.edu/usr/elliotr/Private/18765/765p5/test_run/work simrandom=yes compactioneffort=high simulation=gp effort=high reportfaultsummary=yes  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday May 04 05:48:18 2015  EDT
+            Host machine is nemesis.lab.ece.cmu.local, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 23510.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=/afs/ece.cmu.edu/usr/elliotr/Private/18765/765p5/test_run/work
+            TESTMODE=FULLSCAN
+            EXPERIMENT=poutine
+
+            effort=high
+            simulation=gp
+            maxpatternstatic=99999999
+            simrandom=yes
+            reportfaultsummary=yes
+            reportcircuit=yes
+            logfile=/afs/ece.cmu.edu/usr/elliotr/Private/18765/765p5/test_run/work/testresults/logs/log_create_logic_tests_FULLSCAN_poutine_050415054818-466437000
+            stepid=pd__create_logic_tests
+            compactioneffort=high
+[end TDA_009]
+malloc: using debugging hooks
+
+
+
+------------------Circuit Statistics---------------------
+
+Circuit Summary
+---------------
+
+Hierarchical Model:                  Flattened Model:
+     5598  Blocks                          6094  Blocks
+    14065  Pins                            6094  Nodes
+     5844  Nets
+
+Primary Inputs:                      Primary Outputs:
+      247  Input Only                       250  Output Only
+        0  Input/Output                       0  Input/Output
+      247  Total Inputs                     250  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+        0  Tied to 0                          0  Two-State
+        0  Tied to 1                          0  Three-State
+        0  Tied to X                          0  Total Dotted Nets
+        0  Total Tied Nets
+
+Selected Primitive Functions:
+        0  Clock Chopper (CHOP) primitives 
+        0  RAMs
+        0  ROMs
+        0  TSDs
+        0  Resistors
+        0  Transistors
+        0  Latches
+
+        0  Flip-Flops
+
+
+Test Function Pin Information for Test Mode:  FULLSCAN
+-------------------------------------------
+
+          0  SC    (System  Clock)             Pins
+          0  AC    (A Shift Clock)             Pins
+          0  BC    (B Shift Clock)             Pins
+          0  PC    (P Shift Clock)             Pins
+          0  EC    (E Shift Clock)             Pins
+
+          0  OSC   (Oscillator)                Pins
+
+          0  TI    (Test Inhibit)              Pins
+          0  SE    (Scan Enable)               Pins
+          0  CI    (Clock Isolation)           Pins
+          0  OI    (Output Inhibit)            Pins
+
+          0  SI    (Scan Input)                Pins
+          0  SO    (Scan Output)               Pins
+
+**************************************************************************************
+Coverage Definitions:
+ #Faults  : Number of Active Faults (observable).
+ #Tested  : Number of Active Faults marked tested.
+ #Possibly: Number of Active Faults marked possibly tested
+            (good value is 0 or 1; fault value is X).
+ #Redund  : Number of Active Faults untestable due to redundancy.
+ #Untested: Number of Active Faults untested.
+ %TCov  (%Test Coverage)                      : #Tested / #Faults
+ %ATCov (%Adjusted TCov)                      : #Tested / (#Faults-#Redund)
+**************************************************************************************
+**************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                         #Faults   #Tested #Possibly   #Redund #Untested  %TCov %ATCov
+Total Static               16589         0         0         0     16589   0.00   0.00
+
+                            Global Statistics
+
+                         #Faults   #Tested #Possibly   #Redund #Untested  %TCov %ATCov
+Total Static               16589         0         0         0     16589   0.00   0.00
+**************************************************************************************
+
+
+
+INFO (TTC-110): Initializing the General Purpose Simulator...  [end TTC_110] 
+
+
+
+INFO (TTC-110): Initialization of the simulator was successful.  Time used (CPU/Elapsed)   0:00:00.00/  0:00:00.04.  [end TTC_110] 
+
+
+
+INFO (TTC-110): Starting random pattern simulation...  [end TTC_110] 
+
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----    ----- Faults -----    ------ CPU Time ------  - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global    Aborted   Untested       Sim.        Total                      [end TDA_220] 
+INFO (TDA-220):     32      32       8624    51.99%   51.99%          0       7965     00:00.11     00:00.15        00:00.57    [end TDA_220] 
+INFO (TDA-220):     64      62       1028    58.18%   58.18%          0       6937     00:00.17     00:00.22        00:00.63    [end TDA_220] 
+INFO (TDA-220):     96      86        505    61.23%   61.23%          0       6432     00:00.23     00:00.28        00:00.69    [end TDA_220] 
+INFO (TDA-220):    128     107        462    64.01%   64.01%          0       5970     00:00.29     00:00.33        00:00.76    [end TDA_220] 
+INFO (TDA-220):    160     127        236    65.43%   65.43%          0       5734     00:00.34     00:00.39        00:00.81    [end TDA_220] 
+TFS_msgLevel restored to 0
+
+INFO (TTC-110): Ending Random pattern simulation.  [end TTC_110] 
+
+INFO (TDA-220):    160     127          0    65.43%   65.43%          0       5734     00:00.34     00:00.39        00:00.84    [end TDA_220] 
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----    ----- Faults -----    ------ CPU Time ------  - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global    Aborted   Untested       Sim.        Total                      [end TDA_220] 
+INFO (TDA-220):    176     143       2547    80.82%   80.82%          0       3181     00:00.36     00:00.63        00:01.14    [end TDA_220] 
+INFO (TDA-220):    192     159        924    86.47%   86.47%          0       2241     00:00.38     00:00.83        00:01.37    [end TDA_220] 
+INFO (TDA-220):    208     175        502    89.73%   89.73%          0       1698     00:00.40     00:01.00        00:01.59    [end TDA_220] 
+INFO (TDA-220):    224     191        312    91.88%   91.88%          0       1338     00:00.41     00:01.30        00:01.96    [end TDA_220] 
+INFO (TDA-220):    240     207        185    93.59%   93.59%          0       1050     00:00.42     00:01.63        00:02.33    [end TDA_220] 
+INFO (TDA-220):    256     223        116    98.84%   98.84%          0        182     00:00.44     00:02.32        00:03.22    [end TDA_220] 
+INFO (TDA-220):    272     239         64    99.24%   99.24%          0        118     00:00.45     00:02.34        00:03.23    [end TDA_220] 
+INFO (TDA-220):    288     255         51    99.57%   99.57%          0         67     00:00.46     00:02.35        00:03.25    [end TDA_220] 
+INFO (TDA-220):    295     262         16    99.67%   99.67%          0         51     00:00.47     00:02.35        00:03.25    [end TDA_220] 
+INFO (TDA-220):    313     280         51   100.00%  100.00%          0          0     00:00.48     00:02.37        00:03.27    [end TDA_220] 
+
+**************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                         #Faults   #Tested #Possibly   #Redund #Untested  %TCov %ATCov
+Total Static               16589     15623         0       966         0  94.18 100.00
+
+                            Global Statistics
+
+                         #Faults   #Tested #Possibly   #Redund #Untested  %TCov %ATCov
+Total Static               16589     15623         0       966         0  94.18 100.00
+**************************************************************************************
+
+
+              ----Final Pattern Statistics----
+
+ Test Section Type                       # Test Sequences
+----------------------------------------------------------
+ Logic                                          280
+----------------------------------------------------------
+ Total                                          280
+
+*************************************************************************************** 
+* Untested Fault Summary. Use GUI Analyze Messages for additional analysis information   
+*************************************************************************************** 
+Count   Message
+-----   -------
+  452	   INFO (TFA-020): redundant faults 
+*************************************************************************************** 
+
+(I) File(s) generated (bytes and name):
+
+          90112 /afs/ece.cmu.edu/usr/elliotr/Private/18765/765p5/test_run/work/tbdata/faultStatus.FULLSCAN.poutine
+         195364 /afs/ece.cmu.edu/usr/elliotr/Private/18765/765p5/test_run/work/tbdata/TBDbin.FULLSCAN.poutine
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           10,164,720  bytes
+
+                      CPU Time =    0:00:02.38
+                  Elapsed Time =    0:00:03.39                    [end TDA_001]
+
+     Date Ended:  Monday May 04 05:48:22 2015  EDT
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+     20 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----    ----- Faults -----    ------ CPU Time ------  - Elapsed Time -   
+      4 INFO (TTC-110): Initializing the General Purpose Simulator...   
+
+
+*******************************************************************************

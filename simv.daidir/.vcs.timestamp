@@ -1,0 +1,89 @@
+0 
+23
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -O -I/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags= -melf_i386 -m32
+-Mobjects= /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/libvirsim.so /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/librterrorinf.so /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/vcs_save_restore_new.o
+-Msyslibs=/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/ctype-stubs_32.a -ldl
+-Mvcsaceobjs=
+-gen_obj
+-sverilog
+/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/bin/vcs1
+DFT.v
+TAP.v
+normalOpTB.v
+primitives.v
+s9234.v
+s9234_orig.v
+48
+sysc_uni_pwd=/afs/ece.cmu.edu/usr/elliotr/Private/18765/765p5
+XMODIFIERS=@im=none
+XILINX_PLANAHEAD=/afs/ece.cmu.edu/support/xilinx/xilinx.release/14.2/ISE_DS/PlanAhead
+XILINX_EDK=/afs/ece.cmu.edu/support/xilinx/xilinx.release/14.2/ISE_DS/EDK
+XILINX_DSP=/afs/ece.cmu.edu/support/xilinx/xilinx.release/14.2/ISE_DS/ISE
+XILINX=/afs/ece.cmu.edu/support/xilinx/xilinx.release/14.2/ISE_DS/ISE
+VMR_MODE_FLAG=32
+VCS_MX_HOME_INTERNAL=1
+VCS_LIC_EXPIRE_WARNING=0
+VCS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1
+VCS_EM64T_PURE32=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=suse32
+VCS_ARCH=suse32
+UNAME=/bin/uname
+TOOL_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32
+SYN_DIR=/usr/local/synopsys/synopsys-2007.03-SP5
+SYNOPSYS=/usr/local/synopsys
+SSH_TTY=/dev/pts/14
+SSH_CONNECTION=172.19.132.143 56451 128.2.131.13 22
+SSH_CLIENT=172.19.132.143 56451 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LOADEDMODULES=
+LMC_HOME=/afs/ece.cmu.edu/support/xilinx/xilinx.release/14.2/ISE_DS/ISE/smartmodel/lin64/installed_lin64
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+KRB5CCNAME=FILE:/tmp/krb5cc_7306_sZlAm17041
+KDEDIRS=/usr
+HOSTNAME=ece003.ece.cmu.edu
+HOPE_MAN=/afs/ece/class/ee765/tools/hope/src
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+DC_HOME=/usr/local/synopsys/synopsys-2007.03-SP5/linux/syn
+CVS_RSH=ssh
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+ATALANTA_MAN=/afs/ece/class/ee765/tools/atalanta/src
+AKLOG=/usr/bin/aklog
+0
+6
+1430451820 primitives.v
+1429728906 TAP.v
+1430451820 DFT.v
+1429828406 s9234_orig.v
+1430451820 s9234.v
+1430451820 normalOpTB.v
+4
+0 
+1338179553 /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/libvirsim.so
+1338176222 /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/librterrorinf.so
+1338176038 /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/libsnpsmalloc.so
+1430704286 simv.daidir
